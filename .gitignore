@@ -1,11 +1,7 @@
-# Installation Wordpress
-/wp-cms/*
+.htaccess
+composer.lock
+/vendor/
+#/src/wp-cms/.htaccess
+#/src/wp-content/languages
 
-# Contenus non versionnés
-/wp-content/uploads/
-#/wp-content/plugins/
-/wp-content/themes/opp/.sass-cache
-/wp-content/themes/opp/node_modules
-
-# Configuration
-/wp-config.php
+#wp-cli.local.yml

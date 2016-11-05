@@ -1,0 +1,44 @@
+{
+    "name": "PhotographicObservatoryOfPoles/opp-wordpress",
+    "description": "Observatoire Photographique des Pôles",
+    "license": "",
+    "authors": [
+        {
+            "name": "Audrey Guénée",
+            "email": "audreyguenee@free.free"
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "repositories":[
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/add-to-any": "1.7",
+        "wpackagist-plugin/advanced-custom-fields": "4.4.10",
+        "wpackagist-plugin/cookie-notice": "1.2.36.1",
+        "wpackagist-plugin/custom-contact-forms": "7.8.3",
+        "wpackagist-plugin/give": "1.6.2",
+        "wpackagist-plugin/html-editor-syntax-highlighter": "1.7.2",
+        "wpackagist-plugin/loco-translate": "2.0.7",
+        "wpackagist-plugin/media-library-assistant": "2.33",
+        "wpackagist-plugin/polylang": "2.0.6",
+        "wpackagist-plugin/snazzy-maps": "1.1.2",
+        "wpackagist-plugin/ultimate-wp-query-search-filter": "1.0.10"
+    },
+    "require-dev": {
+        "phing/phing": "2.*",
+        "wp-cli/wp-cli": "0.*"
+    },
+    "extra": {
+        "installer-paths": {
+            "src/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+            "src/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "src/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"]
+        }
+    }
+}
