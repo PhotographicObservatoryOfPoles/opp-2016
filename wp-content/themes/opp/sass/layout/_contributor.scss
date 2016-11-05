@@ -1,0 +1,199 @@
+.page-template-page-contributors {
+
+	.grid {
+	    @media screen and (max-width: 767px) {
+	        margin: auto;
+	        max-width: 300px;
+	    }
+	}
+
+}
+
+
+.single-contributor {
+
+	.row {
+		margin: 0;
+	}
+	
+	.main-cover {
+		height: 400px;
+	    overflow: hidden;
+	    position: relative;
+
+	    + .main-cover {
+	    	background: rgba(0,0,0,0.65);
+	    }
+
+	    img {
+	    	display: block;
+    		margin: auto;
+    		//max-width: 100%;
+    		min-height: 400px;
+    		position: absolute;
+		    left: 50%;
+		    right: 0;
+		    top: 30%;
+		    transform: translate(-50%, -30%);
+	    }
+
+	}
+
+	.main-cover--blurry-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		filter: blur(8px);
+		-webkit-filter: blur(8px);
+	}
+
+	.intro {
+
+		min-height: 120px;
+		margin-bottom: 15px;
+		
+		.container {
+			position: relative;
+		}
+
+		h2 {
+			font-family: 'Source Serif Pro', serif;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 0;
+		}
+
+		h3 {
+			font-size: 14px;
+		    margin: 6px 0;
+		}
+
+		.job {
+			text-transform: uppercase;
+			color: #57025B;
+			line-height: 20px;
+		}
+
+		.website {
+			margin: 10px 0;
+			font-size: 12px;
+    		text-transform: uppercase;
+		}
+
+		.photo {
+			position: absolute;
+			top: -60px;
+			left: 0;
+			margin: 0 15px;
+
+			img {
+				max-width: 180px;
+				border: 3px solid white;
+    			border-radius: 90px;
+    			box-shadow: 0 0 10px 0 rgba(51, 51, 51, 0.48);
+			}
+
+			@media screen and (max-width: 767px) {
+	            position: relative;
+			    top: 0;
+			    margin: auto;
+
+			    img {
+			    	display: block;
+			    	margin: auto;
+			    }
+		    }
+
+		}
+
+		.photo + .row {
+			margin-left: 185px;
+
+			@media screen and (max-width: 767px) {
+				margin: auto;
+				text-align: center;
+		    }
+		}
+
+		.col-sm-7 + .col-sm-5 {
+			padding: 0 36px;
+			margin-top: 15px;
+			color: #333;
+		}
+	}
+
+	.content {
+		//text-align: justify;
+
+		.container {
+			position: relative;
+		}
+
+		@media screen and (min-width: 768px) {
+			p {
+				padding-right: 20px;
+			}
+	    }
+	}
+
+
+	.about {
+		//min-height: 450px;
+	}
+
+	.sharing-buttons {
+		margin-bottom: 30px;
+	}
+
+	.last-contributions {
+
+		h3 {
+			margin-bottom: 35px;
+		}
+	}
+
+	.contributions {
+		.row > h3 {
+			margin: 0 auto 35px;
+			text-align: center;
+			color: #333;
+		}
+	}
+
+	.thumbnail {
+		margin-bottom: 20px;
+
+		h3 {
+			margin: 0;
+			font-size: 16px;
+			line-height: 22px;
+		}
+		
+		.image {
+			max-height: 150px;
+			overflow-y: hidden;
+		}
+
+		.caption {
+			padding: 10px 15px 5px;
+
+			&.tags {
+				padding-top: 5px;
+				padding-bottom: 15px;
+			}
+
+			&.post-type {
+				float: right;
+
+				> .label-primary {
+					border: 1px solid #57025B;
+				    color: #57025B;
+				    text-transform: uppercase;
+				}
+			}
+		}
+
+	}
+
+}

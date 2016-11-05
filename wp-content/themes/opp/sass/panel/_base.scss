@@ -1,0 +1,183 @@
+/* General styles for all menus */
+.panel {
+    background: $panel-background;
+    position: fixed;
+    overflow: auto;
+    border: 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    h3 {
+        //color: #afdefa;
+        //font-size: 1.9em;
+        //padding: 20px;
+        margin: 0;
+        //background: #0d77b6;
+    }
+
+    h4 {
+        //padding-left: 20px;
+    }
+
+    .button--panel-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* Mask component */
+.mask {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+    //cursor: pointer;
+
+    &.is-active {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+    }
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.panel-vertical {
+    //width: $panel-vertical-width; //240
+    height: 100%;
+    top: 0;
+    z-index: 2000;
+
+    /*a {
+        border-bottom: 1px solid #258ecd;
+        padding: 1em;
+    }*/
+}
+
+.panel-horizontal {
+    width: 100%;
+    height: $panel-horizontal-height;
+    left: 0;
+    z-index: 2000;
+    overflow: hidden;
+
+    h3 {
+        height: 100%;
+        width: 20%;
+        float: left;
+    }
+}
+
+/* Vertical menu that slides from the left or right */
+
+.panel-left {
+    width: $panel-vertical-left-width;
+    left: -$panel-vertical-left-width; //240px
+
+    &.panel-open {
+        left: 0px;
+    }
+}
+
+.panel-right {
+    width: $panel-vertical-right-width;
+    right: -$panel-vertical-right-width; //-240
+
+    &.panel-open {
+        right: 0px;
+    }
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.panel-top {
+    top: -$panel-horizontal-height;
+
+    &.panel-open {
+        top: 0px;
+    }
+}
+
+.panel-bottom {
+    bottom: -$panel-horizontal-height;
+
+    &.panel-open {
+        bottom: 0px;
+    }
+}
+
+/* Push classes applied to the body */
+
+.panel-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.panel-push-toright {
+    //left: $panel-vertical-width; //240
+    left: $panel-vertical-left-width; //240
+}
+
+.panel-push-toleft {
+    //left: -$panel-vertical-width; //-240
+    left: -$panel-vertical-right-width; //-240
+}
+
+/* Transitions */
+
+.panel,
+.panel-push {
+    transition: all 0.5s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+    .panel-horizontal {
+        //font-size: 75%;
+        height: $panel-horizontal-height;
+    }
+
+    .panel-top {
+        top: -$panel-horizontal-height;
+    }
+
+    .panel-bottom {
+        bottom: -$panel-horizontal-height;
+    }
+
+}
+
+@media screen and (max-height: 26.375em){
+
+    .panel-vertical {
+        //font-size: 90%;
+        //width: $panel-vertical-width; //190px
+    }
+
+    /*.panel-left,
+    .panel-push-toleft {
+        left: -$panel-vertical-width; //-190px
+    }
+
+    .panel-right {
+        right: -$panel-vertical-width; //-190px
+    }
+
+    .panel-push-toright {
+        left: $panel-vertical-width; //190px
+    }*/
+}

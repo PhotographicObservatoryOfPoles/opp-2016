@@ -1,0 +1,203 @@
+// Hamburger menu button
+.c-hamburger {
+    display: block;
+    //position: relative; // no position relative = fix bug on IE10
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: $button-width;
+    height: $button-height;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:focus {
+        outline: none;
+    }
+
+    span.c-hamburger-line {
+        display: block;
+        position: absolute;
+        //top: 44px;
+        left: $button-pad;
+        right: $button-pad;
+        height: $bar-thickness;
+        background: #333;
+
+        &::before,
+        &::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: $bar-thickness;
+            background-color: #333;
+            content: "";
+        }
+
+        &::before {
+            top: -$button-bar-space;
+        }
+
+        &::after {
+            bottom: -$button-bar-space;
+        }
+    }
+}
+
+// Style 1: rotating icon
+.c-hamburger--rot {
+    background-color: #28aadc;
+
+    span.c-hamburger-line {
+        transition: transform $button-transistion-duration;
+    }
+
+    /* active state, i.e. menu open */
+    &.is-active {
+        background-color: #166888;
+
+        span {
+            transform: rotate(90deg);
+        }
+    }   
+}
+
+// Style 2: animate to X
+.c-hamburger--htx {
+    background-color: #ff3264;
+
+    span.c-hamburger-line {
+        transition: background 0s $button-transistion-duration;
+
+        &::before,
+        &::after {
+            transition-duration: $button-transistion-duration, $button-transistion-duration;
+            transition-delay: $button-transistion-duration, 0s;
+        }
+
+        &::before {
+            transition-property: top, transform;
+        }
+
+        &::after {
+            transition-property: bottom, transform;
+        }
+    }
+
+    /* active state, i.e. menu open */
+    &.is-active {
+        background-color: #cb0032;
+
+        span.c-hamburger-line {
+            background: none;
+
+            &::before,
+            &::after {
+                transition-delay: 0s, $button-transistion-duration;
+            }
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+
+        }
+    }
+}
+
+// Style 3: Animate To Left-Pointing Arrow
+.c-hamburger--htla {
+    background-color: #32dc64;
+
+    span.c-hamburger-line {
+        transition: transform $button-transistion-duration;
+
+        &::before {
+            transform-origin: top right;
+            transition: transform $button-transistion-duration, width $button-transistion-duration, top $button-transistion-duration;
+        }
+
+        &::after {
+            transform-origin: bottom right;
+            transition: transform $button-transistion-duration, width $button-transistion-duration, bottom $button-transistion-duration;
+        }
+    }
+
+    /* active state, i.e. menu open */
+    &.is-active {
+        background-color: #18903c;
+
+        span.c-hamburger-line {
+            transform: rotate(180deg);
+
+            &::before,
+            &::after {
+                width: 50%;
+            }
+
+            &::before {
+                top: 0;
+                transform: translateX(38px) translateY(4px) rotate(45deg);
+            }
+
+            &::after {
+                bottom: 0;
+                transform: translateX(38px) translateY(-4px) rotate(-45deg);
+            }
+        }
+    }
+}
+
+// Style 4: Animate To Right-Pointing Arrow
+.c-hamburger--htra {
+    background-color: #ff9650;
+    
+    span.c-hamburger-line {
+        transition: transform $button-transistion-duration;
+
+        &::before {
+            transform-origin: top left;
+            transition: transform $button-transistion-duration, width $button-transistion-duration, top $button-transistion-duration;
+        }
+
+        &::after {
+            transform-origin: bottom left;
+            transition: transform $button-transistion-duration, width $button-transistion-duration, bottom $button-transistion-duration;
+        }
+    }
+
+    /* active state, i.e. menu open */
+    &.is-active {
+        background-color: #e95d00;
+
+        span.c-hamburger-line {
+            transform: rotate(180deg);
+
+            &::before,
+            &::after {
+                width: 50%;
+            }
+
+            &::before {
+                top: 0;
+                transform: translateX(-8px) translateY(4px) rotate(-45deg);
+            }
+
+            &::after {
+                bottom: 0;
+                transform: translateX(-8px) translateY(-4px) rotate(45deg);
+            }
+        }
+    }
+}

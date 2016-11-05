@@ -1,0 +1,38 @@
+/*
+ Theme Name:   OPP Theme
+ Theme URI:    
+ Description:  OPP Theme
+ Author:       
+ Author URI:   
+ Template:     opp
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  opp
+*/
+
+@import "compass";
+//@import "compass/reset";
+
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+// Import custom Bootstrap variables
+@import "global/bootstrap-variables";
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+@import "global/mixins";
+@import "global/variables";
+@import "global/typography";
+@import "global/common";
+
+@import "layout/home";
+@import "layout/gallery";
+@import "layout/expedition";
+@import "layout/contributor";
+@import "layout/map";
+@import "layout/observatory";
+@import "layout/donation";
+@import "layout/contact";
+@import "layout/news";

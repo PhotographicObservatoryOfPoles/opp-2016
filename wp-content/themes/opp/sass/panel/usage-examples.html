@@ -1,0 +1,116 @@
+<div>
+	<button id="button--panel-contributors" class="button--panel-open">Contributors panel</button>
+	<button id="button--panel-summary" class="button--panel-open">Navigation panel</button>
+
+	<!-- examples -->
+	<button id="button--panel-1" class="button--panel-open">Panel 1 (push right)</button>
+	<button id="button--panel-2" class="button--panel-open">Panel 2 (slide top)</button>
+	<button id="button--panel-3" class="button--panel-open">Panel 3 (slide bottom)</button>
+</div>
+
+<!-- Side panel: contributors -->
+<aside class="panel panel-vertical panel-left" id="contributors-panel">
+	<button class="button--panel-close">&larr; Close</button>
+	<h4>Contributeurs</h4>
+ 	<?php foreach ( $authors as $index => $author ) : 
+			$photo = get_field('photo', $author->ID); ?>
+			<div>
+				<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="" />	
+				<h3><?php echo $author->post_title; ?></h3>
+				<p><?php echo $author->post_excerpt; ?></p>
+				<a href="<?php echo get_permalink ($author->ID); ?>">En savoir +</a>
+			</div>
+	<?php endforeach; ?>
+</aside>
+
+<!-- Side panel: summary -->
+<aside class="panel panel-vertical panel-left" id="summary-panel">
+	<button class="button--panel-close">&larr; Close</button>
+	<h4>Chronologie</h4>
+	<ol>
+	<?php foreach ($allPages as $page) : 
+			$class = $page->ID === $post->ID ? 'current' : '';
+	?>
+		<li class="nav <?php echo $class; ?>"><a href="<?php echo get_permalink($page->ID); ?>"><?php echo $page->post_title; ?></a></li>
+
+	<?php endforeach; ?>
+	</ol>
+</aside>
+
+
+<div class="panel panel-vertical panel-right" id="panel-1">
+	<button class="button--panel-close">&larr; Close</button>
+	PANEL #1 (push-right)
+</div>
+<div class="panel panel-horizontal panel-top" id="panel-2">
+	<button class="button--panel-close">&larr; Close</button>
+	PANEL #2 (slide-top)
+</div>
+<div class="panel panel-horizontal panel-bottom" id="panel-3">
+	<button class="button--panel-close">&larr; Close</button>
+	PANEL #3 (slide-bottom)
+</div>
+
+
+<div id="mask" class="mask"></div>
+
+
+<script src="<?php bloginfo('template_directory');?>/js/panel.js"></script>
+<script type="text/javascript">
+
+	// Examples
+	// Push right
+	var panel1 = new Panel({
+		panel: '#panel-1',
+		type: 'push-right'
+	});
+	var panel1Btn = document.querySelector('#button--panel-1');
+	panel1Btn.addEventListener('click', function(e) {
+		e.preventDefault;
+		panel1.open();
+	});
+
+	// Slide top
+	var panel2 = new Panel({
+		panel: '#panel-2',
+	});
+	var panel2Btn = document.querySelector('#button--panel-2');
+	panel2Btn.addEventListener('click', function(e) {
+		e.preventDefault;
+		panel2.open();
+	});
+
+	// Slide bottom
+	var panel3 = new Panel({
+		panel: '#panel-3',
+	});
+	var panel3Btn = document.querySelector('#button--panel-3');
+	panel3Btn.addEventListener('click', function(e) {
+		e.preventDefault;
+		panel3.open();
+	});
+
+
+	// Contributors panel (push left)
+	var contributorsPanel = new Panel({
+		panel: '#contributors-panel',
+		type: 'push-left'
+	});
+	var contributorsPanelBtn = document.querySelector('#button--panel-contributors');
+	contributorsPanelBtn.addEventListener('click', function(e) {
+		e.preventDefault;
+		contributorsPanel.open();
+	});
+
+	// Navigation panel (push left)
+	var navigationPanel = new Panel({
+		panel: '#summary-panel',
+		type: 'push-left'
+	});
+	var navigationPanelBtn = document.querySelector('#button--panel-summary');
+	navigationPanelBtn.addEventListener('click', function(e) {
+		e.preventDefault;
+		navigationPanel.open();
+	});
+
+</script>

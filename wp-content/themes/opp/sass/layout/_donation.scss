@@ -1,0 +1,27 @@
+.page-template-page-donation {
+
+	.content .row {
+		//margin: 0 50px;
+	}
+	
+	.give-form-title {
+		display: none;
+	}
+
+	form.give-form {
+		background: #F9F9F9;
+    	box-shadow: 0 1px 1px rgba(0,0,0,.125);
+    	padding: 25px 30px;
+	}
+}
+
+.page-template-page-donation-confirmation {
+	.content {
+		text-align: center;
+
+		a {
+			display: inline-block;
+			margin: 20px 0 10px;
+		}
+	}
+}
