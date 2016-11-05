@@ -1,0 +1,11 @@
+# Installation Wordpress
+/wp-cms/*
+
+# Contenus non versionnés
+/wp-content/uploads/
+#/wp-content/plugins/
+/wp-content/themes/opp/.sass-cache
+/wp-content/themes/opp/node_modules
+
+# Configuration
+/wp-config.php
