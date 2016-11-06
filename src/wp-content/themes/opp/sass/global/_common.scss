@@ -86,6 +86,31 @@ body {
     }
 }
 
+#skipping-link {
+    //text-align: center;
+    //margin: 0 auto 10px;
+    margin-bottom: 20px;
+
+    > a {
+        //display: inline-block;
+        //float: right;
+        color: #57025b;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 13px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+
+        .glyphicon {
+            display: inline-block;
+        }
+    }
+}
+
 .content p:first-child {
     margin-top: 0;
 }

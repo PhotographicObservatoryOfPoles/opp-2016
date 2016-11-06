@@ -72,7 +72,7 @@ while ( have_posts() ) : the_post();
 <!-- Cover image -->
 <div class="main-cover main-cover--blurry-bg mobile-hidden"><!-- just to insert a blurry background image --></div>
 <div class="main-cover mobile-hidden">
-	<a href="#biography" class="scroll">
+	<a href="#biography" class="scroll" data-scroll-offset="10">
 		<?php if ( $cover ) : ?>
 			<?php echo $cover; ?>
 		<?php else : ?>

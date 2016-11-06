@@ -1,7 +1,7 @@
 <!-- Cover image -->
 <div class="main-cover main-cover--blurry-bg mobile-hidden">just to insert a blurry background image</div>
 <div class="main-cover">
-	<a href="#intro" class="scroll">
+	<a href="#intro" class="scroll" data-scroll-offset="70">
 		<?php if ( $cover ) : ?>
             <?php echo $cover; ?>
         <?php else: ?>

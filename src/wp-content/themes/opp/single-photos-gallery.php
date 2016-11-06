@@ -59,6 +59,12 @@ while ( have_posts() ) : the_post();
 <!-- Description -->
 <section class="content">
 	<div class="container">
+		<div id="skipping-link" class="row">
+			<a href="#photos" class="scroll btn btn-default" data-scroll-offset="-20">
+				<span class="glyphicon glyphicon-menu-down"></span>
+				<?php echo __( 'See the gallery', 'opp' ); ?>
+			</a>
+		</div>
 		<div class="row">
 			<?php echo $description; ?>
 		</div>
@@ -97,7 +103,7 @@ while ( have_posts() ) : the_post();
 		$imagesIDs = explode( ',', $gallery['ids'] );
 		$nbImages = count( $imagesIDs );
 ?>
-	<section class="gallery loading">
+	<section id="photos" class="gallery loading">
 		<span class="spinner"></span>
 		<div id="slider" class="flexslider">
 		  	<ul class="slides">
