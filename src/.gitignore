@@ -6,6 +6,7 @@
 /wp-content/plugins/
 /wp-content/themes/opp/.sass-cache
 /wp-content/themes/opp/node_modules
+desktop.ini
 
 # Configuration
 /wp-config.php
