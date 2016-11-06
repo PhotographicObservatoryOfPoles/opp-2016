@@ -7,7 +7,9 @@ get_header();
 
 // Get contributors
 $contributors = new WP_Query( array(
-	'orderby'        => 'title',
+	//'orderby'        => 'title',
+	'orderby'   	 => 'meta_value',
+	'meta_key'  	 => 'last_name',
 	'order'          => 'ASC',
 	'posts_per_page' => -1,
 	//'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
