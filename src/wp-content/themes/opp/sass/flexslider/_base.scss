@@ -80,23 +80,6 @@
   }
 }
 
-#enter-exit-fs {
-  position: absolute;
-  right: 0;
-  bottom: -50px;
-  padding: 8px 8px 8px 35px;
-  margin: 8px 12px;
-  font-size: 13px;
-  font-weight: bold;
-  opacity: 1;
-
-  .glyphicon {
-    font-size: 17px;
-    position: absolute;
-    left: 11px;
-    top: 9px;
-  }
-}
 
 #carousel {
 
@@ -431,5 +414,51 @@
   .flex-active {
     opacity: 1;
     cursor: default;
+  }
+}
+
+// Full screen
+
+#enter-fs {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  padding: 8px 8px 8px 35px;
+  margin: 8px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 1;
+
+  .glyphicon {
+    font-size: 17px;
+    position: absolute;
+    left: 11px;
+    top: 9px;
+  }
+}
+
+#exit-fs {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 4px 6px;
+  margin: 12px 8px;
+  opacity: 0.2;
+  z-index: 2;
+  display: none;
+
+  &:hover {
+    opacity: 0.5;
+    transition: opacity ease 0.5s;
+  }
+
+  .glyphicon {
+    font-size: 26px
+  }
+}
+
+:fullscreen {
+  #exit-fs {
+    display: inline-block;
   }
 }

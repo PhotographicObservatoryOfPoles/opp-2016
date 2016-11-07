@@ -106,6 +106,12 @@ while ( have_posts() ) : the_post();
 	<section id="photos" class="gallery loading">
 		<span class="spinner"></span>
 		<div id="slider" class="flexslider">
+
+			<button id="exit-fs" type="button" onclick="exitFullscreen()" class="btn btn-default btn-lg mobile-hidden tablet-hidden">
+			 	<span class="glyphicon glyphicon-resize-small"></span>
+			 	<!--<?php echo __( 'Full screen mode', 'opp' ); ?>-->
+			</button>
+
 		  	<ul class="slides">
 			<?php foreach ( $imagesIDs as $index => $imageID ) :
 					// Image infos
@@ -152,8 +158,8 @@ while ( have_posts() ) : the_post();
 			<?php endforeach; ?>
 		  	</ul>
 		</div>
-		<button id="enter-exit-fs" type="button" onclick="enterFullscreen()" class="btn btn-default btn-lg mobile-hidden tablet-hidden">
-		 	<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+		<button id="enter-fs" type="button" onclick="enterFullscreen()" class="btn btn-default btn-lg mobile-hidden tablet-hidden">
+		 	<span class="glyphicon glyphicon-fullscreen"></span>
 		 	<?php echo __( 'Full screen mode', 'opp' ); ?>
 		</button>
 		<!-- Sharing -->
