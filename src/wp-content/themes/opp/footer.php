@@ -168,6 +168,11 @@
 		    itemMargin: 15
 	  	});
 
+		// Homepage super-contributors slider
+	  	/*$('#homepage-super-contributors-slider').flexslider({
+			animation: "slide"
+		});*/
+
 	  	// Masonry
 	  	$('.grid').masonry({
             itemSelector: '.grid-item'

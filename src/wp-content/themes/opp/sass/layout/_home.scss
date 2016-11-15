@@ -192,6 +192,22 @@
 	}
 }
 
+#homepage-super-contributors-slider {
+	//position: relative;
+
+	.thumbnail-square {
+		margin: 0;
+	}
+
+	/*.flex-viewport {
+	    width: 171px;
+	}*/
+
+	.flex-control-nav {
+		display: none;
+	}
+}
+
 #homepage-contributors-carousel {
 	position: relative;
 
@@ -221,5 +237,122 @@
     		background-image: url('img/arrow-left--medium.png');
     	}
     }
+}
 
+#test-tuiles {
+	margin-top: 40px;
+    width: 85%;
+
+    .main-title {
+    	margin-bottom: 35px;
+    }
+
+    @media screen and (min-width: 992px) {
+        .row {
+	    	margin-top: -10px;
+	    }
+
+	    #main-post {
+			padding-right: 3px;
+		}
+
+		#secondary-posts {
+			padding-left: 3px;
+		}
+    }
+    
+    .thumbnail {
+    	margin: 6px 0;
+    }
+
+	#main-post {
+
+		.all-posts-link {
+			margin: 26px auto 20px;
+		}
+
+		.description {
+		    max-height: 170px;
+    		overflow-y: hidden;
+		}
+	}
+
+	#secondary-posts {
+
+		.col-md-4,
+		.col-md-6,
+		.col-md-8,
+		.col-md-12 {
+			padding-left: 6px;
+    		padding-right: 6px;
+		}
+	}
+
+	#about {
+		display: block;
+
+		.caption {
+			padding: 16px 18px;
+		    line-height: 20px;
+		    font-size: 13px;
+
+		    > p {
+		    	max-height: 120px;
+		    	height: 120px;
+		    	overflow-y: hidden;
+		    	text-overflow: ellipsis;
+		    }
+		}
+
+		h3 {
+		    font-size: 18px;
+    		margin: 0 0 8px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		}
+	}
+
+	#map-link {
+	    margin: 5px 0;
+		display: block;
+		height: 164px;
+		background: url('img/homepage-map.png') center no-repeat;
+		background-size: cover;
+		opacity: 1;
+
+		.main-title {
+			margin: 0 auto;
+			line-height: 164px;
+			opacity: 1;
+			transition: all 0.5s;
+			background: rgba(0,0,0,0.25);
+
+			h2 {
+			    color: #ffffff;
+			    border-top: 0;
+			    border-bottom: 0;
+			    text-shadow: 0px 3px 10px #000000;
+			    font-size: 30px;
+			    line-height: 36px;
+		        vertical-align: middle;
+			}
+		}
+
+		&:hover .main-title {
+		    background: rgba(0,0,0,0.10);
+			//opacity: 1;
+		}
+	}
+
+	.all-posts-link {
+		text-align: center;
+		margin: 20px auto 20px;
+		padding: 0;
+		display: none;
+
+		@media screen and (min-width: 992px) {
+			display: block;
+		}
+	}
 }

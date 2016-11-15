@@ -7,7 +7,6 @@ get_header();
 
 // Get contributors
 $contributors = new WP_Query( array(
-	//'orderby'        => 'title',
 	'orderby'   	 => 'meta_value',
 	'meta_key'  	 => 'last_name',
 	'order'          => 'ASC',
@@ -26,6 +25,11 @@ $contributors = new WP_Query( array(
 
 $index = 0;
 
+// Get super-contributors linked to last news
+$lastNews = get_last_posts( 'post', 1 );
+$lastNews = $lastNews[0];
+$superContributors = get_linked_contributors( $lastNews, $locale );
+
 ?>
 
 <!-- Title -->
@@ -39,9 +43,58 @@ $index = 0;
 	</div>
 </section>
 
+<!-- Super-contributors -->
+<?php if ( count($superContributors['posts']) ) : ?>
+	<section class="container mobile-hidden">
+		<div class="row">
+			<div id="contributors-slider" class="col-sm-12 col-md-12">
+				<ul class="slides">
+					<?php //foreach ( $lastPosts as $lastPost ) :
+						$superContributorsBanner = get_field( 'linked_contributors_banner', $lastNews );
+						//$superContributorsText = get_field( 'linked_contributors_text', $lastNews );
+						$extract = wp_strip_all_tags( get_post_field( 'post_content', $lastNews ) );
+			        	$extract = strlen( $extract ) > 200 ? mb_substr( $extract, 0, 200 ) . '...' : $lastNews;
+					?>
+						<li>
+							<?php if ( $superContributorsBanner ) : ?>
+				            	<img src="<?php echo $superContributorsBanner['url']; ?>" alt="<?php echo $lastNews->post_title; ?>" />
+				            <?php else: ?>
+				               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" />
+				            <?php endif; ?>
+							<div class="flex-caption">
+								<h2 class="title">
+									<?php foreach ( $superContributors['posts'] as $key => $superContributorID ) : $superContributor = get_post( $superContributorID, $locale ); ?>
+										<?php echo $superContributor->post_title; ?><?php echo $key !== $superContributors['lastKey'] ? ',' : ''; ?>
+									<?php endforeach; ?>
+								</h2>
+								<h3 class="subtitle"><?php echo $lastNews->post_title; ?></h2>
+								<p><?php echo $extract; ?></p>
+				        		<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>">
+					        		<?php echo __( 'Read the news', 'opp' ); ?>
+					        		<span class="glyphicon glyphicon-menu-right"></span>
+					        	</a>
+							</div>
+							<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>" title="<?php echo __( 'Read the news', 'opp' ); ?>"></a>
+						</li>
+					<?php// endforeach; ?>
+				</ul>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
+
 <!-- Contributors -->
 <?php if ( $contributors->have_posts() ) : ?>
 	<div class="container">
+		<?php if ( count($superContributors['posts']) ) : ?>
+			<section class="row mobile-hidden">
+				<div class="main-title main-title--section clearfix">
+					<div class="col-sm-12 col-md-12">
+						<h3><?php echo __( 'All contributors', 'opp' ); ?></h3>
+					</div>
+				</div>
+			</section>
+		<?php endif; ?>
 		<section class="row">
 			<span class="spinner"></span>
 

@@ -47,7 +47,7 @@ while ( have_posts() ) : the_post();
 				<div class="authors">
 					<?php foreach ( $authors['posts'] as $key => $author ) : ?>
 						<h3>
-							<a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo $author->post_title; ?></a>
+							<a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo $author->post_title; ?></a><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>
 						</h3>
 					<?php endforeach; ?>
 				</div>
@@ -178,6 +178,7 @@ while ( have_posts() ) : the_post();
 			<?php foreach ( $authors['posts'] as $index => $author ) :
 				// Class
 				$class = ( $index % 2 === 0 && ($index + 1) > $authors['lastKey']) ? 'col-sm-12 col-md-12' : 'col-sm-6 col-md-6';
+				$class .= $index % 2 === 0 ? ' break' : '';
 				// Photo
 				$photo = get_field( 'photo', $author->ID );
 				// Biography

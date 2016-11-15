@@ -59,4 +59,37 @@
 	#sharing {
 	    padding-bottom: 20px;
 	}
+
+    .contributors {
+        //margin-top: 90px;
+
+        .row {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            //padding: 0 80px;
+        }
+
+       .row > div {
+    		padding: 45px;
+    		box-sizing: border-box;
+    	}
+
+    	h3 {
+    		font-size: 20px;
+    		margin-top: 0;
+    	}
+
+    	p {
+    		margin: 10px 0;
+    		line-height: 28px;
+    		text-align: justify;
+            font-size: 1.1em;
+    	}
+
+    	img {
+    		float: left;
+    		margin: 0 15px 0 0;
+    	}
+    }
 }

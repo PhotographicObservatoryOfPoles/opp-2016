@@ -38,6 +38,36 @@ function get_authors( $post, $locale ) {
 }
 
 /**
+ * Get linked contributors (with last contributor key)
+ * @param int|WP_Post $post
+ * @param string $locale
+ * @return array
+ */
+function get_linked_contributors( $post, $locale ) {
+	$hasLinkedContributors = get_field( 'has_linked_contributors', $post );
+
+	$contributors = array(
+		'posts' => array(),
+		'lastKey' => 0
+	);
+
+	if ( !$hasLinkedContributors ) {
+		return $contributors;
+	}
+
+	$contributorsID = get_field( 'linked_contributors', $post );
+	
+	foreach ( $contributorsID as $contributorID ) {
+		$contributors['posts'][] = get_post( pll_get_post( $contributorID, $locale ) );
+	}
+
+	$keys = array_keys( $contributors['posts'] );
+	$contributors['lastKey'] = end( $keys );
+
+	return $contributors;
+}
+
+/**
  * Get terms (theme & region)
  * @param int|WP_Post $post
  * @param bool $merged (optional, default false)

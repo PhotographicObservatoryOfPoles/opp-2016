@@ -12,6 +12,10 @@ while ( have_posts() ) : the_post();
 
 	// All posts page
 	$allPostsPage = pll_get_post( PAGE_NEWS_ID, $locale );
+
+	// Linked contributors
+	$linkedContributors = get_linked_contributors( $post, $locale );
+	$nbLinkedContributors = count( $linkedContributors['posts'] );
 ?>
 
 <!-- Panel button -->
@@ -43,7 +47,6 @@ while ( have_posts() ) : the_post();
 				<?php the_content(); ?>
 			</div>
 		</div>
-
 	</div>
 </section>
 
@@ -56,6 +59,34 @@ while ( have_posts() ) : the_post();
 					<span><?php echo __( 'Share', 'opp' ); ?></span>
 					<?php ADDTOANY_SHARE_SAVE_KIT(); ?>
 				</div>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
+
+<!-- Linked contributors -->
+<?php if ( $nbLinkedContributors ) : ?>
+	<section id="linked-contributors" class="contributors mobile-hidden">
+		<div class="container">
+			<div class="row">
+				<?php foreach ( $linkedContributors['posts'] as $index => $contributor ) :
+					// Class
+					$class = ( $index % 2 === 0 && ($index + 1) > $linkedContributors['lastKey']) ? 'col-sm-12 col-md-12' : 'col-sm-6 col-md-6';
+					$class .= $index % 2 === 0 ? ' break' : '';
+					// Photo
+					$photo = get_field( 'photo', $contributor->ID );
+					// Biography
+					$biography = strip_tags( get_post_field( 'post_content', $contributor->ID ) );
+					$maxLength = ( $index % 2 === 0 && ($index + 1) > $contributors['lastKey'] ) ? 330 : 100;
+					$biography = strlen( $biography ) > $maxLength ? mb_substr( $biography, 0, $maxLength ) . '...' : $biography;
+				?>
+					<div class="<?php echo $class; ?>">
+						<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>" />	
+						<h3><?php echo $contributor->post_title; ?></h3>
+						<p><?php echo $biography ?></p>
+						<a href="<?php echo get_permalink ($contributor->ID); ?>"><?php echo __( 'See more', 'opp' ); ?></a>
+					</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 	</section>
