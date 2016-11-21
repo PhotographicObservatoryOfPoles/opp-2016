@@ -5,6 +5,7 @@ add_theme_support( 'post-thumbnails' );
 /**
  * Custom post types definition
  *      - contributor
+ *      - partner
  *      - photos-gallery
  *      - expedition
  */
@@ -38,7 +39,10 @@ function custom_post_type() {
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
         'hierarchical'        => false,
-        'rewrite'			  => array( 'slug' => 'contributor' )
+        'rewrite'			  => array( 'slug' => 'contributor' ),
+        // roles and capabilities
+        'capability_type'     => array( 'contributor', 'contributors' ),
+        'map_meta_cap'        => true
     );
     register_post_type( 'contributor', $args );
 
@@ -71,7 +75,10 @@ function custom_post_type() {
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
         'hierarchical'        => false,
-        'rewrite'             => array( 'slug' => 'partner' )
+        'rewrite'             => array( 'slug' => 'partner' ),
+        // roles and capabilities
+        'capability_type'     => array( 'partner', 'partners' ),
+        'map_meta_cap'        => true
     );
     register_post_type( 'partner', $args );
 
@@ -104,7 +111,10 @@ function custom_post_type() {
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
         'hierarchical'        => false,
-        'rewrite'             => array( 'slug' => 'photos-gallery' )
+        'rewrite'             => array( 'slug' => 'photos-gallery' ),
+        // roles and capabilities
+        'capability_type'     => array( 'photos-gallery', 'photos-galleries' ),
+        'map_meta_cap'        => true
     );
     register_post_type( 'photos-gallery', $args );
 
@@ -137,7 +147,10 @@ function custom_post_type() {
         'publicly_queryable'  => true,
         'capability_type'     => 'page',
         'hierarchical'        => true,
-        'rewrite'             => array( 'slug' => 'expedition' )
+        'rewrite'             => array( 'slug' => 'expedition' ),
+        // roles and capabilities
+        'capability_type'     => array( 'expedition', 'expeditions' ),
+        'map_meta_cap'        => true
     );
     register_post_type( 'expedition', $args );
 }
