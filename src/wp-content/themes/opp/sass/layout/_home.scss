@@ -194,9 +194,16 @@
 
 #homepage-super-contributors-slider {
 	//position: relative;
+	@media screen and (min-width: 992px) {
+       max-width: 184px;
+ 	}
 
 	.thumbnail-square {
 		margin: 0;
+
+		h3 {
+			line-height: 18px;
+		}
 	}
 
 	/*.flex-viewport {
@@ -242,6 +249,7 @@
 #test-tuiles {
 	margin-top: 40px;
     width: 85%;
+   	max-width: 1300px;
 
     .main-title {
     	margin-bottom: 35px;
