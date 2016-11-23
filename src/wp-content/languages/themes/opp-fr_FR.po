@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-13 11:39+0000\n"
-"PO-Revision-Date: 2016-11-13 11:39+0000\n"
+"POT-Creation-Date: 2016-11-23 20:28+0000\n"
+"PO-Revision-Date: 2016-11-23 20:28+0000\n"
 "Last-Translator: admin <audreyguenee@free.fr>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -21,6 +21,10 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
+
+#: page-contributors.php:67
+msgid "and"
+msgstr "et"
 
 #. Author of the theme
 msgid "Anonyme"
@@ -74,27 +78,27 @@ msgstr "Actualité"
 msgid "contributor"
 msgstr "Contributeur"
 
-#: content-search.php:33 content-search.php:38 header.php:82 index.php:37 
-#: index.php:38 index.php:71 index.php:85 index.php:94 index.php:129 
-#: index.php:144 index.php:153 index.php:183 index.php:189 index.php:202 
-#: index.php:206 index.php:208 index.php:209 index.php:246 index.php:258 
-#: index.php:267 index.php:314 index.php:327 index.php:336 index.php:366 
-#: index.php:379 index.php:388 index.php:458 index.php:464 
-#: page-contributors.php:119 page-contributors.php:126 page-expeditions.php:63 
-#: page-expeditions.php:75 page-expeditions.php:84 page-galleries.php:62 
-#: page-galleries.php:74 page-galleries.php:83 page-map.php:138 
-#: page-news.php:54 page-news.php:68 page-news.php:77 
-#: single-contributor.php:149 single-contributor.php:164 
-#: single-contributor.php:173 single-contributor.php:209 
-#: single-contributor.php:224 single-contributor.php:233 
-#: single-expedition.php:170 single-photos-gallery.php:193 
-#: single-photos-gallery.php:230 single-photos-gallery.php:242 
-#: single-photos-gallery.php:251 single-post.php:87 taxonomy.php:67 
-#: taxonomy.php:80 taxonomy.php:89 partials/expedition-thumbnail.php:10 
-#: partials/expedition-thumbnail.php:22 partials/expedition-thumbnail.php:31 
-#: partials/map-panel.php:85 partials/page-team.php:67 
-#: partials/page-team.php:71 partials/photos-gallery-thumbnail.php:10 
-#: partials/photos-gallery-thumbnail.php:22 
+#: content-search.php:33 content-search.php:38 header.php:82 index.php:37
+#: index.php:38 index.php:71 index.php:85 index.php:94 index.php:129
+#: index.php:144 index.php:153 index.php:190 index.php:196 index.php:209
+#: index.php:213 index.php:248 index.php:260 index.php:269 index.php:296
+#: index.php:308 index.php:317 index.php:379 index.php:392 index.php:401
+#: index.php:431 index.php:444 index.php:453 index.php:523 index.php:529
+#: page-contributors.php:119 page-contributors.php:126 page-expeditions.php:63
+#: page-expeditions.php:75 page-expeditions.php:84 page-galleries.php:62
+#: page-galleries.php:74 page-galleries.php:83 page-map.php:138
+#: page-news.php:54 page-news.php:68 page-news.php:77
+#: single-contributor.php:149 single-contributor.php:164
+#: single-contributor.php:173 single-contributor.php:209
+#: single-contributor.php:224 single-contributor.php:233
+#: single-expedition.php:170 single-photos-gallery.php:193
+#: single-photos-gallery.php:230 single-photos-gallery.php:242
+#: single-photos-gallery.php:251 single-post.php:87 taxonomy.php:67
+#: taxonomy.php:80 taxonomy.php:89 partials/expedition-thumbnail.php:10
+#: partials/expedition-thumbnail.php:22 partials/expedition-thumbnail.php:31
+#: partials/map-panel.php:85 partials/page-team.php:67
+#: partials/page-team.php:71 partials/photos-gallery-thumbnail.php:10
+#: partials/photos-gallery-thumbnail.php:22
 #: partials/photos-gallery-thumbnail.php:31
 msgid "See more"
 msgstr "Voir la suite"
@@ -112,8 +116,8 @@ msgstr "Suivez-nous"
 msgid "Menu"
 msgstr "Menu"
 
-#: header.php:46 inc/custom-post-types.php:22 inc/custom-post-types.php:55 
-#: inc/custom-post-types.php:88 inc/custom-post-types.php:121
+#: header.php:46 inc/custom-post-types.php:23 inc/custom-post-types.php:59
+#: inc/custom-post-types.php:95 inc/custom-post-types.php:131
 msgid "Search"
 msgstr "Rechercher"
 
@@ -121,11 +125,11 @@ msgstr "Rechercher"
 msgid "Close"
 msgstr "Fermer"
 
-#: header.php:132 inc/custom-post-types.php:170
+#: header.php:132 inc/custom-post-types.php:183
 msgid "Themes"
 msgstr "Thèmes"
 
-#: header.php:139 inc/custom-post-types.php:181
+#: header.php:139 inc/custom-post-types.php:194
 msgid "Regions"
 msgstr "Régions"
 
@@ -138,37 +142,41 @@ msgstr "A propos"
 msgid "News"
 msgstr "Actus"
 
-#: index.php:106 index.php:280
+#: index.php:106 index.php:345
 msgid "Discover"
 msgstr "Découvrez"
 
-#: index.php:199
+#: index.php:159 index.php:160 single-post.php:25
+msgid "All news"
+msgstr "Toutes les actus"
+
+#: index.php:206
 msgid "About the Observatory"
 msgstr "A propos de l'Observatoire"
 
-#: index.php:219
+#: index.php:221
 msgid "Explore the map"
 msgstr "Explorer la carte"
 
-#: index.php:340 index.php:341 single-photos-gallery.php:37 
-#: inc/custom-post-types.php:82
+#: index.php:326 index.php:327 index.php:405 index.php:406
+#: single-photos-gallery.php:37 inc/custom-post-types.php:89
 msgid "All galleries"
 msgstr "Toutes les galeries"
 
-#: index.php:394 index.php:395 single-expedition.php:90 
-#: inc/custom-post-types.php:115
+#: index.php:332 index.php:333 index.php:459 index.php:460
+#: single-expedition.php:90 inc/custom-post-types.php:125
 msgid "All expeditions"
 msgstr "Toutes les expéditions"
 
-#: index.php:404
+#: index.php:469
 msgid "Explore"
 msgstr "Explorez"
 
-#: index.php:408
+#: index.php:473
 msgid "Browse the map"
 msgstr "Parcourir la carte"
 
-#: index.php:417
+#: index.php:482
 msgid "Our contributors"
 msgstr "Nos contributeurs"
 
@@ -176,8 +184,8 @@ msgstr "Nos contributeurs"
 msgid "Contact"
 msgstr "Contact"
 
-#: single-expedition.php:106 single-expedition.php:149 
-#: inc/custom-post-types.php:14
+#: single-expedition.php:106 single-expedition.php:149
+#: inc/custom-post-types.php:15
 msgid "Contributors"
 msgstr "Contributeurs"
 
@@ -185,8 +193,8 @@ msgstr "Contributeurs"
 msgid "Read the news"
 msgstr "Lire l'actu"
 
-#: page-contributors.php:93 single-contributor.php:68 
-#: inc/custom-post-types.php:16
+#: page-contributors.php:93 single-contributor.php:68
+#: inc/custom-post-types.php:17
 msgid "All contributors"
 msgstr "Tous les contributeurs"
 
@@ -207,7 +215,7 @@ msgstr "Retour à la page de l'Observatoire"
 msgid "Donation"
 msgstr "Don"
 
-#: inc/custom-post-types.php:113
+#: inc/custom-post-types.php:123
 msgid "Expeditions"
 msgstr "Expéditions"
 
@@ -215,7 +223,7 @@ msgstr "Expéditions"
 msgid "<span class=\"btn btn-default\">More expeditions</span>"
 msgstr "<span class=\"btn btn-default\">Plus d'expéditions</span>"
 
-#: inc/custom-post-types.php:80
+#: inc/custom-post-types.php:87
 msgid "Galleries"
 msgstr "Galeries"
 
@@ -260,6 +268,7 @@ msgid "Support us"
 msgstr "Soutenez-nous"
 
 #: search.php:23
+#, php-format
 msgid "Search results for: %s"
 msgstr "Résultat de la recherche pour : %s"
 
@@ -283,8 +292,8 @@ msgstr "Rechercher dans tout le site"
 msgid "Website"
 msgstr "Site web"
 
-#: single-contributor.php:126 single-photos-gallery.php:75 single-post.php:59 
-#: partials/expedition-chapter.php:31 partials/expedition-chapter.php:56 
+#: single-contributor.php:126 single-photos-gallery.php:75 single-post.php:59
+#: partials/expedition-chapter.php:31 partials/expedition-chapter.php:56
 #: partials/expedition-cover.php:40 partials/expedition-slide.php:23
 msgid "Share"
 msgstr "Partager"
@@ -305,8 +314,8 @@ msgstr "Toutes les contributions"
 msgid "Summary"
 msgstr "Sommaire"
 
-#: single-expedition.php:106 single-expedition.php:149 
-#: inc/custom-post-types.php:15
+#: single-expedition.php:106 single-expedition.php:149
+#: inc/custom-post-types.php:16
 msgid "Contributor"
 msgstr "Contributeur"
 
@@ -334,10 +343,6 @@ msgstr "Mode plein écran"
 msgid "Here are other galleries that should please you"
 msgstr "Voici d'autres galeries qui devraient vous plaire"
 
-#: single-post.php:25
-msgid "All news"
-msgstr "Toutes les actus"
-
 #: single-post.php:36
 msgid "Published on"
 msgstr "Publié le"
@@ -346,73 +351,73 @@ msgstr "Publié le"
 msgid "<span class=\"btn btn-default\">More posts</span>"
 msgstr "<span class=\"btn btn-default\">Plus d'articles</span>"
 
-#: inc/custom-post-types.php:17 inc/custom-post-types.php:50 
-#: inc/custom-post-types.php:83 inc/custom-post-types.php:116
+#: inc/custom-post-types.php:18 inc/custom-post-types.php:54
+#: inc/custom-post-types.php:90 inc/custom-post-types.php:126
 msgid "View"
 msgstr "Voir"
 
-#: inc/custom-post-types.php:18
+#: inc/custom-post-types.php:19
 msgid "Add a contributor"
 msgstr "Ajouter un contributeur"
 
-#: inc/custom-post-types.php:19 inc/custom-post-types.php:52 
-#: inc/custom-post-types.php:85 inc/custom-post-types.php:118
+#: inc/custom-post-types.php:20 inc/custom-post-types.php:56
+#: inc/custom-post-types.php:92 inc/custom-post-types.php:128
 msgid "Add"
 msgstr "Ajouter"
 
-#: inc/custom-post-types.php:20 inc/custom-post-types.php:53 
-#: inc/custom-post-types.php:86 inc/custom-post-types.php:119
+#: inc/custom-post-types.php:21 inc/custom-post-types.php:57
+#: inc/custom-post-types.php:93 inc/custom-post-types.php:129
 msgid "Edit"
 msgstr "Editer"
 
-#: inc/custom-post-types.php:21 inc/custom-post-types.php:54 
-#: inc/custom-post-types.php:87 inc/custom-post-types.php:120
+#: inc/custom-post-types.php:22 inc/custom-post-types.php:58
+#: inc/custom-post-types.php:94 inc/custom-post-types.php:130
 msgid "Update"
 msgstr "Mettre à jour"
 
-#: inc/custom-post-types.php:23 inc/custom-post-types.php:56 
-#: inc/custom-post-types.php:89 inc/custom-post-types.php:122
+#: inc/custom-post-types.php:24 inc/custom-post-types.php:60
+#: inc/custom-post-types.php:96 inc/custom-post-types.php:132
 msgid "Not found"
 msgstr "Aucun résultat"
 
-#: inc/custom-post-types.php:24 inc/custom-post-types.php:57 
-#: inc/custom-post-types.php:90 inc/custom-post-types.php:123
+#: inc/custom-post-types.php:25 inc/custom-post-types.php:61
+#: inc/custom-post-types.php:97 inc/custom-post-types.php:133
 msgid "Not found in trash"
 msgstr "Aucun résultat dans la corbeille"
 
-#: inc/custom-post-types.php:47
+#: inc/custom-post-types.php:51
 msgid "Partners"
 msgstr "Partenaires"
 
-#: inc/custom-post-types.php:48
+#: inc/custom-post-types.php:52
 msgid "Partner"
 msgstr "Partenaire"
 
-#: inc/custom-post-types.php:49
+#: inc/custom-post-types.php:53
 msgid "All partners"
 msgstr "Tous les partenaires"
 
-#: inc/custom-post-types.php:51
+#: inc/custom-post-types.php:55
 msgid "Add a partner"
 msgstr "Ajouter un partenaire"
 
-#: inc/custom-post-types.php:81
+#: inc/custom-post-types.php:88
 msgid "Gallery"
 msgstr "Galerie"
 
-#: inc/custom-post-types.php:84
+#: inc/custom-post-types.php:91
 msgid "Add a gallery"
 msgstr "Ajouter une galerie"
 
-#: inc/custom-post-types.php:114
+#: inc/custom-post-types.php:124
 msgid "Expedition"
 msgstr "Expédition"
 
-#: inc/custom-post-types.php:117
+#: inc/custom-post-types.php:127
 msgid "Add an expedition"
 msgstr "Ajouter une expédition"
 
-#: inc/custom-post-types.php:159
+#: inc/custom-post-types.php:172
 msgid "Contributor types"
 msgstr "Types de contributeur"
 

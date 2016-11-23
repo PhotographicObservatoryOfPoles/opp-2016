@@ -77,11 +77,15 @@ while ( have_posts() ) : the_post();
 					$photo = get_field( 'photo', $contributor->ID );
 					// Biography
 					$biography = strip_tags( get_post_field( 'post_content', $contributor->ID ) );
-					$maxLength = ( $index % 2 === 0 && ($index + 1) > $contributors['lastKey'] ) ? 330 : 100;
+					$maxLength = ( $index % 2 === 0 && ($index + 1) > $contributors['lastKey'] ) ? 250 : 100;
 					$biography = strlen( $biography ) > $maxLength ? mb_substr( $biography, 0, $maxLength ) . '...' : $biography;
 				?>
 					<div class="<?php echo $class; ?>">
-						<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>" />	
+						<?php if ( $photo ) : ?>
+							<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>" />
+						<?php else : ?>
+							<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" width="150" />
+						<?php endif; ?>
 						<h3><?php echo $contributor->post_title; ?></h3>
 						<p><?php echo $biography ?></p>
 						<a href="<?php echo get_permalink ($contributor->ID); ?>"><?php echo __( 'See more', 'opp' ); ?></a>

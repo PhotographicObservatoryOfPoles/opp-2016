@@ -62,9 +62,9 @@ $superContributors = get_linked_contributors( $lastNews, $locale );
 				               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" />
 				            <?php endif; ?>
 							<div class="flex-caption">
-								<h2 class="title">
+								<h2 class="title <?php if (count($superContributors['posts']) > 1) { echo 'title-small'; } ?>">
 									<?php foreach ( $superContributors['posts'] as $key => $superContributorID ) : $superContributor = get_post( $superContributorID, $locale ); ?>
-										<?php echo $superContributor->post_title; ?><?php echo $key !== $superContributors['lastKey'] ? ',' : ''; ?>
+										<?php echo $superContributor->post_title; ?><?php echo $key !== $superContributors['lastKey'] ? $key === $superContributors['lastKey'] - 1 ? ' ' . __( 'and', 'opp' ) . ' ' : ',' : ''; ?>
 									<?php endforeach; ?>
 								</h2>
 								<h3 class="subtitle"><?php echo $lastNews->post_title; ?></h2>

@@ -61,7 +61,7 @@
 	}
 
     .contributors {
-        //margin-top: 90px;
+        margin-top: 10px;
 
         .row {
             max-width: 90%;
@@ -71,7 +71,7 @@
         }
 
        .row > div {
-    		padding: 45px;
+    		padding: 25px 45px;
     		box-sizing: border-box;
     	}
 
@@ -82,9 +82,9 @@
 
     	p {
     		margin: 10px 0;
-    		line-height: 28px;
-    		text-align: justify;
-            font-size: 1.1em;
+    		line-height: 24px;
+    		//text-align: justify;
+            font-size: 14px;
     	}
 
     	img {
