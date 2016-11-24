@@ -159,6 +159,14 @@
 		$('#homepage-slider').flexslider({
 			animation: "slide"
 		});
+
+		// Homepage super-contributors slider
+	  	$('#homepage-super-contributors-slider').flexslider({
+			animation: "slide",
+			animationLoop: true,
+			itemWidth: 220,
+			itemMargin: 15
+		});
 		
 		// Homepage contributors carousel
 		$('#homepage-contributors-carousel').flexslider({
@@ -167,11 +175,6 @@
 		    itemWidth: 210,
 		    itemMargin: 15
 	  	});
-
-		// Homepage super-contributors slider
-	  	/*$('#homepage-super-contributors-slider').flexslider({
-			animation: "slide"
-		});*/
 
 	  	// Masonry
 	  	$('.grid').masonry({
