@@ -1,5 +1,3 @@
-<!--<h4><?php echo __( $postType, 'opp' ); ?></h4>-->
-
 <ul class="list-<?php echo $postType; ?>">
 	<?php foreach ( $postIDs as $postID ) :
 			$post = get_post( pll_get_post( $postID, $locale ) );

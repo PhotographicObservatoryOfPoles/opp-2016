@@ -7,7 +7,6 @@
 
 #about {
 	padding-top: 0;
-    //padding-bottom: 20px;
 }
 
 #team {
@@ -24,22 +23,6 @@
 			width: 90%;
 			margin: 0 auto 20px;
 		}
-
-		/*@media screen and (min-width: 1024px) {
-			width: 90%;
-		}*/
-
-		/*.thumbnail-horizontal {
-			.image {
-				height: auto;
-
-				> img {
-				    position: relative;
-					top: 0;
-					transform: translateY(0);
-				}
-			}
-		}*/
 	}
 
 	@media screen and (max-width: 585px) {

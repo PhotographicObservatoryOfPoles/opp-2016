@@ -285,16 +285,11 @@
     	font-weight: normal;
     	text-transform: uppercase;
     	background-color: black;
-    	//z-index: 1000;
     	border-radius: 0;
 
     	&:hover {
     		background-color: #337ab7;
     	}
-
-		/*.glyphicon {
-			font-size: 28px;
-		}*/
 	}
     
 }
@@ -327,7 +322,6 @@
 	.summary {
 		line-height: 24px;
 		margin-top: 40px;
-		//padding-left: 0;
 
 		li {
 			position: relative;
@@ -338,10 +332,6 @@
 		.chapter {
 			font-size: 16px;
 			margin: 20px 0 6px 0;
-			//padding-left: 8px;
-			//border-bottom: 1px dotted gray;
-			//width: 85%;
-			//line-height: 25px;
 		}
 
 		.slide {
@@ -397,7 +387,6 @@
 			font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 		    margin: 0;
     		line-height: 28px;
-    		//text-align: justify;
     		font-size: 14px;
 		}
 	}

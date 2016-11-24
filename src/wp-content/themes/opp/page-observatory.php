@@ -10,7 +10,6 @@ $contributors = new WP_Query( array(
 	'orderby'        => 'title',
 	'order'          => 'ASC',
 	'posts_per_page' => -1,
-	//'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
 	'post_type'  	 => 'contributor',
 	'post_status'	 => 'publish',
 	'tax_query' => array(

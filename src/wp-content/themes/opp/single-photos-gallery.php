@@ -109,7 +109,6 @@ while ( have_posts() ) : the_post();
 
 			<button id="exit-fs" type="button" onclick="exitFullscreen()" class="btn btn-default btn-lg mobile-hidden tablet-hidden">
 			 	<span class="glyphicon glyphicon-resize-small"></span>
-			 	<!--<?php echo __( 'Full screen mode', 'opp' ); ?>-->
 			</button>
 
 		  	<ul class="slides">
@@ -323,11 +322,8 @@ document.addEventListener('keydown', function(e) {
   switch (e.keyCode) {
     case 13: // ENTER. ESC should also take you out of fullscreen by default.
       e.preventDefault();
-      document.cancelFullScreen(); // explicitly go out of fs.
+      document.cancelFullScreen();
       break;
-    /*case 70: // f
-      enterFullscreen();
-      break;*/
   }
 }, false);
 

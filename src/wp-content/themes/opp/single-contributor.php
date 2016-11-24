@@ -26,16 +26,12 @@ while ( have_posts() ) : the_post();
  	// Website
  	$website = get_field( 'website', $post );
 
- 	// Types
- 	//$types = wp_get_post_terms( $post->ID, 'contributor-type', array('fields' => 'names') );
-
  	// Contributions
  	/* All contributions */
 	$contributions = new WP_Query( array(
 		'orderby'        => 'date',
 		'order'          => 'DESC',
 		'posts_per_page' => -1,
-		//'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
 		'post_type'  	 => array( 'photos-gallery', 'expedition' ),
 		'post_status'	 => 'publish',
 		'post_parent'	 => 0,
@@ -159,7 +155,6 @@ while ( have_posts() ) : the_post();
 				                    <a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo $author->post_title; ?></a><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>
 				                <?php endforeach; ?>
 				            </h4>
-				            <!--<p><?php echo $description; ?></p>-->
 				           	<a class="read-more-link" href="<?php echo get_permalink( $contribution ); ?>">
 				                <?php echo __( 'See more', 'opp' ); ?>
 				                <span class="glyphicon glyphicon-menu-right"></span>

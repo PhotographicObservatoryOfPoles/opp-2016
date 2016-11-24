@@ -11,7 +11,6 @@ $contributors = new WP_Query( array(
 	'meta_key'  	 => 'last_name',
 	'order'          => 'ASC',
 	'posts_per_page' => -1,
-	//'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
 	'post_type'  	 => 'contributor',
 	'post_status'	 => 'publish',
 	'tax_query' => array(
@@ -49,9 +48,8 @@ $superContributors = get_linked_contributors( $lastNews, $locale );
 		<div class="row">
 			<div id="contributors-slider" class="col-sm-12 col-md-12">
 				<ul class="slides">
-					<?php //foreach ( $lastPosts as $lastPost ) :
+					<?php
 						$superContributorsBanner = get_field( 'linked_contributors_banner', $lastNews );
-						//$superContributorsText = get_field( 'linked_contributors_text', $lastNews );
 						$extract = wp_strip_all_tags( get_post_field( 'post_content', $lastNews ) );
 			        	$extract = strlen( $extract ) > 200 ? mb_substr( $extract, 0, 200 ) . '...' : $lastNews;
 					?>
@@ -76,7 +74,6 @@ $superContributors = get_linked_contributors( $lastNews, $locale );
 							</div>
 							<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>" title="<?php echo __( 'Read the news', 'opp' ); ?>"></a>
 						</li>
-					<?php// endforeach; ?>
 				</ul>
 			</div>
 		</div>
@@ -121,7 +118,6 @@ $superContributors = get_linked_contributors( $lastNews, $locale );
 				  		</div>
 				      	<div class="caption">
 				        	<h3><?php echo $contributor->post_title; ?></h3>
-				        	<!--<?php if ($job) : ?><h4><?php echo $job; ?></h4><?php endif; ?>-->
 				      	</div>
 			       		<a class="read-more-link" href="<?php echo get_permalink( $contributor ); ?>" title="<?php echo __( 'See more', 'opp' ); ?>"></a>
 				    </div>

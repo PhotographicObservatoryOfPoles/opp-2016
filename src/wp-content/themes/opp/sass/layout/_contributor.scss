@@ -33,7 +33,6 @@
 
     	.title {
     		font-family: "Open Sans", Helvetica, Arial, sans-serif;
-		    //font-weight: bold;
 		    font-size: 24px;
 		    color: #333333;
 	        padding: 0 0 5px;
@@ -108,8 +107,6 @@
 
 	img {
     	height: auto;
-    	//width: 100%;
-    	//max-width: 100%;
     	margin: auto;
     	display: block;
     	position: absolute;
@@ -150,7 +147,6 @@
 	    img {
 	    	display: block;
     		margin: auto;
-    		//max-width: 100%;
     		min-height: 400px;
     		position: absolute;
 		    left: 50%;
@@ -246,7 +242,6 @@
 	}
 
 	.content {
-		//text-align: justify;
 
 		.container {
 			position: relative;
@@ -257,11 +252,6 @@
 				padding-right: 20px;
 			}
 	    }
-	}
-
-
-	.about {
-		//min-height: 450px;
 	}
 
 	.sharing-buttons {

@@ -50,7 +50,6 @@
 
 		<!-- Homepage slider -->
 		<?php if ( is_home() ) : $lastPosts = get_home_slider_posts( array('photos-gallery', 'expedition', 'post') ); ?>
-			<!--<img id="homepage-banner" src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" class="tablet-hidden" />-->
 			<div id="homepage-slider" class="mobile-hidden">
 				<ul class="slides">
 					<?php foreach ( $lastPosts as $lastPost ) :
@@ -85,16 +84,6 @@
 				</ul>
 			</div>
 		<?php endif; ?>
-
-		<!-- Page header image -->
-		<?php //if ( !is_home() ) : $GLOBALS['banner_img'] = rand( 1, 5 ) . '.png'; ?>
-			<!--<div class="header-banner header-banner--blurry-bg mobile-hidden">just to insert a blurry background image</div>
-			<div class="header-banner mobile-hidden">
-				<a href="#main-content" class="scroll">
-					<img src="<?php bloginfo('template_directory'); ?>/img/banner/<?php echo $GLOBALS['banner_img']; ?>" alt="" />
-				</a>
-			</div>-->
-		<?php //endif; ?>
 	</header>
 
 	<main id="main-content" class="main-wrapper">

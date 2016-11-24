@@ -4,7 +4,7 @@
 
 html,
 body {
-    height: 100%; // auto
+    height: 100%;
     background: #F7F7F7;
 }
 
@@ -95,13 +95,9 @@ body {
 }
 
 #skipping-link {
-    //text-align: center;
-    //margin: 0 auto 10px;
     margin-bottom: 20px;
 
     > a {
-        //display: inline-block;
-        //float: right;
         color: #57025b;
         text-transform: uppercase;
         font-weight: normal;
@@ -124,9 +120,7 @@ body {
 }
 
 small.post-type {
-    //float: right;
     color: #57025B;
-    //opacity: 0.7;
     font-weight: bold;
     text-transform: uppercase;
 
@@ -190,16 +184,8 @@ header {
     min-height: 70px;
     overflow-x: hidden;
 
-    /*.menu-bar:first-child {
-        background: rgba(255,255,255,0.75);
-    }*/
-
     @media screen and (min-width: 768px) {
         min-height: auto;
-    
-        /*.menu-bar:first-child {
-            background: none;
-        }*/
     }
 }
 
@@ -506,10 +492,6 @@ header {
         }
     }
 
-    .container {
-        //padding: 0 100px;
-    }
-
 }
 
 // Pagination
@@ -547,28 +529,20 @@ header {
 
 // Footer 
 .site-footer {
-    //margin-top: 30px;
     padding: 15px;
     color: white;
     text-align: center;
     background: #333;
-    //clear: both;
     position: absolute;
     bottom: -100px;
     left: 0;
     right: 0;
 
-    /*.container {
-        padding: 0 150px;
-    }*/
-
     .site-info {
-        //margin: 4px 0;
         opacity: 0.9;
     }
 
     .links {
-        //margin: 4px 0;
         list-style: none;
         padding: 0;
         opacity: 0.7;
@@ -613,13 +587,6 @@ header {
 // Filters
 #filters-result {
     padding: 0;
-    //margin-top: 20px;
-
-    /*.grid-item {
-       padding-right: 8px;
-       padding-left: 8px;
-       //width: 320px;
-    }*/
 }
 
 #button-filters {
@@ -631,13 +598,7 @@ header {
 }
 
 #search {
-    //height: 250px;
-    //top: -250px;
     padding-left: 0;
-
-    /*&.panel-open {
-        top: 0;
-    }*/
     
     .row {
         margin-top: 12px;
@@ -653,7 +614,7 @@ header {
         text-decoration: none;
         font-size: 13px;
         background-color: #ECECEC;
-        border-radius: 10px; // .25em
+        border-radius: 10px;
         white-space: nowrap;
         margin: 10px;
         vertical-align: baseline;
@@ -684,11 +645,6 @@ header {
 }
 
 .no-result {
-    /*position: fixed;
-    left: 0;
-    right: 0;
-    top: 80%;*/
-
     p {
         text-align: center;
         font-size: 20px;
@@ -732,7 +688,6 @@ header {
         background: #333;
         color: white;
         font-size: 12px;
-        //text-transform: uppercase;
         letter-spacing: 1px;
         opacity: 0;
         transition: opacity 0.5s;
@@ -813,16 +768,6 @@ header {
         font-size: 14px;
         font-weight: bold;
         text-transform: uppercase;
-
-        /*&:after {
-            content: '\2014';
-            display: block;
-            color: #333;
-            font-size: 16px;
-            font-weight: normal;
-            margin-top: 5px;
-        }*/
-
     }
 
     .authors {
@@ -917,17 +862,12 @@ header {
 
 .main-title--section {
     margin-top: 0;
-    //text-align: left;
 
     h3 {
         display: inline-block;
         line-height: 46px;
         font-weight: bold;
         text-transform: uppercase;
-        //letter-spacing: 2px;
-        //color: #57025b;
-        //border-bottom: 2px solid #333;
-        //border-top: 2px solid #333;
     }
 }
 
@@ -1174,7 +1114,6 @@ iframe {
         right: 0;
         padding-top: 0;
         padding-bottom: 15px;
-        //line-height: 1.65;
 
         .label {
             font-size: 65%;
@@ -1183,19 +1122,6 @@ iframe {
 }
 
 .thumbnail-square {
-    //max-width: 245px;
-    /*.image {
-        min-height: 243px;
-
-        > img {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            transform: translateY(-50%);
-        }
-    }*/
-
     .caption {
         padding: 10px 14px;
         text-align: center;
@@ -1217,21 +1143,15 @@ iframe {
     .image {
         float: left;
         width: 40%;
-        /*height: 150px;
-        overflow-y: hidden;*/
 
         > img {
             margin: 0;
-            /*position: absolute;
-            top: 50%;
-            transform: translateY(-50%);*/
         }
     }
 
     .caption {
         float: left;
         width: 60%;
-        //display: inline-block;
         text-align: left;
         padding: 15px 20px;
 
@@ -1314,9 +1234,9 @@ iframe {
 
     p, ul, ol {
         font-family: 'Source Serif Pro', serif;
-        font-size: 18px; // 20
-        line-height: 28px;// 34
-        margin: 20px 0; // 30 0
+        font-size: 18px;
+        line-height: 28px;
+        margin: 20px 0;
 
         &.wp-caption-text {
             font-size: 18px;

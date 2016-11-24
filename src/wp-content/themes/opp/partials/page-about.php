@@ -12,12 +12,6 @@ $page_content = get_formatted_post_content( $page );
 
 <div class="container">
 	<div class="row">
-		<!--<div class="main-title main-title--section clearfix">
-			<div class="col-sm-12 col-md-12">
-				<h3><?php echo $page->post_title; ?></h3>
-			</div>
-		</div>-->
-
 		<div class="content">
 			<div class="col-sm-12 col-md-12">
 				<?php echo $page_content; ?>

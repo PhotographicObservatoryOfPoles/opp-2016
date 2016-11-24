@@ -13,14 +13,14 @@ $items = new WP_Query( array(
     'orderby'        => 'date',
     'order'          => 'DESC',
     'posts_per_page' => -1,
-    //'paged'          => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
     'post_type'      => array( 'photos-gallery', 'expedition' ),
     'post_status'    => 'publish',
     'meta_query'     => array(array(
-                                'key' => $taxonomy,
-                                'value' => '"' . $term->term_id . '"',
-                                'compare' => 'LIKE'
-                        ))
+                'key' => $taxonomy,
+                'value' => '"' . $term->term_id . '"',
+                'compare' => 'LIKE'
+            )
+        )
     )
 );
 $index = 0;
@@ -91,12 +91,6 @@ $index = 0;
                 </div>
             <?php endwhile; ?>
         </div>
-
-        <!--<div class="load-more-manual">
-            <nav class="page-nav" role="navigation">
-                <?php next_posts_link( __( '<span class="btn btn-default">More posts</span>', 'opp' ), $items->max_num_pages ); ?>
-            </nav>
-        </div>-->
 
     </section>
 <?php endif; ?>
