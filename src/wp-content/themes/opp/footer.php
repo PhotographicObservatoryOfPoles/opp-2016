@@ -164,7 +164,7 @@
 	  	$('#homepage-super-contributors-slider').flexslider({
 			animation: "slide",
 			animationLoop: true,
-			itemWidth: 220,
+			itemWidth: 250,
 			itemMargin: 15
 		});
 		
@@ -172,8 +172,8 @@
 		$('#homepage-contributors-carousel').flexslider({
 		    animation: "slide",
 		    animationLoop: true,
-		    itemWidth: 210,
-		    itemMargin: 15
+		    itemWidth: 175,
+		    itemMargin: 10
 	  	});
 
 	  	// Masonry

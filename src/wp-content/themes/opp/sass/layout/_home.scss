@@ -1,10 +1,7 @@
 .home {
 
 	#about,
-	#news,
-	#discover,
-	#explore,
-	#contributors {
+	#news {
 		margin-bottom: 35px;
 
 		.main-title--page {
@@ -12,8 +9,7 @@
 		}
 	}
 
-	#about .read-more-link,
-	#discover .all-posts-link {
+	#about .read-more-link {
 		text-align: center;
 	}
 
@@ -49,35 +45,13 @@
 		}
     }
 
-	#map-link {
-		display: block;
-		height: 250px;
-		background: url('img/homepage-map.png') center no-repeat;
-		background-size: cover;
-		opacity: 1;
-
-		.main-title {
-			margin: 0 auto;
-			line-height: 250px;
-			opacity: 0;
-			transition: all 0.5s;
-
-			h2 {
-			    color: #ffffff;
-			    border-top: 0;
-			    border-bottom: 0;
-			    text-shadow: 0px 3px 10px #000000;
-			    font-size: 36px;
-			}
-		}
-
-		&:hover .main-title {
-		    background: rgba(0,0,0,0.15);
-			opacity: 1;
-		}
-	}
-
 	#contributors {
+	    margin: 25px auto 10px;
+
+	    .main-title--page {
+			margin-bottom: 40px;
+		}
+
 		.thumbnail-square {
 			.caption h3 {
 			    line-height: 18px;
@@ -152,8 +126,8 @@
 
 	.slides > li {
 		position: relative;
-	    height: 600px;
-	    min-height: 600px;
+	    height: 500px;
+	    min-height: 500px;
 		overflow: hidden;
 	    background: #181818;
 
@@ -187,39 +161,8 @@
 	}
 }
 
-#homepage-contributors-carousel {
-	position: relative;
-
-	.thumbnail-square {
-		margin: 0;
-	}
-
-	.flex-control-nav {
-		position: relative;
-		bottom: 0;
-	    margin: 15px 0;
-	}
-
-	.flex-direction-nav a {
-    	opacity: 0.4;
-    	top: 40%;
-	    width: 36px;
-	    height: 36px;
-	    
-    	&.flex-next {
-    		right: -50px;
-    		background-image: url('img/arrow-right--medium.png');
-    	}
-
-    	&.flex-prev {
-    		left: -50px;
-    		background-image: url('img/arrow-left--medium.png');
-    	}
-    }
-}
-
 #homepage-tiles {
-	margin-top: 40px;
+    margin: 25px auto 10px;
     width: 85%;
    	max-width: 1300px;
 
@@ -273,7 +216,7 @@
 		display: block;
 
 		.caption {
-			padding: 16px 18px;
+			padding: 12px 18px;
 		    line-height: 20px;
 		    font-size: 13px;
 
@@ -350,27 +293,74 @@
 		h3 {
 			line-height: 18px;
 		}
+
+		.caption {
+		    padding: 10px 5px;
+		}
+
+		.image {
+			max-height: 220px;
+			height: 220px;
+			overflow: hidden;
+			background: #F1F1F1;
+
+			> img {
+				position: absolute;
+				top: 50%;
+    			left: 50%;
+    			transform: translate(-50%,-50%);
+			}
+
+			@media screen and (min-width: 992px) {
+				max-height: 150px;
+				height: 150px;
+			}
+
+			@media screen and (min-width: 1200px) {
+				max-height: 170px;
+				height: 170px;
+			}
+		}
+			
+	}
+
+	.flex-direction-nav,
+	.flex-control-nav {
+		display: none;
+	}
+}
+
+#homepage-contributors-carousel {
+	position: relative;
+
+	.thumbnail-square {
+		margin: 0;
+	}
+
+	.flex-control-nav {
+		position: relative;
+		bottom: 0;
+	    margin: 15px 0;
 	}
 
 	.flex-direction-nav {
 		display: none;
-	}
 
-	.flex-control-nav {
-		display: none;
-		bottom: -27px;
+		a {
+	    	opacity: 0.4;
+	    	top: 40%;
+		    width: 36px;
+		    height: 36px;
+		    
+	    	&.flex-next {
+	    		right: -50px;
+	    		background-image: url('img/arrow-right--medium.png');
+	    	}
 
-		li {
-			margin: 0 3px;
-		}
-
-		@media screen and (min-width: 992px) {
-			display: inline-block;
-		}
-	}
-
-	.flex-control-paging li a {
-		width: 5px;
-		height: 5px;
+	    	&.flex-prev {
+	    		left: -50px;
+	    		background-image: url('img/arrow-left--medium.png');
+	    	}
+	    }
 	}
 }

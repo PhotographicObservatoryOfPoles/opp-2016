@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-23 20:28+0000\n"
-"PO-Revision-Date: 2016-11-23 20:28+0000\n"
+"POT-Creation-Date: 2016-11-27 16:08+0000\n"
+"PO-Revision-Date: 2016-11-27 16:09+0000\n"
 "Last-Translator: admin <audreyguenee@free.fr>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -22,13 +22,13 @@ msgstr ""
 "X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: page-contributors.php:67
-msgid "and"
-msgstr "et"
+#: index.php:105
+msgid "Discover the Observatory"
+msgstr "Découvrez l'Observatoire"
 
-#. Author of the theme
-msgid "Anonyme"
-msgstr ""
+#: index.php:207
+msgid "About the association"
+msgstr "A propos de l'association"
 
 #: 404.php:17
 msgid "404"
@@ -78,25 +78,25 @@ msgstr "Actualité"
 msgid "contributor"
 msgstr "Contributeur"
 
-#: content-search.php:33 content-search.php:38 header.php:82 index.php:37
-#: index.php:38 index.php:71 index.php:85 index.php:94 index.php:129
-#: index.php:144 index.php:153 index.php:190 index.php:196 index.php:209
-#: index.php:213 index.php:248 index.php:260 index.php:269 index.php:296
-#: index.php:308 index.php:317 index.php:379 index.php:392 index.php:401
-#: index.php:431 index.php:444 index.php:453 index.php:523 index.php:529
-#: page-contributors.php:119 page-contributors.php:126 page-expeditions.php:63
+#: content-search.php:33 content-search.php:38 header.php:81 index.php:37
+#: index.php:38 index.php:71 index.php:85 index.php:94 index.php:131
+#: index.php:145 index.php:154 index.php:191 index.php:197 index.php:210
+#: index.php:214 index.php:249 index.php:261 index.php:270 index.php:297
+#: index.php:309 index.php:318 index.php:379 index.php:392 index.php:401
+#: index.php:431 index.php:443 index.php:452 index.php:522 index.php:528
+#: page-contributors.php:116 page-contributors.php:122 page-expeditions.php:63
 #: page-expeditions.php:75 page-expeditions.php:84 page-galleries.php:62
 #: page-galleries.php:74 page-galleries.php:83 page-map.php:138
 #: page-news.php:54 page-news.php:68 page-news.php:77
-#: single-contributor.php:149 single-contributor.php:164
-#: single-contributor.php:173 single-contributor.php:209
-#: single-contributor.php:224 single-contributor.php:233
-#: single-expedition.php:170 single-photos-gallery.php:193
-#: single-photos-gallery.php:230 single-photos-gallery.php:242
-#: single-photos-gallery.php:251 single-post.php:87 taxonomy.php:67
+#: single-contributor.php:145 single-contributor.php:159
+#: single-contributor.php:168 single-contributor.php:204
+#: single-contributor.php:219 single-contributor.php:228
+#: single-expedition.php:170 single-photos-gallery.php:192
+#: single-photos-gallery.php:229 single-photos-gallery.php:241
+#: single-photos-gallery.php:250 single-post.php:90 taxonomy.php:67
 #: taxonomy.php:80 taxonomy.php:89 partials/expedition-thumbnail.php:10
 #: partials/expedition-thumbnail.php:22 partials/expedition-thumbnail.php:31
-#: partials/map-panel.php:85 partials/page-team.php:67
+#: partials/map-panel.php:83 partials/page-team.php:67
 #: partials/page-team.php:71 partials/photos-gallery-thumbnail.php:10
 #: partials/photos-gallery-thumbnail.php:22
 #: partials/photos-gallery-thumbnail.php:31
@@ -121,19 +121,19 @@ msgstr "Menu"
 msgid "Search"
 msgstr "Rechercher"
 
-#: header.php:109
+#: header.php:98
 msgid "Close"
 msgstr "Fermer"
 
-#: header.php:132 inc/custom-post-types.php:183
+#: header.php:121 inc/custom-post-types.php:183
 msgid "Themes"
 msgstr "Thèmes"
 
-#: header.php:139 inc/custom-post-types.php:194
+#: header.php:128 inc/custom-post-types.php:194
 msgid "Regions"
 msgstr "Régions"
 
-#: index.php:25 single-contributor.php:121 single-expedition.php:150
+#: index.php:25 single-contributor.php:117 single-expedition.php:150
 msgid "About"
 msgstr "A propos"
 
@@ -142,41 +142,37 @@ msgstr "A propos"
 msgid "News"
 msgstr "Actus"
 
-#: index.php:106 index.php:345
-msgid "Discover"
-msgstr "Découvrez"
-
-#: index.php:159 index.php:160 single-post.php:25
+#: index.php:160 index.php:161 single-post.php:25
 msgid "All news"
 msgstr "Toutes les actus"
 
-#: index.php:206
-msgid "About the Observatory"
-msgstr "A propos de l'Observatoire"
-
-#: index.php:221
+#: index.php:222
 msgid "Explore the map"
 msgstr "Explorer la carte"
 
-#: index.php:326 index.php:327 index.php:405 index.php:406
+#: index.php:327 index.php:328 index.php:405 index.php:406
 #: single-photos-gallery.php:37 inc/custom-post-types.php:89
 msgid "All galleries"
 msgstr "Toutes les galeries"
 
-#: index.php:332 index.php:333 index.php:459 index.php:460
+#: index.php:333 index.php:334 index.php:458 index.php:459
 #: single-expedition.php:90 inc/custom-post-types.php:125
 msgid "All expeditions"
 msgstr "Toutes les expéditions"
 
-#: index.php:469
+#: index.php:345
+msgid "Discover"
+msgstr "Découvrez"
+
+#: index.php:468
 msgid "Explore"
 msgstr "Explorez"
 
-#: index.php:473
+#: index.php:472
 msgid "Browse the map"
 msgstr "Parcourir la carte"
 
-#: index.php:482
+#: index.php:481
 msgid "Our contributors"
 msgstr "Nos contributeurs"
 
@@ -189,11 +185,15 @@ msgstr "Contact"
 msgid "Contributors"
 msgstr "Contributeurs"
 
-#: page-contributors.php:73 page-contributors.php:77
+#: page-contributors.php:65
+msgid "and"
+msgstr "et"
+
+#: page-contributors.php:71 page-contributors.php:75
 msgid "Read the news"
 msgstr "Lire l'actu"
 
-#: page-contributors.php:93 single-contributor.php:68
+#: page-contributors.php:90 single-contributor.php:64
 #: inc/custom-post-types.php:17
 msgid "All contributors"
 msgstr "Tous les contributeurs"
@@ -243,7 +243,7 @@ msgstr "Carte"
 msgid "gallery"
 msgstr "Galerie"
 
-#: page-map.php:110 taxonomy.php:71 partials/map-panel.php:54
+#: page-map.php:110 taxonomy.php:71 partials/map-panel.php:52
 msgid "expedition"
 msgstr "Expédition"
 
@@ -259,11 +259,11 @@ msgstr "<span class=\"btn btn-default\">Articles plus anciens</span>"
 msgid "Observatory"
 msgstr "Observatoire"
 
-#: page-observatory.php:43
+#: page-observatory.php:42
 msgid "Download the information brochure"
 msgstr "Télécharger la plaquette d’information"
 
-#: page-observatory.php:55
+#: page-observatory.php:54
 msgid "Support us"
 msgstr "Soutenez-nous"
 
@@ -288,25 +288,25 @@ msgstr "Page"
 msgid "Search through all website"
 msgstr "Rechercher dans tout le site"
 
-#: single-contributor.php:106 partials/page-sponsors.php:61
+#: single-contributor.php:102 partials/page-sponsors.php:61
 msgid "Website"
 msgstr "Site web"
 
-#: single-contributor.php:126 single-photos-gallery.php:75 single-post.php:59
+#: single-contributor.php:122 single-photos-gallery.php:75 single-post.php:58
 #: partials/expedition-chapter.php:31 partials/expedition-chapter.php:56
 #: partials/expedition-cover.php:40 partials/expedition-slide.php:23
 msgid "Share"
 msgstr "Partager"
 
-#: single-contributor.php:134
+#: single-contributor.php:130
 msgid "Last contributions"
 msgstr "Dernières contributions"
 
-#: single-contributor.php:134
+#: single-contributor.php:130
 msgid "Last contribution"
 msgstr "Dernière contribution"
 
-#: single-contributor.php:189
+#: single-contributor.php:184
 msgid "All contributions"
 msgstr "Toutes les contributions"
 
@@ -335,21 +335,17 @@ msgstr "Voir la galerie"
 msgid "Location"
 msgstr "Localisation"
 
-#: single-photos-gallery.php:112 single-photos-gallery.php:163
+#: single-photos-gallery.php:162
 msgid "Full screen mode"
 msgstr "Mode plein écran"
 
-#: single-photos-gallery.php:206
+#: single-photos-gallery.php:205
 msgid "Here are other galleries that should please you"
 msgstr "Voici d'autres galeries qui devraient vous plaire"
 
-#: single-post.php:36
+#: single-post.php:35
 msgid "Published on"
 msgstr "Publié le"
-
-#: taxonomy.php:97
-msgid "<span class=\"btn btn-default\">More posts</span>"
-msgstr "<span class=\"btn btn-default\">Plus d'articles</span>"
 
 #: inc/custom-post-types.php:18 inc/custom-post-types.php:54
 #: inc/custom-post-types.php:90 inc/custom-post-types.php:126
@@ -433,7 +429,7 @@ msgstr "Carte de l'expédition"
 msgid "Discover the expedition"
 msgstr "Découvrir l'expédition"
 
-#: partials/map-panel.php:54
+#: partials/map-panel.php:52
 msgid "photos-gallery"
 msgstr "Galerie"
 
