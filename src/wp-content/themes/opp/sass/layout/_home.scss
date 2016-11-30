@@ -1,49 +1,24 @@
 .home {
 
-	#about,
-	#news {
+	#about-mobile,
+	#news-mobile {
 		margin-bottom: 35px;
 
 		.main-title--page {
 			margin-bottom: 40px;
 		}
+
+		.read-more-link {
+			text-align: center;
+		}
 	}
 
-	#about .read-more-link {
-		text-align: center;
-	}
-
-	#about,
-	#news {
+	#about-mobile,
+	#news-mobile {
 		@media screen and (min-width: 768px) {
 	        display: none;
 	    }
-	} 
-
-	#main-post,
-	#secondary-posts {
-		.all-posts-link {
-			margin: 10px auto 20px;
-			display: none;
-		}
 	}
-
-	@media screen and (min-width: 992px) {
-        #main-post {
-			padding-right: 5px;
-		}
-
-		#secondary-posts {
-			padding-left: 5px;
-		}
-
-		#main-post,
-		#secondary-posts {
-			.all-posts-link {
-				display: block;
-			}
-		}
-    }
 
 	#contributors {
 	    margin: 25px auto 10px;
@@ -126,8 +101,8 @@
 
 	.slides > li {
 		position: relative;
-	    height: 500px;
-	    min-height: 500px;
+	    height: 550px;
+	    min-height: 550px;
 		overflow: hidden;
 	    background: #181818;
 
@@ -164,32 +139,34 @@
 #homepage-tiles {
     margin: 25px auto 10px;
     width: 85%;
-   	max-width: 1300px;
+   	max-width: 1330px;
 
     .main-title {
     	margin-bottom: 35px;
     }
 
-    @media screen and (min-width: 992px) {
-        .row {
-	    	margin-top: -10px;
+    .thumbnail--small {
+	    margin: 16px auto;
+
+	    .image > img {
+	    	max-width: 100%;
 	    }
-
-	    #main-post {
-			padding-right: 3px;
-		}
-
-		#secondary-posts {	
-   			max-height: 806px;
-			padding-left: 3px;
-		}
     }
-    
-    .thumbnail {
-    	margin: 6px 0;
+
+    .thumbnail--small-wrapper {
+	   	padding-left: 16px;
+		padding-right: 16px;
     }
+
+    .all-posts-link {
+		text-align: center;
+		margin: 20px auto 20px;
+		padding: 0;
+	}
 
 	#main-post {
+		padding-left: 30px;
+		padding-right: 30px;
 
 		.all-posts-link {
 			margin: 26px auto 20px;
@@ -201,19 +178,8 @@
 		}
 	}
 
-	#secondary-posts {
-
-		.col-md-4,
-		.col-md-6,
-		.col-md-8,
-		.col-md-12 {
-			padding-left: 6px;
-    		padding-right: 6px;
-		}
-	}
-
 	#about {
-		display: block;
+		margin: 16px 0;
 
 		.caption {
 			padding: 12px 18px;
@@ -268,24 +234,62 @@
 		}
 	}
 
-	.all-posts-link {
-		text-align: center;
-		margin: 20px auto 20px;
-		padding: 0;
-		display: none;
-
-		@media screen and (min-width: 992px) {
-			display: inline-block;
+	@media screen and (min-width: 992px) {
+    	.col-sm-12 {
+		    width: 100%;
 		}
-	}
+
+        .row {
+	    	margin-top: -10px;
+	    }
+
+	    .thumbnail {
+	    	margin: 16px 0;
+	    }
+
+	    #main-post {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+    }
+
+ 	@media screen and (min-width: 1100px) {
+ 		.col-md-6 {
+		    width: 50%;
+		}
+
+		.thumbnail {
+	    	margin: 6px 0;
+	    }
+
+	    .thumbnail--small .image > img {
+	    	max-width: 350px;
+	    }
+
+		#main-post {
+			padding-right: 3px;
+		}
+
+		#secondary-posts {
+			padding-left: 3px;
+
+			.col-md-4,
+			.col-md-6,
+			.col-md-8,
+			.col-md-12 {
+				padding-left: 6px;
+	    		padding-right: 6px;
+			}
+		}
+
+		#about {
+			margin: 6px 0;
+		}
+ 	}
 }
 
 #homepage-super-contributors-slider {
-	margin: 6px 0;
-
-	@media screen and (min-width: 992px) {
-       max-width: 184px;
- 	}
+	margin: 16px 0;
 
 	.thumbnail-square {
 		margin: 0;
@@ -299,8 +303,8 @@
 		}
 
 		.image {
-			max-height: 220px;
-			height: 220px;
+			max-height: 170px;
+			height: 170px;
 			overflow: hidden;
 			background: #F1F1F1;
 
@@ -310,16 +314,6 @@
     			left: 50%;
     			transform: translate(-50%,-50%);
 			}
-
-			@media screen and (min-width: 992px) {
-				max-height: 150px;
-				height: 150px;
-			}
-
-			@media screen and (min-width: 1200px) {
-				max-height: 170px;
-				height: 170px;
-			}
 		}
 			
 	}
@@ -328,6 +322,17 @@
 	.flex-control-nav {
 		display: none;
 	}
+
+	@media screen and (min-width: 1100px) {
+		margin: 6px 0;
+
+		.thumbnail-square {
+			.image {
+				max-height: 170px;
+				height: 170px;
+			}
+		}
+	}
 }
 
 #homepage-contributors-carousel {
@@ -335,6 +340,10 @@
 
 	.thumbnail-square {
 		margin: 0;
+
+		.caption {
+			padding: 10px;
+		}
 	}
 
 	.flex-control-nav {

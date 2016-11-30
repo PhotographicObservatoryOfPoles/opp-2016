@@ -18,7 +18,7 @@ get_header(); ?>
 
 <?php if (is_home() ) : ?>
 
-	<section id="about" class="container">
+	<section id="about-mobile" class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<div class="main-title main-title--page">
@@ -42,7 +42,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section id="news" class="container">
+	<section id="news-mobile" class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<div class="main-title main-title--page">
@@ -228,7 +228,7 @@ get_header(); ?>
 				<?php $randomGallery = get_random_posts( 'photos-gallery', 1 ); ?>
 				<?php foreach ( $randomGallery as $gallery ) : $index++;
 					// Thumbnail
-					$thumbnail = get_the_post_thumbnail( $gallery, 'medium' );
+					$thumbnail = get_the_post_thumbnail( $gallery, 'medium_large' );
 					// Authors
 					$authors = get_authors( $gallery, $locale );
 					// Terms (theme & region)
@@ -276,7 +276,7 @@ get_header(); ?>
 				<?php $randomExpedition = get_random_posts( 'expedition', 1 ); ?>
 				<?php foreach ( $randomExpedition as $expedition ) : $index++;
 					// Thumbnail
-					$thumbnail = get_the_post_thumbnail( $expedition, 'medium' );
+					$thumbnail = get_the_post_thumbnail( $expedition, 'medium_large' );
 					// Authors
 					$authors = get_authors( $expedition, $locale );
 					// Terms (theme & region)
@@ -322,14 +322,14 @@ get_header(); ?>
 			</div>
 
 			<!-- All posts link -->
-			<div>
-				<div class="col-sm-12 col-md-3 all-posts-link">
+			<div class="col-sm-12 col-md-6">
+				<div class="col-sm-6 col-md-6 all-posts-link">
 					<a class="btn btn-default" href="<?php echo get_permalink( PAGE_GALLERIES_ID ); ?>" title="<?php echo __( 'All galleries', 'opp' ); ?>">
 						<?php echo __( 'All galleries', 'opp' ); ?>
 					</a>
 				</div>
 
-				<div class="col-sm-12 col-md-3 all-posts-link">
+				<div class="col-sm-6 col-md-6 all-posts-link">
 					<a class="btn btn-default" href="<?php echo get_permalink( PAGE_EXPEDITIONS_ID ); ?>" title="<?php echo __( 'All expeditions', 'opp' ); ?>">
 						<?php echo __( 'All expeditions', 'opp' ); ?>
 					</a>
