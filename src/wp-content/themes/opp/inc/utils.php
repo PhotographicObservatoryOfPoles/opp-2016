@@ -140,7 +140,7 @@ function get_formatted_post_content( $post ) {
 }
 
 /**
- * Get posts data of home slider (last gallery, last expedition, last news)
+ * Get posts data of home slider (gallery, expedition, news)
  * get_posts() is used instead of WP_Query() because this function is called in header.php (outside main render loop) 
  * @param array $postTypes
  * @return array
@@ -152,11 +152,14 @@ function get_home_slider_posts( $postTypes ) {
 		$post = get_posts( array(
 			'orderby'          => 'date',
 			'order'            => 'DESC',
-	        'posts_per_page'   => 1,
-	        'offset'           => 0,
 	        'post_type'        => $postType,
-	        'post_parent'	   => 0,
-	        'post_status'      => 'publish'
+	        'meta_query' 	   => array(
+				array(
+					'key' 	=> 'is_homepage_slider_image',
+					'value' => 1,
+				)
+			),
+	        'post_status'      => 'publish',
 		) );
 
 		$posts = array_merge( $posts, $post );

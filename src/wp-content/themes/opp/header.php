@@ -50,39 +50,41 @@
 
 		<!-- Homepage slider -->
 		<?php if ( is_home() ) : $lastPosts = get_home_slider_posts( array('photos-gallery', 'expedition', 'post') ); ?>
-			<div id="homepage-slider" class="mobile-hidden">
-				<ul class="slides">
-					<?php foreach ( $lastPosts as $lastPost ) :
-						// Slide
-						$slide = get_field( 'homepage_slider_image', $lastPost );
-						// Authors
-						$authors =  $lastPost->post_type !== 'post' ? get_authors( $lastPost, $locale ) : [];
-					?>
-						<li>
-							<?php if ( $slide ) : ?>
-				            	<img src="<?php echo $slide['url']; ?>" alt="<?php echo $lastPost->post_title; ?>" />
-				            <?php else: ?>
-				               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" />
-				            <?php endif; ?>
-							<div class="flex-caption">
-								<span class="post-type"><?php echo __( $lastPost->post_type, 'opp' ); ?></span>
-								<?php if ( $lastPost->post_type === 'post' ) : ?>
-									<h3 class="date"><?php echo get_the_date( 'l j F Y', $lastPost->ID ); ?></h3>
-								<?php endif; ?>
-								<h2 class="title"><?php echo $lastPost->post_title; ?></h2>
-								<?php if ( $authors ) : ?>
-									<h3 class="contributors">
-										<?php foreach ( $authors['posts'] as $key => $author ) : ?>
-											<?php echo $author->post_title; ?><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>
-										<?php endforeach; ?>
-									</h3>
-								<?php endif; ?>
-							</div>
-							<a class="read-more-link" href="<?php echo get_permalink( $lastPost ); ?>" title="<?php echo __( 'See more', 'opp' ); ?>"></a>
-						</li>
-					<?php endforeach; ?>
-				</ul>
-			</div>
+			<?php if ( !empty( $lastPosts ) ) : ?>
+				<div id="homepage-slider" class="mobile-hidden">
+					<ul class="slides">
+						<?php foreach ( $lastPosts as $lastPost ) :
+							// Slide
+							$slide = get_field( 'homepage_slider_image', $lastPost );
+							// Authors
+							$authors =  $lastPost->post_type !== 'post' ? get_authors( $lastPost, $locale ) : [];
+						?>
+							<li>
+								<?php if ( $slide ) : ?>
+					            	<img src="<?php echo $slide['url']; ?>" alt="<?php echo $lastPost->post_title; ?>" />
+					            <?php else: ?>
+					               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" />
+					            <?php endif; ?>
+								<div class="flex-caption">
+									<span class="post-type"><?php echo __( $lastPost->post_type, 'opp' ); ?></span>
+									<?php if ( $lastPost->post_type === 'post' ) : ?>
+										<h3 class="date"><?php echo get_the_date( 'l j F Y', $lastPost->ID ); ?></h3>
+									<?php endif; ?>
+									<h2 class="title"><?php echo $lastPost->post_title; ?></h2>
+									<?php if ( $authors ) : ?>
+										<h3 class="contributors">
+											<?php foreach ( $authors['posts'] as $key => $author ) : ?>
+												<?php echo $author->post_title; ?><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>
+											<?php endforeach; ?>
+										</h3>
+									<?php endif; ?>
+								</div>
+								<a class="read-more-link" href="<?php echo get_permalink( $lastPost ); ?>" title="<?php echo __( 'See more', 'opp' ); ?>"></a>
+							</li>
+						<?php endforeach; ?>
+					</ul>
+				</div>
+			<?php endif; ?>
 		<?php endif; ?>
 	</header>
 
