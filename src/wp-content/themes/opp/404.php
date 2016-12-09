@@ -32,7 +32,7 @@ get_header(); ?>
 
 				<div class="mobile-hidden"><?php get_search_form(); ?></div>
 
-				<a class="btn btn-primary" href="<?php echo pll_home_url( $locale ); ?>" title="<?php echo __( 'Homepage', 'opp' ); ?>">
+				<a class="btn btn-primary" href="<?php echo pll_home_url( $locale ); ?>">
 					<?php echo __( 'Back to homepage', 'opp' ); ?>
 				</a>
 			</div>

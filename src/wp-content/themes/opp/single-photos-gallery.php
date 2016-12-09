@@ -32,7 +32,7 @@ while ( have_posts() ) : the_post();
 
 <!-- Panel button -->
 <div class="menu-bar menu-bar--page">
-	<a href="<?php echo get_permalink( $allGalleriesPage ); ?>" title="" class="btn button--w-tooltip">
+	<a href="<?php echo get_permalink( $allGalleriesPage ); ?>" class="btn button--w-tooltip">
 		<span class="glyphicon glyphicon-th-large"></span>
 		<span class="button-tooltip button-tooltip--left"><?php echo __( 'All galleries', 'opp' ); ?></span>
 	</a>
@@ -119,7 +119,7 @@ while ( have_posts() ) : the_post();
 					$src = wp_get_attachment_url( $imageID , false );
 			?>
 				<li data-index="<?php echo $index + 1; ?>">
-					<img src="<?php echo $src; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
+					<img src="<?php echo $src; ?>" alt="<?php echo $image->post_title; ?>" />
 					<div class="flex-caption">
 						<?php if ( $image->post_title ) : ?>
 							<h3><?php echo $image->post_title; ?></h3>
@@ -151,7 +151,7 @@ while ( have_posts() ) : the_post();
 					$alt = get_post_meta( $imageID, '_wp_attachment_image_alt', true );
 			?>
 				<li data-index="<?php echo $index + 1; ?>">
-					<img src="<?php echo $src[0]; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
+					<img src="<?php echo $src[0]; ?>" alt="<?php echo $image->post_title; ?>" />
 				</li>
 			<?php endforeach; ?>
 		  	</ul>

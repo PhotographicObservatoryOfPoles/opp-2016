@@ -20,7 +20,7 @@ while ( have_posts() ) : the_post();
 
 <!-- Panel button -->
 <div class="menu-bar menu-bar--page">
-	<a href="<?php echo get_permalink( $allPostsPage ); ?>" title="" class="btn button--w-tooltip">
+	<a href="<?php echo get_permalink( $allPostsPage ); ?>" class="btn button--w-tooltip">
 		<span class="glyphicon glyphicon-th-large"></span>
 		<span class="button-tooltip button-tooltip--left"><?php echo __( 'All news', 'opp' ); ?></span>
 	</a>

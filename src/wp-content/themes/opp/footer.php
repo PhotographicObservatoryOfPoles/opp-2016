@@ -21,7 +21,7 @@
 		<ul class="links">
 			<?php foreach ( $footerLinkItemsIDs as $footerLinkitemID => $footerLinkInfos ) : $footerLinkitem = get_post( $footerLinkitemID ); ?>
 				<li class="menu-item <?php echo !is_home() && (($post->ID === $footerLinkitemID) || ($post->post_type === $footerLinkInfos['post_type'])) ? 'current' : ''; ?>">
-					<a href="<?php echo get_permalink( $footerLinkitemID ); ?>" title="<?php echo $footerLinkitem->post_title; ?>">
+					<a href="<?php echo get_permalink( $footerLinkitemID ); ?>">
 						<?php echo $footerLinkitem->post_title; ?>
 					</a>
 				</li>
@@ -91,7 +91,7 @@
 				$isMobileHidden = in_array($mainMenuItemID, $GLOBALS['mobile_hidden_pages']);
 			?>
 			<li class="menu-item <?php echo $isCurrent ? 'current' : ''; ?> <?php echo $isMobileHidden ? 'mobile-hidden' : ''; ?>">
-				<a href="<?php echo get_permalink( $mainMenuItemID ); ?>" title="<?php echo $mainMenuItem->post_title; ?>">
+				<a href="<?php echo get_permalink( $mainMenuItemID ); ?>">
 					<?php echo $mainMenuItem->post_title; ?>
 				</a>
 			</li>

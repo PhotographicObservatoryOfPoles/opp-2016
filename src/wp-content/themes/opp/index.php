@@ -157,7 +157,7 @@ get_header(); ?>
 
 				<!-- All posts link -->
 				<div class="all-posts-link">
-					<a class="btn btn-default" href="<?php echo get_permalink( PAGE_NEWS_ID ); ?>" title="<?php echo __( 'All news', 'opp' ); ?>">
+					<a class="btn btn-default" href="<?php echo get_permalink( PAGE_NEWS_ID ); ?>">
 						<?php echo __( 'All news', 'opp' ); ?>
 					</a>
 				</div>
