@@ -185,7 +185,11 @@ while ( have_posts() ) : the_post();
 				$biography = strlen( $biography ) > $maxLength ? mb_substr( $biography, 0, $maxLength ) . '...' : $biography;
 			?>
 				<div class="<?php echo $class; ?>">
-					<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $author->post_title; ?>" />	
+					<?php if ( $photo ) : ?>
+						<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $author->post_title; ?>" />
+					<?php else : ?>
+		  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php echo $author->post_title; ?>" width="150" />
+		  			<?php endif; ?>
 					<h3><?php echo $author->post_title; ?></h3>
 					<p><?php echo $biography ?></p>
 					<a href="<?php echo get_permalink ($author->ID); ?>"><?php echo __( 'See more', 'opp' ); ?></a>
