@@ -81,9 +81,9 @@ while ( have_posts() ) : the_post();
 				?>
 					<div class="<?php echo $class; ?>">
 						<?php if ( $photo ) : ?>
-							<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>" />
+							<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $contributor->post_title; ?>" />
 						<?php else : ?>
-							<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" width="150" />
+							<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php echo $contributor->post_title; ?>" width="150" />
 						<?php endif; ?>
 						<h3><?php echo $contributor->post_title; ?></h3>
 						<p><?php echo $biography ?></p>

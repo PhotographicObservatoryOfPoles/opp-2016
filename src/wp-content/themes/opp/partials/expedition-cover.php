@@ -5,7 +5,7 @@
 		<?php if ( $cover ) : ?>
             <?php echo $cover; ?>
         <?php else: ?>
-            <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+            <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php the_title(); ?>" />
         <?php endif; ?>
 		<span class="glyphicon glyphicon-menu-down mobile-hidden"></span>
 	</a>

@@ -25,7 +25,7 @@
 	<header role="banner" class="fixed">
 		<div class="menu-bar">
 			<a class="site-branding button--w-tooltip" href="<?php echo pll_home_url( $locale ); ?>" title="<?php echo __( 'Homepage', 'opp' ); ?>">
-				<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="" />
+				<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="<?php echo __( 'Observatory Photographic of Poles' , 'opp'); ?>" />
 				<h1 class="button-tooltip button-tooltip--right site-name">
 					<?php echo __( 'Observatory <span class="light-blue">Photographic</span> of Poles', 'opp' ); ?>
 				</h1>
@@ -63,7 +63,7 @@
 								<?php if ( $slide ) : ?>
 					            	<img src="<?php echo $slide['url']; ?>" alt="<?php echo $lastPost->post_title; ?>" />
 					            <?php else: ?>
-					               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" />
+					               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="<?php echo $lastPost->post_title; ?>" />
 					            <?php endif; ?>
 								<div class="flex-caption">
 									<span class="post-type"><?php echo __( $lastPost->post_type, 'opp' ); ?></span>

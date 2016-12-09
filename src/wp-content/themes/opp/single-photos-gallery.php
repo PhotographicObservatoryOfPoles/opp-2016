@@ -117,10 +117,9 @@ while ( have_posts() ) : the_post();
 					$image = get_post( $imageID );
 					$metadata = wp_get_attachment_metadata( $imageID );
 					$src = wp_get_attachment_url( $imageID , false );
-					$alt = get_post_meta( $imageID, '_wp_attachment_image_alt', true );
 			?>
 				<li data-index="<?php echo $index + 1; ?>">
-					<img src="<?php echo $src; ?>" alt="<?php echo $alt; ?>" title="<?php echo $image->post_title; ?>" />
+					<img src="<?php echo $src; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
 					<div class="flex-caption">
 						<?php if ( $image->post_title ) : ?>
 							<h3><?php echo $image->post_title; ?></h3>
@@ -152,7 +151,7 @@ while ( have_posts() ) : the_post();
 					$alt = get_post_meta( $imageID, '_wp_attachment_image_alt', true );
 			?>
 				<li data-index="<?php echo $index + 1; ?>">
-					<img src="<?php echo $src[0]; ?>" alt="<?php echo $alt; ?>" title="<?php echo $image->post_title; ?>" />
+					<img src="<?php echo $src[0]; ?>" alt="<?php echo $image->post_title; ?>" title="<?php echo $image->post_title; ?>" />
 				</li>
 			<?php endforeach; ?>
 		  	</ul>
@@ -186,7 +185,7 @@ while ( have_posts() ) : the_post();
 				$biography = strlen( $biography ) > $maxLength ? mb_substr( $biography, 0, $maxLength ) . '...' : $biography;
 			?>
 				<div class="<?php echo $class; ?>">
-					<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>" />	
+					<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $author->post_title; ?>" />	
 					<h3><?php echo $author->post_title; ?></h3>
 					<p><?php echo $biography ?></p>
 					<a href="<?php echo get_permalink ($author->ID); ?>"><?php echo __( 'See more', 'opp' ); ?></a>
@@ -223,7 +222,7 @@ while ( have_posts() ) : the_post();
 				  			<?php if ( $thumbnail ) : ?>
 					            <?php echo $thumbnail; ?>
 					        <?php else: ?>
-					            <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+					            <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php echo $featuredGallery->post_title; ?>" />
 					        <?php endif; ?>
 				        	<button class="read-more-button" role="button">
 				                <span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>

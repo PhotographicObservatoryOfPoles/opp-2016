@@ -75,7 +75,7 @@
 				<?php if ( $thumbnail ) : ?>
 					<?php echo $thumbnail; ?>
 	            <?php else: ?>
-	                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+	                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php echo $post->post_title; ?>" />
 	            <?php endif; ?>
 			 	<p><?php echo $description; ?></p>
 			</div>

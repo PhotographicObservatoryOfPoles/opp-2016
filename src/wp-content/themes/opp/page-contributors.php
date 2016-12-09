@@ -53,27 +53,27 @@ $superContributors = get_linked_contributors( $lastNews, $locale );
 						$extract = wp_strip_all_tags( get_post_field( 'post_content', $lastNews ) );
 			        	$extract = strlen( $extract ) > 200 ? mb_substr( $extract, 0, 200 ) . '...' : $lastNews;
 					?>
-						<li>
-							<?php if ( $superContributorsBanner ) : ?>
-				            	<img src="<?php echo $superContributorsBanner['url']; ?>" alt="<?php echo $lastNews->post_title; ?>" />
-				            <?php else: ?>
-				               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="" />
-				            <?php endif; ?>
-							<div class="flex-caption">
-								<h2 class="title <?php if (count($superContributors['posts']) > 1) { echo 'title-small'; } ?>">
-									<?php foreach ( $superContributors['posts'] as $key => $superContributorID ) : $superContributor = get_post( $superContributorID, $locale ); ?>
-										<?php echo $superContributor->post_title; ?><?php echo $key !== $superContributors['lastKey'] ? $key === $superContributors['lastKey'] - 1 ? ' ' . __( 'and', 'opp' ) . ' ' : ',' : ''; ?>
-									<?php endforeach; ?>
-								</h2>
-								<h3 class="subtitle"><?php echo $lastNews->post_title; ?></h2>
-								<p><?php echo $extract; ?></p>
-				        		<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>">
-					        		<?php echo __( 'Read the news', 'opp' ); ?>
-					        		<span class="glyphicon glyphicon-menu-right"></span>
-					        	</a>
-							</div>
-							<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>" title="<?php echo __( 'Read the news', 'opp' ); ?>"></a>
-						</li>
+					<li>
+						<?php if ( $superContributorsBanner ) : ?>
+			            	<img src="<?php echo $superContributorsBanner['url']; ?>" alt="<?php echo $lastNews->post_title; ?>" />
+			            <?php else: ?>
+			               	<img src="<?php bloginfo('template_directory'); ?>/img/default/slider_image.jpg" alt="<?php echo $lastNews->post_title; ?>" />
+			            <?php endif; ?>
+						<div class="flex-caption">
+							<h2 class="title <?php if (count($superContributors['posts']) > 1) { echo 'title-small'; } ?>">
+								<?php foreach ( $superContributors['posts'] as $key => $superContributorID ) : $superContributor = get_post( $superContributorID, $locale ); ?>
+									<?php echo $superContributor->post_title; ?><?php echo $key !== $superContributors['lastKey'] ? $key === $superContributors['lastKey'] - 1 ? ' ' . __( 'and', 'opp' ) . ' ' : ',' : ''; ?>
+								<?php endforeach; ?>
+							</h2>
+							<h3 class="subtitle"><?php echo $lastNews->post_title; ?></h2>
+							<p><?php echo $extract; ?></p>
+			        		<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>">
+				        		<?php echo __( 'Read the news', 'opp' ); ?>
+				        		<span class="glyphicon glyphicon-menu-right"></span>
+				        	</a>
+						</div>
+						<a class="read-more-link" href="<?php echo get_permalink( $lastNews ); ?>" title="<?php echo __( 'Read the news', 'opp' ); ?>"></a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -108,9 +108,9 @@ $superContributors = get_linked_contributors( $lastNews, $locale );
 				  	<div class="thumbnail thumbnail-square">
 				  		<div class="image">
 				  			<?php if ( $thumbnail ) : ?>
-				  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $thumbnail['alt']; ?>" />
+				  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $contributor->post_title; ?>" />
 				  			<?php else : ?>
-				  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" />
+				  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php echo $contributor->post_title; ?>" />
 				  			<?php endif; ?>
 				  			<button class="read-more-button" role="button">
 				       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>

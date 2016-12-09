@@ -164,7 +164,7 @@ while ( have_posts() ) : the_post();
 		<div class="contributor clearfix">
 			<h4><?php echo $author->post_title; ?></h4>
 			<div class="clearfix">
-				<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $photo['alt']; ?>" />
+				<img src="<?php echo $photo['sizes']['thumbnail']; ?>" alt="<?php echo $author->post_title; ?>" />
 				<p><?php echo $biography; ?></p>
 			</div>
 			<a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo __( 'See more', 'opp' ); ?></a>

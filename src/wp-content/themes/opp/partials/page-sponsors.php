@@ -50,9 +50,9 @@ $key = 0;
 				  	<div class="thumbnail thumbnail-horizontal clearfix">
 				  		<div class="image">
 				  			<?php if ( $thumbnail ) : ?>
-				  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $thumbnail['alt']; ?>" />
+				  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $sponsor->post_title; ?>" />
 				  			<?php else : ?>
-				  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" />
+				  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php echo $sponsor->post_title; ?>" />
 				  			<?php endif; ?>
 				  		</div>
 				      	<div class="caption">

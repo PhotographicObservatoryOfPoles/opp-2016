@@ -56,7 +56,7 @@ $index = 0;
 				  			<?php if ( $thumbnail ) : ?>
 				                <?php echo $thumbnail; ?>
 				            <?php else: ?>
-				                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+				                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php echo $gallery->post_title; ?>" />
 				            <?php endif; ?>
 				  			<button class="read-more-button" role="button">
 				       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>

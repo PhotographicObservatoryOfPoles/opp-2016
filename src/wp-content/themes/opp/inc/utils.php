@@ -212,9 +212,3 @@ function get_last_posts( $postType, $nbPosts ) {
 
 	return $post;
 }
-
-/**
- * @todo
- */
-// Get excerpt (biography, description thumbnail) ?
-// Get previous_next_page (expedition) ?

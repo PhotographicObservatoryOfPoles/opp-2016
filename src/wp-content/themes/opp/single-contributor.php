@@ -72,7 +72,7 @@ while ( have_posts() ) : the_post();
 		<?php if ( $cover ) : ?>
 			<?php echo $cover; ?>
 		<?php else : ?>
-			<img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+			<img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php the_title(); ?>" />
 		<?php endif; ?>
 	</a>
 </div>
@@ -83,9 +83,9 @@ while ( have_posts() ) : the_post();
 
 		<div class="photo">
 			<?php if ( $photo ) : ?>
-				<img src="<?php echo $photo['sizes']['medium']; ?>" alt="<?php echo $photo['alt']; ?>" />
+				<img src="<?php echo $photo['sizes']['medium']; ?>" alt="<?php the_title(); ?>" />
 			<?php else : ?>
-				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" />
+				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php the_title(); ?>" />
 			<?php endif; ?>
 		</div>
 

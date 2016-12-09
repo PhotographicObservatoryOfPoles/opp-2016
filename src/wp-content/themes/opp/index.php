@@ -125,7 +125,7 @@ get_header(); ?>
 								<?php if ( has_post_thumbnail( $article ) ) : ?>
 									<?php echo get_the_post_thumbnail( $article, 'large' ); ?>
 								<?php else: ?>
-									<img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+									<img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php echo $article->post_title; ?>" />
 								<?php endif; ?>
 								<button class="read-more-button" role="button">
 					       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>
@@ -183,9 +183,9 @@ get_header(); ?>
 						<li class="thumbnail thumbnail-square">
 					  		<div class="image">
 					  			<?php if ( $thumbnail ) : ?>
-					  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $thumbnail['alt']; ?>" />
+					  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $contributor->post_title; ?>" />
 					  			<?php else : ?>
-					  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" />
+					  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php echo $contributor->post_title; ?>" />
 					  			<?php endif; ?>
 					  			<button class="read-more-button" role="button">
 					       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>
@@ -243,7 +243,7 @@ get_header(); ?>
 					  			<?php if ( $thumbnail ) : ?>
 					                <?php echo $thumbnail; ?>
 					            <?php else: ?>
-					                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+					                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php echo $gallery->post_title; ?>" />
 					            <?php endif; ?>
 					  			<button class="read-more-button" role="button">
 					       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>
@@ -291,7 +291,7 @@ get_header(); ?>
 					  			<?php if ( $thumbnail ) : ?>
 					                <?php echo $thumbnail; ?>
 					            <?php else: ?>
-					                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="" />
+					                <img src="<?php bloginfo('template_directory'); ?>/img/default/cover_image.jpg" alt="<?php echo $expedition->post_title; ?>" />
 					            <?php endif; ?>
 					  			<button class="read-more-button" role="button">
 					       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>
@@ -378,9 +378,9 @@ get_header(); ?>
 		    			<div class="thumbnail thumbnail-square">
 					  		<div class="image">
 					  			<?php if ( $thumbnail ) : ?>
-					  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $thumbnail['alt']; ?>" />
+					  				<img src="<?php echo $thumbnail['sizes']['medium']; ?>" alt="<?php echo $contributor->post_title; ?>" />
 					  			<?php else : ?>
-					  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="" />
+					  				<img src="<?php bloginfo('template_directory'); ?>/img/default/photo.png" alt="<?php echo $contributor->post_title; ?>" />
 					  			<?php endif; ?>
 					  			<button class="read-more-button" role="button">
 					       			<span class="btn btn-default"><?php echo __( 'See more', 'opp' ); ?></span>
