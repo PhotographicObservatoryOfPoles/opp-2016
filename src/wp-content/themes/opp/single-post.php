@@ -76,7 +76,7 @@ while ( have_posts() ) : the_post();
 					$photo = get_field( 'photo', $contributor->ID );
 					// Biography
 					$biography = strip_tags( get_post_field( 'post_content', $contributor->ID ) );
-					$maxLength = ( $index % 2 === 0 && ($index + 1) > $linkedContributors['lastKey'] ) ? 320 : 170;
+					$maxLength = ( $index % 2 === 0 && ($index + 1) > $linkedContributors['lastKey'] ) ? 320 : 130;
 					$biography = strlen( $biography ) > $maxLength ? mb_substr( $biography, 0, $maxLength ) . '...' : $biography;
 				?>
 					<div class="<?php echo $class; ?>">

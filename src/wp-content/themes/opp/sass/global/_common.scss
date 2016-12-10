@@ -8,6 +8,10 @@ body {
     background: #F7F7F7;
 }
 
+h3, .h3 {
+    font-size: 22px;
+}
+
 .main-wrapper {
     min-height: 100%;
     position: relative;
@@ -1234,13 +1238,13 @@ iframe {
 
     p, ul, ol {
         font-family: 'Source Serif Pro', serif;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
         margin: 20px 0;
 
         &.wp-caption-text {
-            font-size: 18px;
-            line-height: 30px;
+            font-size: 16px;
+            line-height: 24px;
             font-weight: normal;
             text-align: center;
             margin: 10px auto 70px;
