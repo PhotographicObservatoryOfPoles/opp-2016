@@ -1,7 +1,5 @@
 .htaccess
 composer.lock
 /vendor/
-#/src/wp-cms/.htaccess
-#/src/wp-content/languages
 
 #wp-cli.local.yml

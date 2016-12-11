@@ -1,3 +1,7 @@
 build.properties
 db.properties
 wp.properties
+
+build.*.properties
+db.*.properties
+wp.*.properties
