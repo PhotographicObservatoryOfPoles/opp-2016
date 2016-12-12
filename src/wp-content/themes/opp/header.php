@@ -13,6 +13,17 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+	<?php 
+		if ( $post->post_parent ) {
+			$parent = get_post( $post->post_parent );
+			$title = $parent->post_parent ? get_the_title( $parent->post_parent ) : get_the_title( $post->post_parent );
+     		echo $title . ' > ';
+     	}
+     	wp_title( '|', true, 'right' );
+     	bloginfo( 'name' );
+    ?>
+ 	</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=1.0" rel="stylesheet">
