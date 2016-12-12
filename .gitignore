@@ -1,5 +1,22 @@
-.htaccess
-composer.lock
+# Dépendances et données
 /vendor/
+/data/
+composer.lock
 
-#wp-cli.local.yml
+# Installation Wordpress
+/src/wp-cms/*
+
+# Contenus Wordpress non versionnés
+/src/wp-content/uploads/
+/src/wp-content/plugins/
+/src/wp-content/languages/
+/src/wp-content/upgrade/
+/src/wp-content/themes/opp/.sass-cache
+/src/wp-content/themes/opp/node_modules
+/src/wp-content/themes/opp/languages/*.pot~
+
+# Configuration
+/config/*.properties
+/src/wp-config*.php
+.htaccess
+desktop.ini
