@@ -50,7 +50,7 @@
 
 	<!-- Languages -->
 	<ul class="languages">
-		<?php pll_the_languages( array(
+		<?php /*pll_the_languages( array(
 			'dropdown'				 => 0, // displays a list if set to 0, a dropdown list if set to 1 (default: 0)
 			'show_names' 			 => 1, // displays language names if set to 1 (default: 1)
 			'display_names_as' 		 => 'name', // either ‘name’ or ‘slug’ (default: ‘name’)
@@ -62,7 +62,7 @@
 			'hide_current' 			 => 1, // hides the current language if set to 1 (default: 0)
 			'post_id' 				 => null, // if set, displays links to translations of the post (or page) defined by post_id (default: null)
 			'raw' 					 => 0 // use this to create your own custom language switcher (default:0)
-		) ); ?>
+		) );*/ ?>
 	</ul>
 
 	<!-- Branding + home link -->
