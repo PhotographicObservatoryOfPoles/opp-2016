@@ -120,17 +120,19 @@ while ( have_posts() ) : the_post();
 			?>
 				<li data-index="<?php echo $index + 1; ?>">
 					<img src="<?php echo $src; ?>" alt="<?php echo $image->post_title; ?>" />
-					<div class="flex-caption">
-						<?php if ( $image->post_title ) : ?>
-							<h3><?php echo $image->post_title; ?></h3>
-						<?php endif; ?>
-						<?php if ( $image->post_excerpt ) : ?>
-							<p><?php echo $image->post_excerpt; ?></p>
-						<?php endif; ?>
-						<?php if ( $image->post_content ) : ?>
-							<p><?php echo $image->post_content; ?></p>
-						<?php endif; ?>
-					</div>
+					<?php if ( $image->post_title || $image->post_excerpt || $image->post_content ) : ?>
+						<div class="flex-caption">
+							<?php if ( $image->post_title ) : ?>
+								<h3><?php echo $image->post_title; ?></h3>
+							<?php endif; ?>
+							<?php if ( $image->post_excerpt ) : ?>
+								<p><?php echo $image->post_excerpt; ?></p>
+							<?php endif; ?>
+							<?php if ( $image->post_content ) : ?>
+								<p><?php echo $image->post_content; ?></p>
+							<?php endif; ?>
+						</div>
+					<?php endif; ?>
 					<?php if ( $metadata['image_meta']['credit'] ) : ?>
 						<h3 class="credit">&copy;&nbsp;<?php echo $metadata['image_meta']['credit']; ?></h3>
 					<?php endif; ?>
