@@ -48,9 +48,6 @@ while ( have_posts() ) : the_post();
 	if ( $strlen > 800 ) {
 		$nbLastContributions = 2;
 	}
-	if ( $strlen > 1500 ) {
-		$nbLastContributions = 3;
-	}
 	$lastContributions = array_slice( $contributions->posts, 0, $nbLastContributions );
 
 	// All contributors page
