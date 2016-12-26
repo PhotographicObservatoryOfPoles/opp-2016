@@ -181,13 +181,15 @@ function center_map( map ) {
 	{
 
 		// set center of map
-	    //map.setCenter( bounds.getCenter() );
+	    map.setCenter( bounds.getCenter() );
 	    map.setZoom( 2 );
 	}
 	else
 	{
 		// fit to bounds
-		map.fitBounds( bounds );
+		// map.fitBounds( bounds );
+		map.setCenter( bounds.getCenter() );
+		map.setZoom( 2 );
 	}
 
 }
