@@ -25,6 +25,10 @@
 		}
 	}
 
+	img {
+		filter: grayscale(100%);
+	}
+
 	@media screen and (max-width: 585px) {
 		.thumbnail-horizontal {
 			max-width: 250px;
@@ -44,6 +48,10 @@
 #sponsors {
 	.main-title h3 {
 		margin-bottom: 10px;
+	}
+
+	img {
+		filter: grayscale(100%);
 	}
 }
 
