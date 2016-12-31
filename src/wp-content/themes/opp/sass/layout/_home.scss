@@ -41,6 +41,7 @@
 
 #homepage-slider {
     position: relative;
+    margin-bottom: 25px;
 
 	.flex-caption {
 	    background: rgba(255,255,255,0.55);
@@ -143,7 +144,12 @@
 
     .main-title {
     	margin-bottom: 35px;
+	    margin-top: 15px;
     }
+
+    /*.row:first-child {
+    	margin-top: 80px;
+    }*/
 
     .thumbnail--small {
 	    margin: 16px auto;
