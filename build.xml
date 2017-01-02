@@ -34,9 +34,9 @@
         <echo msg="These shortcuts are available:" />
         <echo msg=' - help           -> Print tool command description' />
         <echo msg=' - env:init       -> Initialize current environment by preparing configurations and dependencies' />
-        <echo msg=' - env:restore    -> Restore backuped date in the current environement' />
+        <echo msg=' - env:restore    -> Restore backuped data in the current environement' />
         <echo msg=' - env:backup     -> Backup current data' />
-        <echo msg=' - env:wp:install -> Initialize WordPress database from the defined configuration' />
+        <echo msg=' - env:install -> Initialize WordPress database from the defined configuration' />
     </target>
 <!--################################################################################-->
     <target name="env:init" description="Initialize current environment by preparing configurations and dependencies">
