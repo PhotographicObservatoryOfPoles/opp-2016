@@ -9,11 +9,14 @@ composer.lock
 # Contenus Wordpress non versionnés
 /src/wp-content/uploads/
 /src/wp-content/plugins/
-/src/wp-content/languages/
 /src/wp-content/upgrade/
 /src/wp-content/themes/opp/.sass-cache
 /src/wp-content/themes/opp/node_modules
-/src/wp-content/themes/opp/languages/*.pot~
+
+# Traduction
+*.pot~
+*.po~
+*.mo
 
 # Configuration
 /config/*.properties
