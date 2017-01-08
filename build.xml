@@ -83,6 +83,9 @@
                 <phingcall target="wp:install" />
             </else>
         </if>
+        <!-- Set up folder's permissions -->
+        <exec command="sudo chown -R www-data:www-data ." logoutput="true" />
+        <exec command="sudo chmod -R g+w ." logoutput="true" />
     </target>
 <!--################################################################################-->
     <target name="env:wp:update" description="Update local wordpress version instance to the most recent one">
