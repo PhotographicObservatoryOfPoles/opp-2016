@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-27 16:08+0000\n"
-"PO-Revision-Date: 2016-11-27 16:09+0000\n"
+"POT-Creation-Date: 2017-01-08 15:36+0000\n"
+"PO-Revision-Date: 2017-01-08 15:36+0000\n"
 "Last-Translator: admin <audreyguenee@free.fr>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -21,14 +21,6 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
-
-#: index.php:105
-msgid "Discover the Observatory"
-msgstr "Découvrez l'Observatoire"
-
-#: index.php:207
-msgid "About the association"
-msgstr "A propos de l'association"
 
 #: 404.php:17
 msgid "404"
@@ -142,9 +134,17 @@ msgstr "A propos"
 msgid "News"
 msgstr "Actus"
 
+#: index.php:105
+msgid "Discover the Observatory"
+msgstr "Découvrez l'Observatoire"
+
 #: index.php:160 index.php:161 single-post.php:25
 msgid "All news"
 msgstr "Toutes les actus"
+
+#: index.php:207
+msgid "About the association"
+msgstr "A propos de l'association"
 
 #: index.php:222
 msgid "Explore the map"

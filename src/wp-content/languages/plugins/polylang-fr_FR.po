@@ -54,9 +54,9 @@ msgstr "Votre clé de licence expire le %s."
 msgid "You need Polylang Pro to enable this feature."
 msgstr "Vous avez besoin de Polylang Pro pour activer cette fonctionnalité."
 
-#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.0.9)  #-#-#-#-#
+#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.0.11)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.0.9)  #-#-#-#-#
+#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.0.11)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://polylang.pro"
 msgstr "https://polylang.pro"
@@ -1829,7 +1829,7 @@ msgstr "Fermer"
 msgid "None"
 msgstr "Aucun"
 
-#: modules/plugins/plugins-compat.php:97
+#: modules/plugins/plugins-compat.php:100
 msgid "Import <strong>posts, pages, comments, custom fields, categories, and tags</strong> from a WordPress export file."
 msgstr "Importation d&rsquo;<strong>articles, pages, commentaires, champs personnalisés, catégories et étiquettes</strong> depuis un fichier export de WordPress."
 
