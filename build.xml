@@ -33,6 +33,7 @@
         <echo msg="" />
         <echo msg="These shortcuts are available:" />
         <echo msg=' - help           -> Print tool command description' />
+        <echo msg=' - env:setup      -> Set up current environment by creating backup folders and getting dependencies' />
         <echo msg=' - env:init       -> Initialize current environment by preparing configurations and dependencies' />
         <echo msg=' - env:restore    -> Restore backuped data in the current environement' />
         <echo msg=' - env:backup     -> Backup current data' />
@@ -40,13 +41,48 @@
     </target>
 <!--################################################################################-->
     <target name="env:init" description="Initialize current environment by preparing configurations and dependencies">
+        <!-- Set up environment -->
+        <phingcall target="env:setup" />
+        <!-- Get WP files -->
+        <exec command="git submodule init" logoutput="true" />
         <exec command="git submodule update --force" logoutput="true" />
+        <!-- Create WP config files -->
         <phingcall target="wp:init" />
+        <!-- Create database (empty) -->
+        <phingcall target="db:create" />
+    </target>
+<!--################################################################################-->
+    <target name="env:setup" description="Set up current environment by creating backup folders and getting dependencies">
+        <!-- Create data folder (for backups) -->
+        <if>
+            <not>
+                <available file="${project.datadir}" type="dir" property="" />
+            </not>
+            <then>
+                <exec command="mkdir ${project.datadir}" logoutput="true" />
+            </then>
+        </if>
+        <!-- Get WP plugins (and other dependencies) -->
+        <exec command="composer install" logoutput="true" />
+        <exec command="(cd src/wp-content/themes/opp ; npm install)" logoutput="true" />
     </target>
 <!--################################################################################-->
     <target name="env:install" description="Install current environment">
         <phingcall target="env:init" />
-        <phingcall target="wp:install" />
+        <if>
+            <and>
+                <isset property="env.from" />
+            </and>
+            <then>
+                <echo message="Init environment from last backup" />
+                <phingcall target="env:restore" />
+                <phingcall target="wp:migrate" />
+            </then>
+            <else>
+                <echo message="Init environment from scratch" />
+                <phingcall target="wp:install" />
+            </else>
+        </if>
     </target>
 <!--################################################################################-->
     <target name="env:wp:update" description="Update local wordpress version instance to the most recent one">
