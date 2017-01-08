@@ -35,6 +35,8 @@
         </if>
     </target>
 
+    <php expression="exec('date \'+%d-%m-%y_%H:%M:%S\'');" returnProperty="date.current" />
+
 <!--################################################################################-->
     <target name="wp:help" description="Print help for current phing command">
         <echo msg="Specific wordpress commands:" />
@@ -85,6 +87,8 @@
 <!--################################################################################-->
     <target name="wp:uploads:backup" depends="wp:check-configuration" description="Save current uploads folder to a ZIP">
         <tar destfile="${wp.path.backupfolder}/uploads.tar.gz" basedir="src/wp-content/uploads" compression="gzip" />
+        <!-- Copy uploads.tar.gz to uploads-<date>.tar.gz -->
+        <exec command="cp ${wp.path.backupfolder}/uploads.tar.gz ${wp.path.backupfolder}/uploads--${date.current}.tar.gz" logoutput="true" />
     </target>
 <!--################################################################################-->
     <target name="wp:uploads:restore" depends="wp:check-configuration,helper:secure-by-input" description="Restore uploads folder from previously backuped ZIP">

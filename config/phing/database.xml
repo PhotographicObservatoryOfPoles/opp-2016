@@ -31,6 +31,8 @@
         </else>
     </if>
 
+    <php expression="exec('date \'+%d-%m-%y_%H:%M:%S\'');" returnProperty="date.current" />
+
 <!--################################################################################-->
     <target name="db:help" depends="db:check-configuration" description="Print help for current phing command">
         <echo msg="Specific database commands:" />
@@ -91,7 +93,9 @@
             </then>
         </if>
         <!-- Dump Current DB -->
-        <exec command="${db.program.mysqldump} --delayed-insert --skip-extended-insert --host=${db.host} --user=${db.user} --password=${db.pass.cmd} ${db.name} --result-file=${db.path.backupfolder}/${db.path.backupfile}" />
+        <exec command="${db.program.mysqldump} --host=${db.host} --user=${db.user} --password=${db.pass.cmd} ${db.name} --result-file=${db.path.backupfolder}/${db.path.backupfile}" />
+        <!-- Copy backup.sql to backup-<date>.sql -->
+        <exec command="cp ${db.path.backupfolder}/${db.path.backupfile} ${db.path.backupfolder}/backup--${date.current}.sql" logoutput="true" />
     </target>
 <!--################################################################################-->
     <target name="db:restore" depends="db:check-configuration,helper:secure-by-input" description="Restore backuped database">
