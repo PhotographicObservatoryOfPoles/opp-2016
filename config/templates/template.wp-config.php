@@ -80,13 +80,16 @@ define('WPLANG', '${wp.lang}');
  */
 define('WP_DEBUG', false);
 
-//Define specific website URL
+// Define specific website URL
 define('WP_HOME', '${server.protocol}://${server.qualified-hostname}/${server.pathname}');
 define('WP_SITEURL', '${server.protocol}://${server.qualified-hostname}/${server.pathname}');
 
 define('WP_CONTENT_DIR', dirname(__FILE__).'/wp-content');
 define('WP_CONTENT_URL', '${server.protocol}://${server.qualified-hostname}/${server.pathname}wp-content');
 define('WP_DEFAULT_THEME', '${wp.theme}');
+
+// Define other specific constants
+define('GOOGLE_MAPS_API_KEY', '${googlemaps.api.key}');
 
 /* That's all, stop editing! Happy blogging. */
 

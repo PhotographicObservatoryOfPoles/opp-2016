@@ -35,7 +35,7 @@ function opp_scripts() {
     wp_enqueue_script( 'infinite-scroll' );
 
     // Map
-    wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyC3r8wn48vnzEgZpmshZ5nDHskBzp28Luk' );
+    wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API_KEY );
     wp_enqueue_script( 'map-icons', get_template_directory_uri().'/fonts/map-icons/map-icons.min.js' );
     wp_enqueue_script( 'acf-map', get_template_directory_uri().'/js/acf-map.min.js', 'jquery', '2.0', true );
 }
