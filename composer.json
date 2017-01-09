@@ -30,7 +30,8 @@
         "wpackagist-plugin/snazzy-maps": "1.1.2",
         "wpackagist-plugin/ultimate-wp-query-search-filter": "1.0.10",
         "wpackagist-plugin/advanced-access-manager": "3.9.2.2",
-        "wpackagist-plugin/wordpress-seo": "4.0"
+        "wpackagist-plugin/wordpress-seo": "4.0",
+        "wpackagist-plugin/google-analytics-dashboard-for-wp": "4.9.5"
     },
     "require-dev": {
     },
