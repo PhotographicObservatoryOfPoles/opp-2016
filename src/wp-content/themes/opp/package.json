@@ -11,12 +11,12 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "hhttps://github.com/aguenee/opp.git"
+    "url": "https://github.com/PhotographicObservatoryOfPoles/opp-wordpress.git"
   },
   "bugs": {
-    "url": "https://github.com/aguenee/opp/issues"
+    "url": "https://github.com/PhotographicObservatoryOfPoles/opp-wordpress/issues"
   },
-  "homepage": "https://github.com/aguenee/opp",
+  "homepage": "https://github.com/PhotographicObservatoryOfPoles/opp-wordpress",
   "dependencies": {
     "flexslider": "^2.6.3",
     "jquery": "2.2.1",
