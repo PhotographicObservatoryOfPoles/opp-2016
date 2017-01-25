@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Cron tasks builder" basedir=".">
+    <!-- Load environment specific configuration default is build.properties -->
+    <target name="cron:check-configuration">
+        <if>
+            <available file="config/build.${build.env}.properties" property="" />
+            <then>
+                <property file="config/build.${build.env}.properties" override="false" />
+            </then>
+            <else>
+                <if>
+                    <available file="config/build.properties" property="" />
+                    <then>
+                        <property file="config/build.properties" override="false" />
+                    </then>
+                    <else>
+                        <fail message="Property file does not defined! Please create build.properties!" />
+                    </else>
+                </if>
+            </else>
+        </if>
+
+        <if>
+            <available file="config/db.${build.env}.properties" property="" />
+            <then>
+                <property file="config/db.${build.env}.properties" override="false" />
+            </then>
+            <else>
+                <if>
+                    <available file="config/db.properties" property="" />
+                    <then>
+                        <property file="config/db.properties" override="false" />
+                    </then>
+                    <else>
+                        <fail message="Property file does not defined! Please create db.properties!" />
+                    </else>
+                </if>
+            </else>
+        </if>
+
+        <if>
+            <available file="config/wp.${build.env}.properties" property="" />
+            <then>
+                <property file="config/wp.${build.env}.properties" override="false" />
+            </then>
+            <else>
+                <if>
+                    <available file="config/wp.properties" property="" />
+                    <then>
+                        <property file="config/wp.properties" override="false" />
+                    </then>
+                    <else>
+                        <fail message="Property file does not defined! Please create wp.properties!" />
+                    </else>
+                </if>
+            </else>
+        </if>
+
+        <!-- Create cron tasks folder -->
+        <if>
+            <not>
+                <available file="${cron.path.folder}" type="dir" property="" />
+            </not>
+            <then>
+                <exec command="mkdir ${cron.path.folder}" logoutput="true" />
+            </then>
+        </if>
+    </target>
+
+<!--################################################################################-->
+    <target name="cron:init" depends="cron:check-configuration" description="Initialize cron scripts files">
+        <copy file="config/cron/task.backup-database.php" tofile="${cron.path.folder}/task.backup-database.php" overwrite="true" />
+        <copy file="config/cron/task.backup-uploads.php" tofile="${cron.path.folder}/task.backup-uploads.php" overwrite="true" />
+        <copy file="config/cron/project-cron" tofile="${cron.path.folder}/${project.name}-cron" overwrite="true" />
+
+        <reflexive>
+            <fileset dir="${cron.path.folder}">
+                <include name="task.backup-database.php" />
+                <include name="task.backup-uploads.php" />
+                <include name="${project.name}-cron" />
+            </fileset>
+
+            <filterchain>
+                <expandproperties />
+            </filterchain>
+        </reflexive>
+    </target>
+<!--################################################################################-->
+    <target name="cron:setup" depends="cron:check-configuration" description="Set up cron tasks">
+        <phingcall target="cron:uninstall" />
+        <if>
+            <equals arg1="${cron.enable}" arg2="true" />
+            <then>
+                <phingcall target="cron:init" />
+                <exec command="sudo cp ${cron.path.folder}/${project.name}-cron /etc/cron.d/" passthru="true" checkreturn="true" />
+            </then>
+            <else>
+                <echo message="Cowardly refusing to setup a cron" />
+            </else>
+        </if>
+    </target>
+<!--################################################################################-->
+    <target name="cron:uninstall" depends="cron:check-configuration" description="Uninstall cron tasks">
+        <exec passthru="true" checkreturn="false" command="sudo rm -f /etc/cron.d/${project.name}-cron" />
+    </target>
+</project>

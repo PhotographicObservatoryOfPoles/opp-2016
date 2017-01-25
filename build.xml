@@ -22,6 +22,7 @@
     <import file="./config/phing/helper.xml" />
     <import file="./config/phing/database.xml" />
     <import file="./config/phing/wordpress.xml" />
+    <import file="./config/phing/cron.xml" />
 
 <!--################################################################################-->
     <target name="help" description="Print help for current phing command">
