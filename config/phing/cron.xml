@@ -69,14 +69,21 @@
 
 <!--################################################################################-->
     <target name="cron:init" depends="cron:check-configuration" description="Initialize cron scripts files">
+        <!-- Backup tasks -->
         <copy file="config/cron/task.backup-database.php" tofile="${cron.path.folder}/task.backup-database.php" overwrite="true" />
         <copy file="config/cron/task.backup-uploads.php" tofile="${cron.path.folder}/task.backup-uploads.php" overwrite="true" />
+        <!-- Cleaning tasks -->
+        <copy file="config/cron/task.clean-database-backups.php" tofile="${cron.path.folder}/task.clean-database-backups.php" overwrite="true" />
+        <copy file="config/cron/task.clean-uploads-backups.php" tofile="${cron.path.folder}/task.clean-uploads-backups.php" overwrite="true" />
+        <!-- Cron file -->
         <copy file="config/cron/project-cron" tofile="${cron.path.folder}/${project.name}-cron" overwrite="true" />
 
         <reflexive>
             <fileset dir="${cron.path.folder}">
                 <include name="task.backup-database.php" />
                 <include name="task.backup-uploads.php" />
+                <include name="task.clean-database-backups.php" />
+                <include name="task.clean-uploads-backups.php" />
                 <include name="${project.name}-cron" />
             </fileset>
 
