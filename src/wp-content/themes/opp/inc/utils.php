@@ -115,7 +115,7 @@ function get_featured_posts( $post, $terms, $random = false, $nbPosts = null ) {
 		}
 	}
 
-	if ( $random && $nbPosts ) {
+	if ( $random && $nbPosts && $nbPosts < count( $featuredPosts ) ) {
 		$randomFeaturedPosts = array();
 		$randomIndexes = array_rand( $featuredPosts, $nbPosts );
 		foreach ( $randomIndexes as $randomIndex ) {
