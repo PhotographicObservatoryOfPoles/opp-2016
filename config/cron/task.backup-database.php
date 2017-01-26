@@ -1,5 +1,8 @@
 <?php
 
+// Remove current backup file
+exec('rm ${db.path.backupfolder}/${db.path.backupfile}');
+
 // Backup current DB
 exec('${db.program.mysqldump} --host=${db.host} --user=${db.user} --password=${db.pass.cmd} ${db.name} --result-file=${db.path.backupfolder}/${db.path.backupfile}');
 
