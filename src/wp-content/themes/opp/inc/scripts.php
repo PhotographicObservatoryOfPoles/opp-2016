@@ -1,10 +1,12 @@
 <?php
 
-if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'opp_scripts', 11 );
-
 /**
  * Include JS scripts
  */
+
+/* Front */
+if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'opp_scripts', 11 );
+
 function opp_scripts() {
     // jQuery
     wp_deregister_script( 'jquery' );
@@ -38,4 +40,12 @@ function opp_scripts() {
     wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=' . GOOGLE_MAPS_API_KEY );
     wp_enqueue_script( 'map-icons', get_template_directory_uri().'/fonts/map-icons/map-icons.min.js' );
     wp_enqueue_script( 'acf-map', get_template_directory_uri().'/js/acf-map.min.js', 'jquery', '2.0', true );
+}
+
+/* Back */
+add_filter( 'acf/fields/google_map/api', 'my_acf_google_map_api' );
+
+function my_acf_google_map_api( $api ) {
+    $api['key'] = GOOGLE_MAPS_API_KEY;
+    return $api; 
 }
