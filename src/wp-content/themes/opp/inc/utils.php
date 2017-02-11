@@ -8,10 +8,14 @@
  * @return int
  */
 function sort_hierarchically( $a, $b ) {
-    if ( $a->menu_order == $b->menu_order ) {
+	$itemA = get_post( pll_get_post( $a, $locale ) );
+	$itemB = get_post( pll_get_post( $b, $locale ) );
+
+    if ( $itemA->menu_order == $itemB->menu_order ) {
         return 0;
     }
-    return ( $a->menu_order < $b->menu_order ) ? -1 : 1;
+
+    return ( $itemA->menu_order < $itemB->menu_order ) ? -1 : 1;
 }
 
 /**
