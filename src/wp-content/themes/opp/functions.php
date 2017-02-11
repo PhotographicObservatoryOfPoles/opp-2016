@@ -29,11 +29,19 @@ const POSTS_PER_PAGE = 6;
 /* Mobile hidden pages */
 global $mobile_hidden_pages;
 $mobile_hidden_pages = [ 
-	pll_get_post( PAGE_GALLERIES_ID, $locale ),
-	pll_get_post( PAGE_EXPEDITIONS_ID, $locale ),
-	pll_get_post( PAGE_MAP_ID, $locale ),
-	pll_get_post( PAGE_CONTRIBUTORS_ID, $locale )
+	PAGE_GALLERIES_ID,
+	PAGE_EXPEDITIONS_ID,
+	PAGE_MAP_ID,
+	PAGE_CONTRIBUTORS_ID
 ];
+if ( function_exists(pll_get_post) ) {
+	$mobile_hidden_pages = [ 
+		pll_get_post( PAGE_GALLERIES_ID, $locale ),
+		pll_get_post( PAGE_EXPEDITIONS_ID, $locale ),
+		pll_get_post( PAGE_MAP_ID, $locale ),
+		pll_get_post( PAGE_CONTRIBUTORS_ID, $locale )
+	];
+}
 
 
 /* Page slug body class */
