@@ -65,7 +65,7 @@
         </if>
         <!-- Get WP plugins (and other dependencies) -->
         <exec command="composer install" logoutput="true" />
-        <exec command="(cd src/wp-content/themes/opp ; npm install)" logoutput="true" />
+        <exec command="(cd src/wp-content/themes/opp ; npm install ; cd ../../../../)" logoutput="true" />
     </target>
 <!--################################################################################-->
     <target name="env:install" description="Install current environment">
