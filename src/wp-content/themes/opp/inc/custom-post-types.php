@@ -37,7 +37,7 @@ function custom_post_type() {
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'page',
+        //'capability_type'     => 'page',
         'hierarchical'        => false,
         'rewrite'			  => array( 'slug' => 'contributor' ),
         // roles and capabilities
@@ -73,7 +73,7 @@ function custom_post_type() {
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'page',
+        //'capability_type'     => 'page',
         'hierarchical'        => false,
         'rewrite'             => array( 'slug' => 'partner' ),
         // roles and capabilities
@@ -109,7 +109,7 @@ function custom_post_type() {
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'page',
+        //'capability_type'     => 'page',
         'hierarchical'        => false,
         'rewrite'             => array( 'slug' => 'photos-gallery' ),
         // roles and capabilities
@@ -145,7 +145,7 @@ function custom_post_type() {
         'has_archive'         => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
-        'capability_type'     => 'page',
+        //'capability_type'     => 'page',
         'hierarchical'        => true,
         'rewrite'             => array( 'slug' => 'expedition' ),
         // roles and capabilities
@@ -197,4 +197,4 @@ function custom_taxonomy() {
         )
     );
 }
-add_action( 'init', 'custom_taxonomy' );
+add_action( 'init', 'custom_taxonomy', 0 );
