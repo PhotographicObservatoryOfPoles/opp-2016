@@ -132,10 +132,12 @@ while ( have_posts() ) : the_post();
 								<p><?php echo $image->post_content; ?></p>
 							<?php endif; ?>
 						</div>
-					<?php endif; ?>
-					<?php if ( $metadata['image_meta']['credit'] ) : ?>
-						<h3 class="credit">&copy;&nbsp;<?php echo $metadata['image_meta']['credit']; ?></h3>
-					<?php endif; ?>
+					<?php endif; ?>	
+					<h3 class="credit">
+						&copy;&nbsp;
+						<?php if ( $metadata['image_meta']['credit'] ) : echo $metadata['image_meta']['credit'] . '&nbsp;&nbsp;/&nbsp;'; endif; ?>
+						<?php echo __( 'Observatory Photographic of Poles', 'opp' ); ?>
+					</h3>
 				</li>
 			<?php endforeach; ?>
 		  	</ul>
