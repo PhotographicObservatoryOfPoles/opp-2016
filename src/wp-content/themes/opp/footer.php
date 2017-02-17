@@ -102,8 +102,8 @@
 	<div class="following-buttons">
 		<p><?php echo __( 'Follow us', 'opp' ); ?></p>
 		<div class="a2a_kit a2a_kit_size_24 a2a_default_style a2a_follow">
-		    <a class="a2a_button_twitter" data-a2a-follow="OPP_asso"></a>
-		    <a class="a2a_button_facebook" data-a2a-follow="groups/211629738927815"></a>
+		    <a class="a2a_button_twitter" data-a2a-follow="ObsPhotoPoles"></a>
+		    <a class="a2a_button_facebook" data-a2a-follow="ObsPhotoPoles"></a>
 		    <a class="a2a_button_google_plus" data-a2a-follow="112859177697811162308/about"></a>
 		</div>
 	</div>
