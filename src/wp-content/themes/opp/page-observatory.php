@@ -38,7 +38,8 @@ $contributors = new WP_Query( array(
 	<?php include( locate_template( 'partials/page-about.php' ) ); ?>
 </section>
 
-<a id="brochure-link" class="full-width-link" href="http://observatoirephotographiquedespoles.org/sites/default/files/plaquette_opa_def_bd.pdf" target="_blank">
+<?php $uploadsDir = wp_get_upload_dir(); ?>
+<a id="brochure-link" class="full-width-link" href="<?php echo $uploadsDir['baseurl']; ?>/plaquette_opa_def_bd.pdf" target="_blank">
 	<span><?php echo __( 'Download the information brochure', 'opp' ); ?></span>
 </a>
 
