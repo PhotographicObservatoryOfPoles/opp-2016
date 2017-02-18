@@ -67,10 +67,8 @@
     </target>
 <!--################################################################################-->
     <target name="db:create" depends="db:check-configuration" description="Create the database">
-        <!-- Create DB user -->
-        <exec command='sudo ${db.program.mysql} --user=root --password= --host=${db.host} --execute="CREATE USER IF NOT EXISTS \"${db.user}\"@\"${db.host}\" IDENTIFIED BY \"${db.pass.cmd}\";"' logoutput="true" />
         <!-- Create DB -->
-        <exec command='sudo ${db.program.mysql} --user=root --password= --host=${db.host} --execute="CREATE DATABASE IF NOT EXISTS \`${db.name}\`; GRANT ALL PRIVILEGES ON \`${db.name}\`.* TO \"${db.user}\"@\"${db.host}\" IDENTIFIED BY \"${db.pass.cmd}\";"' logoutput="true" />
+        <exec command='sudo ${db.program.mysql} --user=${db.root.user} --password=${db.root.pass} --host=${db.host} --execute="CREATE DATABASE IF NOT EXISTS \`${db.name}\`; GRANT ALL PRIVILEGES ON \`${db.name}\`.* TO \"${db.user}\"@\"${db.host}\" IDENTIFIED BY \"${db.pass.cmd}\";"' logoutput="true" />
         <!-- Create backup folder -->
         <if>
             <not>
