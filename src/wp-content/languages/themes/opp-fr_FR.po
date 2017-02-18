@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-13 18:39+0000\n"
-"PO-Revision-Date: 2017-02-13 18:39+0000\n"
+"PO-Revision-Date: 2017-02-18 15:47+0000\n"
 "Last-Translator: admin <audreyguenee@free.fr>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -22,25 +22,25 @@ msgstr ""
 "X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: footer.php:70 header.php:38 single-photos-gallery.php:140
-msgid "Observatory Photographic of Poles"
-msgstr "Observatoire Photographique des Pôles"
-
 #. Name of the theme
 msgid "Thème OPP"
-msgstr ""
+msgstr "Thème OPP"
 
 #. Description of the theme
 msgid "Thème de l'Observatoire Photographique des Pôles"
-msgstr ""
+msgstr "Thème de l'Observatoire Photographique des Pôles"
 
 #. Author of the theme
 msgid "Audrey Guénée"
-msgstr ""
+msgstr "Audrey Guénée"
 
 #. Author URI of the theme
 msgid "http://audreyguenee.com"
-msgstr ""
+msgstr "http://audreyguenee.com"
+
+#: footer.php:70 header.php:38 single-photos-gallery.php:140
+msgid "Observatory Photographic of Poles"
+msgstr "Observatoire Photographique des Pôles"
 
 #: 404.php:17
 msgid "404"

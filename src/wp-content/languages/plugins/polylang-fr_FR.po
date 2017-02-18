@@ -15,9 +15,9 @@ msgstr ""
 msgid "Tibet"
 msgstr "Tibet"
 
-#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.1)  #-#-#-#-#
+#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.1.1)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.1)  #-#-#-#-#
+#. #-#-#-#-#  tmp-polylang.pot (Polylang 2.1.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://polylang.pro"
 msgstr "https://polylang.pro"

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-14 10:23:41+0000\n"
+"PO-Revision-Date: 2017-02-16 15:10:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,13 @@ msgstr ""
 "X-Generator: GlotPress/2.3.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
+
+#. Translators: %1$s expands to the keyword density percentage, %2$d expands to
+#. the keyword count, 	   %3$s expands to the maximum keyword density
+#. percentage.
+#: languages/yoast-seo-js.php:52
+msgid "The keyword density is %1$s, which is way over the advised %3$s maximum; the focus keyword was found %2$d times."
+msgstr "La densité du mot-clé est de %1$s, ce qui est supérieur au maximum conseillé de %3$s. Le mot-clé a été trouvé %2$d fois."
 
 #. Translators: %1$s expands to the name of the assessment.
 #: languages/yoast-seo-js.php:285
@@ -4100,7 +4107,7 @@ msgstr "Vous avez déjà utilisé ce mot-clé principal %1$s%2$d fois%3$s, il es
 #. is already used
 #: languages/yoast-seo-js.php:292
 msgid "You've used this focus keyword %1$sonce before%2$s, be sure to make very clear which URL on your site is the most important for this keyword."
-msgstr "Vous avez déjà utilisé ce mot-clé principal %1$sune fois%2$s, assurez-vous d'indiquer très clairement quelle URL sur votre site est la plus importante pour ce mot-clé."
+msgstr "Vous avez déjà utilisé ce mot-clé principal %1$sune fois%2$s, assurez-vous d’indiquer très clairement quelle URL sur votre site est la plus importante pour ce mot-clé."
 
 #: languages/yoast-seo-js.php:288
 msgid "You've never used this focus keyword before, very good."
