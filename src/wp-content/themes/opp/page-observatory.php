@@ -39,7 +39,7 @@ $contributors = new WP_Query( array(
 </section>
 
 <?php $uploadsDir = wp_get_upload_dir(); ?>
-<a id="brochure-link" class="full-width-link" href="<?php echo $uploadsDir['baseurl']; ?>/plaquette_opa_def_bd.pdf" target="_blank">
+<a id="brochure-link" class="full-width-link" href="<?php echo $uploadsDir['baseurl']; ?>/Plaquette-OPP.pdf" target="_blank">
 	<span><?php echo __( 'Download the information brochure', 'opp' ); ?></span>
 </a>
 
