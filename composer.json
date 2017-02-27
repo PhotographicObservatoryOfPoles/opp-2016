@@ -25,13 +25,12 @@
         "wpackagist-plugin/give": "^1.7.2",
         "wpackagist-plugin/html-editor-syntax-highlighter": "^1.7.2",
         "wpackagist-plugin/loco-translate": "^2.0.11",
-        "wpackagist-plugin/media-library-assistant": "^2.41",
         "wpackagist-plugin/polylang": "^2.1",
         "wpackagist-plugin/snazzy-maps": "^1.1.2",
-        "wpackagist-plugin/ultimate-wp-query-search-filter": "^1.0.10",
         "wpackagist-plugin/advanced-access-manager": "^3.9.5.1",
         "wpackagist-plugin/wordpress-seo": "^4.1",
-        "wpackagist-plugin/google-analytics-dashboard-for-wp": "^4.9.5"
+        "wpackagist-plugin/google-analytics-dashboard-for-wp": "^4.9.5",
+	"wpackagist-plugin/gmail-smtp": "^1.1.1"
     },
     "require-dev": {
     },
