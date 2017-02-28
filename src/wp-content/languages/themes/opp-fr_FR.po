@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-21 06:29+0000\n"
-"PO-Revision-Date: 2017-02-21 06:30+0000\n"
+"POT-Creation-Date: 2017-02-28 20:00+0000\n"
+"PO-Revision-Date: 2017-02-28 20:01+0000\n"
 "Last-Translator: admin <audreyguenee@free.fr>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -22,21 +22,9 @@ msgstr ""
 "X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#. URI of the theme
-msgid "http://observatoirephotographiquedespoles.org"
-msgstr "http://observatoirephotographiquedespoles.org"
-
-#. Name of the theme
-msgid "OPP Theme"
-msgstr "Thème OPP"
-
-#. Description of the theme
-msgid "Observatory Photograhic of Poles Theme"
-msgstr "Thème de l'Observatoire Photographique des Pôles"
-
-#. Author of the theme
-msgid "Audrey Guenee"
-msgstr "Audrey Guénée"
+#: page-donation.php:29
+msgid "Make a donation"
+msgstr "Faire un don"
 
 #. Name of the template
 #: index.php:49
@@ -447,6 +435,22 @@ msgstr "Ajouter une expédition"
 #: inc/custom-post-types.php:172
 msgid "Contributor types"
 msgstr "Types de contributeur"
+
+#. Name of the theme
+msgid "OPP Theme"
+msgstr "Thème OPP"
+
+#. Description of the theme
+msgid "Observatory Photograhic of Poles Theme"
+msgstr "Thème de l'Observatoire Photographique des Pôles"
+
+#. URI of the theme
+msgid "http://observatoirephotographiquedespoles.org"
+msgstr "http://observatoirephotographiquedespoles.org"
+
+#. Author of the theme
+msgid "Audrey Guenee"
+msgstr "Audrey Guénée"
 
 #. Author URI of the theme
 msgid "http://audreyguenee.com"

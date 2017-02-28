@@ -22,10 +22,11 @@ get_header();
 	<!-- Content -->
 	<section class="container content">
 		<div class="row">
-			<div class="col-sm-6 col-md-6">
+			<div class="col-sm-12 col-md-12">
 				<?php the_content(); ?>
 			</div>
-			<div class="col-sm-6 col-md-6">
+			<div class="col-sm-12 col-md-12">
+				<h3 class="form-title"><?php echo __( 'Make a donation', 'opp' ); ?></h3>
 				<?php echo do_shortcode( '[give_form id="1157"]' ); ?>
 			</div>
 		</div>
