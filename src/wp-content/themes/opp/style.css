@@ -14428,23 +14428,22 @@ yx-axis
 .page-template-page-donation .give-form-title {
   text-align: center;
   font-size: 26px;
-  padding: 0 0 20px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
-/* line 17, sass/layout/_donation.scss */
+/* line 16, sass/layout/_donation.scss */
 .page-template-page-donation form.give-form {
   background: #F9F9F9;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
   padding: 25px 30px;
 }
 
-/* line 25, sass/layout/_donation.scss */
+/* line 24, sass/layout/_donation.scss */
 .page-template-page-donation-confirmation .content {
   text-align: center;
 }
-/* line 28, sass/layout/_donation.scss */
+/* line 27, sass/layout/_donation.scss */
 .page-template-page-donation-confirmation .content a {
   display: inline-block;
   margin: 20px 0 10px;
