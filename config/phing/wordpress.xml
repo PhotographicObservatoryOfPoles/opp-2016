@@ -113,7 +113,7 @@
         <if>
             <available file="${wp.path.backupfolder}/uploads.tar.gz" property="" />
             <then>
-                <untar file="${wp.path.backupfolder}/uploads.tar.gz" todir="src/wp-content/uploads" />
+                <untar file="${wp.path.backupfolder}/uploads.tar.gz" todir="src/wp-content" />
             </then>
         </if>
         <chmod mode="0777">
