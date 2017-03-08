@@ -2,16 +2,67 @@
 # This file is distributed under the same license as the Plugins - Google Analytics Dashboard for WP - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-06-07 10:07:20+0000\n"
+"PO-Revision-Date: 2017-03-02 10:26:11+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Google Analytics Dashboard for WP - Stable (latest release)\n"
 
-#: admin/setup.php:192 admin/setup.php:289 front/setup.php:100
+#: admin/setup.php:309 front/setup.php:117
+msgid "Exit Rate"
+msgstr "Taux de sortie"
+
+#: admin/setup.php:301 admin/setup.php:302 admin/setup.php:303
+#: admin/setup.php:304 admin/setup.php:305 admin/setup.php:306
+#: front/setup.php:109 front/setup.php:110 front/setup.php:111
+#: front/setup.php:112 front/setup.php:113 front/setup.php:114
+msgid "Future Use"
+msgstr "Usage futur"
+
+#: admin/setup.php:209
+msgid "Session Duration"
+msgstr "Durée de session"
+
+#: admin/setup.php:208 admin/setup.php:308 front/setup.php:116
+msgid "Page Load Time"
+msgstr "Temps de chargement de page"
+
+#: admin/setup.php:207 admin/setup.php:307 front/setup.php:115
+msgid "Time on Page"
+msgstr "Temps sur la page"
+
+#: tools/gapi.php:517
+msgid "Source:"
+msgstr "Source :"
+
+#: tools/gapi.php:517
+msgid "URI:"
+msgstr "URL :"
+
+#: admin/setup.php:178 tools/gapi.php:513
+msgid "404 Errors"
+msgstr "Erreurs 404"
+
+#: admin/settings.php:466
+msgid "Publication Month:"
+msgstr "Mois de publication :"
+
+#: admin/settings.php:287
+msgid "404 Page Title contains:"
+msgstr "Le titre de page 404 contient :"
+
+#: admin/settings.php:283
+msgid "404 Errors Report"
+msgstr "Rapport d’erreurs 404"
+
+#: admin/settings.php:278
+msgid "Maps API Key:"
+msgstr "Clé API de cartes :"
+
+#: admin/setup.php:192 admin/setup.php:292 front/setup.php:100
 msgid "Invalid response"
 msgstr "Réponse non valide"
 
@@ -19,48 +70,48 @@ msgstr "Réponse non valide"
 msgid "Tags:"
 msgstr "Mots-clés :"
 
-#: tools/gapi.php:718
+#: tools/gapi.php:737
 msgid "Other"
 msgstr "Autre"
 
-#: tools/gapi.php:655
+#: tools/gapi.php:674
 msgid "Devices"
 msgstr "Appareils"
 
-#: admin/setup.php:200 admin/setup.php:297 front/setup.php:108
+#: admin/setup.php:200 admin/setup.php:300 front/setup.php:108
 msgid "Mobile Brand"
 msgstr "Marque du téléphone mobile"
 
-#: admin/setup.php:199 admin/setup.php:296 front/setup.php:107
+#: admin/setup.php:199 admin/setup.php:299 front/setup.php:107
 msgid "Screen Resolution"
 msgstr "Résolution d’écran"
 
-#: admin/setup.php:198 admin/setup.php:295 front/setup.php:106
+#: admin/setup.php:198 admin/setup.php:298 front/setup.php:106
 msgid "Operating System"
 msgstr "Système d’exploitation"
 
-#: admin/setup.php:197 admin/setup.php:294 front/setup.php:105
+#: admin/setup.php:197 admin/setup.php:297 front/setup.php:105
 msgid "Browser"
 msgstr "Navigateur"
 
-#: admin/setup.php:177 admin/setup.php:275 front/setup.php:86
+#: admin/setup.php:177 admin/setup.php:278 front/setup.php:86
 msgid "Technology"
 msgstr "Technologie"
 
-#: admin/setup.php:176 admin/setup.php:274 front/setup.php:85
+#: admin/setup.php:176 admin/setup.php:277 front/setup.php:85
 msgid "Traffic"
 msgstr "Volume de transfert"
 
 #. translators: Example: 'l, F j, Y' will become 'Thusday, November 17, 2015'
 #. For details see:
 #. http://php.net/manual/en/function.date.php#refsect1-function.date-parameters
-#: tools/gapi.php:388 tools/gapi.php:755
+#: tools/gapi.php:400 tools/gapi.php:774
 msgid "l, F j, Y"
 msgstr "l j F Y "
 
 #. translators: Example: 'F, Y' will become 'November, 2015' For details see:
 #. http://php.net/manual/en/function.date.php#refsect1-function.date-parameters
-#: tools/gapi.php:379
+#: tools/gapi.php:391
 msgid "F, Y"
 msgstr "F Y"
 
@@ -90,13 +141,13 @@ msgstr "Alin Marcu"
 
 #. Description of the plugin/theme
 msgid "Displays Google Analytics Reports and Real-Time Statistics in your Dashboard. Automatically inserts the tracking code in every page of your website."
-msgstr "Affiche les Rapports de Google Analytics et les Statistiques en Temps Réel dans votre Tableau de Bord. Insère automatiquement le code de traçage dans toutes les pages de votre site web. "
+msgstr "Affiche les rapports de Google Analytics et les statistiques en temps réel dans votre Tableau de bord. Insère automatiquement le code de suivi dans toutes les pages de votre site web. "
 
 #. #-#-#-#-#  tmp-google-analytics-dashboard-for-wp.pot (Google Analytics
-#. Dashboard for WP 4.9.5)  #-#-#-#-#
+#. Dashboard for WP 4.9.6.2)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
 #. #-#-#-#-#  tmp-google-analytics-dashboard-for-wp.pot (Google Analytics
-#. Dashboard for WP 4.9.5)  #-#-#-#-#
+#. Dashboard for WP 4.9.6.2)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://deconf.com"
 msgstr "https://deconf.com"
@@ -105,43 +156,47 @@ msgstr "https://deconf.com"
 msgid "Google Analytics Dashboard for WP"
 msgstr "Google Analytics Dashboard for WP "
 
-#: tools/gapi.php:703
+#: tools/gapi.php:722
 msgid "Type"
 msgstr "Type"
 
-#: tools/gapi.php:655
+#: tools/gapi.php:674
 msgid "Channels"
 msgstr "Canaux"
 
-#: tools/gapi.php:598
+#: tools/gapi.php:617
 msgid "Cities from"
 msgstr "Villes de"
 
-#: tools/gapi.php:588
+#: tools/gapi.php:607
 msgid "Countries"
 msgstr "Pays"
 
-#: tools/gapi.php:353 tools/gapi.php:356 tools/gapi.php:746
+#: tools/gapi.php:365 tools/gapi.php:368 tools/gapi.php:765
 msgid "Date"
 msgstr "Date"
 
-#: tools/gapi.php:350
+#: tools/gapi.php:362
 msgid "Hour"
 msgstr "Heure"
 
-#: tools/gapi.php:342
+#: tools/gapi.php:354
+msgid "Unique Page Views"
+msgstr "Pages uniques vues"
+
+#: tools/gapi.php:351
 msgid "Organic Searches"
 msgstr "Recherches organiques"
 
-#: tools/gapi.php:168
+#: tools/gapi.php:175
 msgid "Save Access Code"
 msgstr "Enregistre le code d’accès"
 
-#: tools/gapi.php:161
+#: tools/gapi.php:162
 msgid "Access Code:"
 msgstr "Code d’accès :"
 
-#: tools/gapi.php:161 tools/gapi.php:162
+#: tools/gapi.php:162 tools/gapi.php:165
 msgid "Use the red link to get your access code!"
 msgstr "Utilisez le lien rouge pour obtenir votre code d’accès !"
 
@@ -233,15 +288,13 @@ msgstr "CAMPAGNE"
 msgid "SOCIAL"
 msgstr "SOCIAL"
 
-#: admin/setup.php:173 tools/gapi.php:466
+#: admin/setup.php:173 tools/gapi.php:485
 msgid "Pages"
 msgstr "Pages"
 
-#: admin/setup.php:167 admin/setup.php:186 admin/setup.php:266
-#: admin/setup.php:283 front/setup.php:77 front/setup.php:94
-#: front/widgets.php:40 tools/gapi.php:345 tools/gapi.php:466
-#: tools/gapi.php:494 tools/gapi.php:530 tools/gapi.php:565 tools/gapi.php:617
-#: tools/gapi.php:703 tools/gapi.php:746
+#: admin/setup.php:167 admin/setup.php:186 front/widgets.php:40
+#: tools/gapi.php:357 tools/gapi.php:485 tools/gapi.php:513 tools/gapi.php:549
+#: tools/gapi.php:584 tools/gapi.php:636 tools/gapi.php:722 tools/gapi.php:765
 msgid "Sessions"
 msgstr "Sessions"
 
@@ -269,134 +322,139 @@ msgstr "Un admin doit être assigné par défaut au profil Google Analytics."
 msgid "Google Analytics Dashboard"
 msgstr "Tableau de bord Google Analytics "
 
-#: admin/setup.php:350
+#: admin/setup.php:362
 msgid "the plugin&#39;s settings page"
 msgstr "la page des réglages de l’extension"
 
-#: admin/setup.php:350
+#: admin/setup.php:362
 msgid "the documentation page"
 msgstr "la page de documentation"
 
-#: admin/setup.php:350
+#: admin/setup.php:362
 msgid "For details, check out %1$s and %2$s."
-msgstr "Pour les détails, jetez un oeil à %1$s et à %2$s."
+msgstr "Pour les détails, jetez un œil à %1$s et à %2$s."
 
-#: admin/setup.php:350
+#: admin/setup.php:362
 msgid "Google Analytics Dashboard for WP has been updated to version %s."
 msgstr "Google Analytics Dashboard for WP a été mis à jour à la version %s. "
 
-#: admin/setup.php:332
+#: admin/setup.php:344
 msgid "Settings"
 msgstr "Réglages"
 
-#: admin/setup.php:196 admin/setup.php:293 admin/widgets.php:35
+#: admin/setup.php:196 admin/setup.php:296 admin/widgets.php:35
 #: front/setup.php:104
 msgid "This plugin needs an authorization:"
 msgstr "Cette extension a besoin d’une autorisation :"
 
-#: admin/setup.php:195 admin/setup.php:292 front/setup.php:103
+#: admin/setup.php:195 admin/setup.php:295 front/setup.php:103
 msgid "report generated by"
-msgstr "rapport générée par"
+msgstr "rapport généré par"
 
-#: admin/setup.php:194 admin/setup.php:291 front/setup.php:102
+#: admin/setup.php:194 admin/setup.php:294 front/setup.php:102
 #: front/widgets.php:107
 msgid "This report is unavailable"
 msgstr "Ce rapport n’est pas disponible"
 
-#: admin/setup.php:193 admin/setup.php:290 front/setup.php:101
+#: admin/setup.php:193 admin/setup.php:293 front/setup.php:101
 msgid "Not enough data collected"
 msgstr "Pas assez de données collectées"
 
-#: admin/setup.php:191 admin/setup.php:288 front/setup.php:99
+#: admin/setup.php:191 admin/setup.php:291 front/setup.php:99
 msgid "Pages/Session"
 msgstr "Pages/Session"
 
-#: admin/setup.php:190 admin/setup.php:287 front/setup.php:98
+#: admin/setup.php:190 admin/setup.php:290 front/setup.php:98
 msgid "Organic Search"
 msgstr "Recherche organique"
 
-#: admin/setup.php:184 admin/setup.php:282 front/setup.php:92
+#: admin/setup.php:184 admin/setup.php:285 front/setup.php:92
 msgid "Search Engines"
 msgstr "Moteurs de recherche"
 
-#: admin/setup.php:185 admin/setup.php:281 front/setup.php:93
+#: admin/setup.php:185 admin/setup.php:284 front/setup.php:93
 msgid "Social Networks"
 msgstr "Réseaux sociaux"
 
-#: admin/setup.php:183 admin/setup.php:280 front/setup.php:91
+#: admin/setup.php:183 admin/setup.php:283 front/setup.php:91
 msgid "Visitor Type"
 msgstr "Type de visiteur"
 
-#: admin/setup.php:182 admin/setup.php:279 front/setup.php:90
+#: admin/setup.php:182 admin/setup.php:282 front/setup.php:90
 msgid "Traffic Mediums"
 msgstr "Trafic Moyen"
 
-#: admin/setup.php:181 admin/setup.php:278 front/setup.php:89
+#: admin/setup.php:181 admin/setup.php:281 front/setup.php:89
 msgid "A JavaScript Error is blocking plugin resources!"
 msgstr "Une erreur JavaScript bloque les ressources de l’extension !"
 
-#: admin/setup.php:175 admin/setup.php:273 front/setup.php:84
-#: tools/gapi.php:565
+#: admin/setup.php:175 admin/setup.php:276 front/setup.php:84
+#: tools/gapi.php:584
 msgid "Searches"
 msgstr "Recherches"
 
-#: admin/setup.php:174 admin/setup.php:272 front/setup.php:83
-#: tools/gapi.php:530
+#: admin/setup.php:174 admin/setup.php:275 front/setup.php:83
+#: tools/gapi.php:549
 msgid "Referrers"
 msgstr "Référence"
 
-#: admin/setup.php:172 admin/setup.php:271 front/setup.php:82
+#: admin/setup.php:172 admin/setup.php:274 front/setup.php:82
 msgid "Location"
 msgstr "Lieu"
 
-#: admin/setup.php:171 admin/setup.php:189 admin/setup.php:270
-#: admin/setup.php:286 front/setup.php:81 front/setup.php:97 tools/gapi.php:339
+#: admin/setup.php:171 admin/setup.php:189 admin/setup.php:273
+#: admin/setup.php:289 front/setup.php:81 front/setup.php:97 tools/gapi.php:348
 msgid "Bounce Rate"
 msgstr "Taux de rebond"
 
-#: admin/setup.php:170 admin/setup.php:188 admin/setup.php:269
-#: admin/setup.php:285 front/setup.php:80 front/setup.php:96 tools/gapi.php:336
+#: admin/setup.php:170 admin/setup.php:188 admin/setup.php:272
+#: admin/setup.php:288 front/setup.php:80 front/setup.php:96 tools/gapi.php:345
 msgid "Page Views"
 msgstr "Pages vues"
 
-#: admin/setup.php:169 admin/setup.php:268 front/setup.php:79
+#: admin/setup.php:169 admin/setup.php:271 front/setup.php:79
 msgid "Organic"
 msgstr "Organiques"
 
-#: admin/setup.php:168 admin/setup.php:187 admin/setup.php:267
-#: admin/setup.php:284 front/setup.php:78 front/setup.php:95 tools/gapi.php:333
+#: admin/setup.php:168 admin/setup.php:187 admin/setup.php:270
+#: admin/setup.php:287 front/setup.php:78 front/setup.php:95 tools/gapi.php:342
 msgid "Users"
 msgstr "Utilisateurs"
 
-#: admin/setup.php:164 admin/setup.php:263 front/setup.php:74
+#: admin/setup.php:269 admin/setup.php:286 front/setup.php:77
+#: front/setup.php:94
+msgid "Unique Views"
+msgstr "Vues uniques"
+
+#: admin/setup.php:164 admin/setup.php:266 front/setup.php:74
 msgid "Three"
 msgstr "Trois"
 
-#: admin/setup.php:163 admin/setup.php:262 front/setup.php:73
+#: admin/setup.php:163 admin/setup.php:265 front/setup.php:73
 msgid "One"
 msgstr "Un"
 
-#: admin/setup.php:163 admin/setup.php:164 admin/setup.php:262
-#: admin/setup.php:263 front/setup.php:73 front/setup.php:74
+#: admin/setup.php:163 admin/setup.php:164 admin/setup.php:265
+#: admin/setup.php:266 front/setup.php:73 front/setup.php:74
 msgid "%s Year"
 msgid_plural "%s Years"
 msgstr[0] "%s an"
 msgstr[1] "%s ans"
 
 #: admin/setup.php:159 admin/setup.php:160 admin/setup.php:161
-#: admin/setup.php:162 admin/setup.php:258 admin/setup.php:259
-#: admin/setup.php:260 admin/setup.php:261 front/setup.php:69
+#: admin/setup.php:162 admin/setup.php:261 admin/setup.php:262
+#: admin/setup.php:263 admin/setup.php:264 front/setup.php:69
 #: front/setup.php:70 front/setup.php:71 front/setup.php:72
 #: front/widgets.php:68 front/widgets.php:71 front/widgets.php:74
 #: front/widgets.php:173 front/widgets.php:174 front/widgets.php:175
 msgid "Last %d Days"
 msgstr "%d derniers jours"
 
-#: admin/setup.php:158 admin/setup.php:257 front/setup.php:68
+#: admin/setup.php:158 admin/setup.php:260 front/setup.php:68
 msgid "Yesterday"
 msgstr "Hier"
 
-#: admin/setup.php:157 admin/setup.php:256 front/setup.php:67
+#: admin/setup.php:157 admin/setup.php:259 front/setup.php:67
 msgid "Today"
 msgstr "Aujourd’hui"
 
@@ -800,7 +858,7 @@ msgstr "activer le Widget du Tableau de bord"
 
 #: admin/settings.php:245
 msgid "enable reports on Posts List and Pages List"
-msgstr "activer les rapports sur la liste des aticles et la liste des pages"
+msgstr "activer les rapports sur la liste des articles et la liste des pages"
 
 #: admin/settings.php:234
 msgid "enable Switch View functionality"
@@ -833,7 +891,7 @@ msgstr "Réglages Google Analytics en Frontend"
 
 #: admin/settings.php:90 admin/settings.php:176 admin/settings.php:320
 #: admin/settings.php:650 admin/settings.php:827 admin/settings.php:1109
-#: admin/setup.php:196 admin/setup.php:293 front/setup.php:104
+#: admin/setup.php:196 admin/setup.php:296 front/setup.php:104
 msgid "authorize the plugin"
 msgstr "autoriser l’extension"
 
