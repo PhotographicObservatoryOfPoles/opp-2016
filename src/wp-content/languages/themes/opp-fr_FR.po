@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-28 20:00+0000\n"
-"PO-Revision-Date: 2017-02-28 20:01+0000\n"
+"POT-Creation-Date: 2017-02-28 20:16+0000\n"
+"PO-Revision-Date: 2017-02-28 20:16+0000\n"
 "Last-Translator: admin <audreyguenee@free.fr>\n"
 "Language-Team: French (France)\n"
 "Language: fr-FR\n"
@@ -21,10 +21,6 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Loco-Target-Locale: fr_FR\n"
 "X-Generator: Loco - https://localise.biz/"
-
-#: page-donation.php:29
-msgid "Make a donation"
-msgstr "Faire un don"
 
 #. Name of the template
 #: index.php:49
