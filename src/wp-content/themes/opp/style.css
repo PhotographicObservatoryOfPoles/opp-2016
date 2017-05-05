@@ -10527,6 +10527,7 @@ iframe {
   position: relative;
   display: none;
   -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 /* line 19, sass/flexslider/_base.scss */
 .flexslider .slides img {
@@ -10534,9 +10535,12 @@ iframe {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 760px;
+  max-height: 460px;
   margin: auto;
-  -moz-user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /* line 33, sass/flexslider/_base.scss */
 .flexslider .slides:after {
@@ -10579,7 +10583,7 @@ html[xmlns] .flexslider .slides {
 /* line 83, sass/flexslider/_base.scss */
 #carousel li {
   max-height: 150px;
-  max-width: 210px;
+  max-width: 150px;
   overflow: hidden;
 }
 /* line 88, sass/flexslider/_base.scss */
@@ -10589,7 +10593,7 @@ html[xmlns] .flexslider .slides {
 /* line 93, sass/flexslider/_base.scss */
 #carousel img {
   max-width: none;
-  max-height: 250px;
+  max-height: 125px;
   cursor: pointer;
   opacity: 0.38;
   -webkit-transition: all 1s ease;
@@ -10617,11 +10621,11 @@ html[xmlns] .flexslider .slides {
   opacity: 1;
 }
 /* line 126, sass/flexslider/_base.scss */
-#slider:-webkit-full-screen .slides {
+#slider:full-screen .slides {
   padding: 0;
 }
 /* line 130, sass/flexslider/_base.scss */
-#slider:-webkit-full-screen .credit {
+#slider:full-screen .credit {
   display: none;
 }
 
@@ -10842,7 +10846,10 @@ html[xmlns] .flexslider .slides {
   display: block;
   opacity: .7;
   cursor: pointer;
-  -moz-user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -10879,7 +10886,7 @@ html[xmlns] .flexslider .slides {
 #exit-fs {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 35px;
   padding: 4px 6px;
   margin: 12px 8px;
   opacity: 0.2;
@@ -10909,6 +10916,49 @@ html[xmlns] .flexslider .slides {
 }
 :fullscreen #exit-fs {
   display: inline-block;
+}
+/* line 444, sass/flexslider/_base.scss */
+:-webkit-full-screen .slides img {
+  max-height: 770px;
+}
+:-moz-full-screen .slides img {
+  max-height: 770px;
+}
+:-ms-fullscreen .slides img {
+  max-height: 770px;
+}
+:fullscreen .slides img {
+  max-height: 770px;
+}
+/* line 448, sass/flexslider/_base.scss */
+:-webkit-full-screen .slides .flex-caption {
+  width: 100% !important;
+}
+:-moz-full-screen .slides .flex-caption {
+  width: 100% !important;
+}
+:-ms-fullscreen .slides .flex-caption {
+  width: 100% !important;
+}
+:fullscreen .slides .flex-caption {
+  width: 100% !important;
+}
+/* line 452, sass/flexslider/_base.scss */
+:-webkit-full-screen .slides li,
+:-webkit-full-screen .slides li.flex-active-slide {
+  margin-top: 0 !important;
+}
+:-moz-full-screen .slides li,
+:-moz-full-screen .slides li.flex-active-slide {
+  margin-top: 0 !important;
+}
+:-ms-fullscreen .slides li,
+:-ms-fullscreen .slides li.flex-active-slide {
+  margin-top: 0 !important;
+}
+:fullscreen .slides li,
+:fullscreen .slides li.flex-active-slide {
+  margin-top: 0 !important;
 }
 
 /* ====================================================================================================================
