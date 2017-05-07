@@ -25,7 +25,7 @@
  	</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=1.0" rel="stylesheet">
+	<link href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=1.1" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 	<?php wp_head(); ?>
 </head>
