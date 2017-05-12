@@ -151,7 +151,7 @@ while ( have_posts() ) : the_post();
 		   	<?php foreach ( $imagesIDs as $index => $imageID ) :
 		   			// Image infos
 					$image = get_post( $imageID );
-					$src = wp_get_attachment_image_src( $imageID, 'medium_large' );
+					$src = wp_get_attachment_image_src( $imageID, 'thumbnail' );
 					$alt = get_post_meta( $imageID, '_wp_attachment_image_alt', true );
 			?>
 				<li data-index="<?php echo $index + 1; ?>">
@@ -279,7 +279,7 @@ $(window).load(function() {
 	    controlNav: false,
 	    animationLoop: false,
 	    slideshow: false,
-	    itemWidth: 210,
+	    itemWidth: 150,
 	    itemMargin: 12,
 	    asNavFor: '#slider',
 	    after: function(carousel) {

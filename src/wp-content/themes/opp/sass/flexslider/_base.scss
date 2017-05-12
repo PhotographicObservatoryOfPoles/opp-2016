@@ -13,7 +13,7 @@
     > li {
       position: relative;
       display: none; 
-      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
     }
 
     img {
@@ -21,9 +21,9 @@
       width: auto;
       max-width: 100%;
       height: auto;
-      max-height: 760px;
+      max-height: 460px;
       margin: auto;
-      -moz-user-select: none;
+      user-select: none;
     }
 
 
@@ -82,7 +82,7 @@
 
   li {
     max-height: 150px;
-    max-width: 210px;
+    max-width: 150px;
     overflow: hidden;
   
     &.flex-active-slide img {
@@ -92,7 +92,7 @@
 
   img {
     max-width: none;
-    max-height: 250px;
+    max-height: 125px;
     cursor: pointer;
     opacity: 0.38;
     @include transition();
@@ -121,7 +121,7 @@
     opacity: 1;
   }
 
-  &:-webkit-full-screen {
+  &:full-screen {
 
     .slides {
       padding: 0;
@@ -382,7 +382,7 @@
     display: block;
     opacity: .7;
     cursor: pointer;
-    -moz-user-select: none;
+    user-select: none;
 
     @include transition();
 
@@ -418,7 +418,7 @@
 #exit-fs {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 35px;
   padding: 4px 6px;
   margin: 12px 8px;
   opacity: 0.2;
@@ -439,4 +439,19 @@
   #exit-fs {
     display: inline-block;
   }
+
+  .slides {
+    img {
+      max-height: 770px;
+    }
+
+    .flex-caption {
+      width: 100% !important;
+    }
+
+    li,
+    li.flex-active-slide {
+      margin-top: 0 !important;
+    }
+  } 
 }
