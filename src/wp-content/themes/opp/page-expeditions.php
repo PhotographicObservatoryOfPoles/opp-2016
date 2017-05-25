@@ -18,9 +18,6 @@ $expeditions = new WP_Query( array(
 
 $index = 0;
 
-// Get current user
-$user = AAM::getUser();
-
 ?>
 
 <!-- Title -->
@@ -44,11 +41,6 @@ $user = AAM::getUser();
 			<?php  while ( $expeditions->have_posts() ) : $index++;
 					// Post
 					$expedition = get_post( $expeditions->the_post() );
-					// Get visibility in list
-					$isHidden = $user->getObject( 'post', $expedition->ID )->has('frontend.list');
-					if ( $isHidden ) {
-						continue;
-					}
 					// Thumbnail
 					$thumbnail = get_the_post_thumbnail( $expedition, 'large' );
 					// Authors
