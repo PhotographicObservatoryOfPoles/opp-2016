@@ -13,13 +13,22 @@ $expeditions = new WP_Query( array(
 	'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
 	'post_type' 	 => 'expedition',
 	'post_status' 	 => 'publish',
-	'post_parent'	 => 0
+	'post_parent'	 => 0,
+	'meta_query' 	 => array(
+		'relation' => 'OR',
+		array(
+            'key' => 'hidden_in_page_list',
+            'value' => '0',
+            'compare' => '='
+        ),
+		array(
+            'key' => 'hidden_in_page_list',
+            'compare' => 'NOT EXISTS'
+        )
+    )
 ) );
 
 $index = 0;
-
-// Get current user
-$user = AAM::getUser();
 
 ?>
 
@@ -44,11 +53,6 @@ $user = AAM::getUser();
 			<?php  while ( $expeditions->have_posts() ) : $index++;
 					// Post
 					$expedition = get_post( $expeditions->the_post() );
-					// Get visibility in list
-					$isHidden = $user->getObject( 'post', $expedition->ID )->has('frontend.list');
-					if ( $isHidden ) {
-						continue;
-					}
 					// Thumbnail
 					$thumbnail = get_the_post_thumbnail( $expedition, 'large' );
 					// Authors

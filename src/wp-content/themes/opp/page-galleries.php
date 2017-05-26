@@ -12,13 +12,22 @@ $galleries = new WP_Query( array(
 	'posts_per_page' => POSTS_PER_PAGE,
 	'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
 	'post_type'  	 => 'photos-gallery',
-	'post_status'	 => 'publish'
+	'post_status'	 => 'publish',
+	'meta_query' 	 => array(
+		'relation' => 'OR',
+		array(
+            'key' => 'hidden_in_page_list',
+            'value' => '0',
+            'compare' => '='
+        ),
+		array(
+            'key' => 'hidden_in_page_list',
+            'compare' => 'NOT EXISTS'
+        )
+    )
 ) );
 
 $index = 0;
-
-// Get current user
-$user = AAM::getUser();
 
 ?>
 
@@ -43,11 +52,6 @@ $user = AAM::getUser();
 			<?php while ( $galleries->have_posts() ) : $index++;
 					// Post
 					$gallery = get_post( $galleries->the_post() );
-					// Get visibility in list
-					$isHidden = $user->getObject( 'post', $gallery->ID )->has('frontend.list');
-					if ( $isHidden ) {
-						continue;
-					}
 					// Thumbnail
 					$thumbnail = get_the_post_thumbnail( $gallery, 'large' );
 					// Auhtors
