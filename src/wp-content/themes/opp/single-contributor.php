@@ -35,13 +35,27 @@ while ( have_posts() ) : the_post();
 		'post_type'  	 => array( 'photos-gallery', 'expedition' ),
 		'post_status'	 => 'publish',
 		'post_parent'	 => 0,
-		'meta_query' 	 => array(array(
-					            'key' => 'authors',
-					            'value' => '"' . $post->ID . '"',
-					            'compare' => 'LIKE'
-					        ))
+		'meta_query' 	 => array(
+			'relation' => 'AND',
+			array(
+	            'key' => 'authors',
+	            'value' => '"' . $post->ID . '"',
+	            'compare' => 'LIKE'
+       		),
+       		array(
+				'relation' => 'OR',
+				array(
+		            'key' => 'hidden_in_page_list',
+		            'value' => '0',
+		            'compare' => '='
+		        ),
+				array(
+		            'key' => 'hidden_in_page_list',
+		            'compare' => 'NOT EXISTS'
+		        )
+		    )	
 		)
-	);
+	));
 	/* Last contributions */
 	$strlen = strlen( wp_strip_all_tags( $post->post_content ) );
 	$nbLastContributions = 1;
