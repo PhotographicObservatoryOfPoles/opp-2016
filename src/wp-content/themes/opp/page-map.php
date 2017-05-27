@@ -9,7 +9,19 @@ get_header();
 $galleries = get_posts( array(
 	'posts_per_page' => -1,
 	'post_type'  	 => 'photos-gallery',
-	'post_status'	 => 'publish'
+	'post_status'	 => 'publish',
+	'meta_query' 	 => array(
+		'relation' => 'OR',
+		array(
+            'key' => 'hidden_in_page_list',
+            'value' => '0',
+            'compare' => '='
+        ),
+		array(
+            'key' => 'hidden_in_page_list',
+            'compare' => 'NOT EXISTS'
+        )
+    )
 ) );
 $expeditions = get_posts( array(
 	'posts_per_page'   => -1,

@@ -13,19 +13,7 @@ $expeditions = new WP_Query( array(
 	'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
 	'post_type' 	 => 'expedition',
 	'post_status' 	 => 'publish',
-	'post_parent'	 => 0,
-	'meta_query' 	 => array(
-		'relation' => 'OR',
-		array(
-            'key' => 'hidden_in_page_list',
-            'value' => '0',
-            'compare' => '='
-        ),
-		array(
-            'key' => 'hidden_in_page_list',
-            'compare' => 'NOT EXISTS'
-        )
-    )
+	'post_parent'	 => 0
 ) );
 
 $index = 0;
