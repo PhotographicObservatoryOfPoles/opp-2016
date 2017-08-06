@@ -8,6 +8,8 @@ get_header(); ?>
 <?php
 // Start the loop.
 while ( have_posts() ) : the_post();
+	// Subtitle
+	$subtitle = get_field( 'subtitle' );
 
 	// Authors
 	$authors = get_authors( $post, $locale );
@@ -27,7 +29,6 @@ while ( have_posts() ) : the_post();
 	
 	// All galleries page
 	$allGalleriesPage = pll_get_post( PAGE_GALLERIES_ID, $locale );
-
 ?>
 
 <!-- Panel button -->
@@ -44,6 +45,9 @@ while ( have_posts() ) : the_post();
 		<div class="row">
 			<div class="col-sm-12 col-md-12">
 				<h2><?php the_title(); ?></h2>
+				<?php if ( $subtitle ) : ?>
+					<h5 class="subtitle"><?php echo $subtitle; ?></h5>
+				<?php endif; ?>
 				<div class="authors">
 					<?php foreach ( $authors['posts'] as $key => $author ) : ?>
 						<h3>

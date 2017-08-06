@@ -142,6 +142,8 @@ while ( have_posts() ) : the_post();
 				<?php foreach ( $lastContributions as $lastContribution ) :
 					// Post
 					$contribution = get_post( $lastContribution );
+					// Subtitle
+					$subtitle = get_field( 'subtitle', $contribution );
 					// Thumbnail
 					$thumbnail = get_the_post_thumbnail( $contribution, 'large' );
 					// Authors
@@ -161,6 +163,7 @@ while ( have_posts() ) : the_post();
 				        </div>
 				        <div class="caption">
 				            <h3><?php echo $contribution->post_title; ?></h3>
+				            <?php if ( $subtitle ) : ?><h5 class="subtitle"><?php echo $subtitle; ?></h5><?php endif; ?>
 				            <h4>
 				                <?php foreach ( $authors['posts'] as $key => $author ) : ?>
 				                    <a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo $author->post_title; ?></a><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>
@@ -197,6 +200,8 @@ while ( have_posts() ) : the_post();
 					<?php while ( $contributions->have_posts() ) :
 						// Post
 						$contribution = get_post( $contributions->the_post() );
+						// Subtitle
+						$subtitle = get_field( 'subtitle', $contribution );
 						// Thumbnail
 						$thumbnail = get_the_post_thumbnail( $contribution, 'large' );
 						// Authors
@@ -220,6 +225,7 @@ while ( have_posts() ) : the_post();
 						        </div>
 						        <div class="caption">
 						            <h3><?php echo $contribution->post_title; ?></h3>
+						            <?php if ( $subtitle ) : ?><h5 class="subtitle"><?php echo $subtitle; ?></h5><?php endif; ?>
 						            <h4>
 						                <?php foreach ( $authors['posts'] as $key => $author ) : ?>
 						                    <a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo $author->post_title; ?></a><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>
