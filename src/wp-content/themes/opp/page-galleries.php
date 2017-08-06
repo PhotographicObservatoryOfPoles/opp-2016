@@ -52,6 +52,8 @@ $index = 0;
 			<?php while ( $galleries->have_posts() ) : $index++;
 					// Post
 					$gallery = get_post( $galleries->the_post() );
+					// Subtitle
+					$subtitle = get_field( 'subtitle', $gallery );
 					// Thumbnail
 					$thumbnail = get_the_post_thumbnail( $gallery, 'large' );
 					// Auhtors
@@ -76,6 +78,9 @@ $index = 0;
 				  		</div>
 				      	<div class="caption">
 				        	<h3><?php echo $gallery->post_title; ?></h3>
+        					<?php if ( $subtitle ) : ?>
+								<h5 class="subtitle"><?php echo $subtitle; ?></h5>
+							<?php endif; ?>
 				        	<h4>
 					        	<?php foreach ( $authors['posts'] as $key => $author ) : ?>
 									<a href="<?php echo get_permalink( $author->ID ); ?>"><?php echo $author->post_title; ?></a><?php echo $key !== $authors['lastKey'] ? ',' : ''; ?>

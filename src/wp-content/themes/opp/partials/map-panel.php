@@ -18,6 +18,8 @@
 
         	// Gallery
 			if ($post->post_type === 'photos-gallery') {
+				// Subtitle
+				$subtitle = get_field( 'subtitle', $post );
 				// Authors
 				$authors = get_authors( $post, $locale );
 				// Thumbnail
@@ -50,7 +52,7 @@
 			<!-- Title(s) -->
 			<div class="main-title main-title--marker">
 				<small class="post-type"><?php echo $post->post_type === 'photos-gallery' ? __( 'photos-gallery', 'opp' ) : __( 'expedition', 'opp' ); ?></small>
-				<?php if ($grandParent || $parent) : ?>
+				<?php if ( $grandParent || $parent ) : ?>
 					<h4 class="parent-title">
 						<?php if ($grandParent) { echo $grandParent->post_title; } ?>
 						<?php if ($grandParent && $parent) { echo '&middot;'; } ?>
@@ -58,6 +60,7 @@
 					</h4>
 				<?php endif; ?>
 				<h3><?php echo $post->post_title; ?></h3>
+				<?php if ( $subtitle ) : ?><h5 class="subtitle"><?php echo $subtitle; ?></h5><?php endif; ?>
 				
 				<!-- Author(s) -->
 				<div class="authors">

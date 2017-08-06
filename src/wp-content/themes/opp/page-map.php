@@ -90,6 +90,8 @@ foreach ( $posts as $key => $item ) {
 
 						<!-- Gallery -->
 						<?php if ( $item->post_type === 'photos-gallery' ) {
+							// Subtitle
+							$subtitle = get_field( 'subtitle', $item );
 							// Authors
 							$authors = get_authors( $item, $locale );
 							// Thumbnail
@@ -128,6 +130,7 @@ foreach ( $posts as $key => $item ) {
 								</h4>
 							<?php endif; ?>
 							<h3><?php echo $item->post_title; ?></h3>
+							<?php if ( $subtitle ) : ?><h5 class="subtitle"><?php echo $subtitle; ?></h5><?php endif; ?>
 							<!-- Author(s) -->
 							<div class="authors">
 								<?php foreach ( $authors['posts'] as $key => $author ) : ?>

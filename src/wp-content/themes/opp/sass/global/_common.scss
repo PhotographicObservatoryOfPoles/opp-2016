@@ -875,6 +875,17 @@ header {
     }
 }
 
+// Subtitle
+.subtitle {
+    color: #57025B;
+    font-weight: bold;
+    font-size: 13px;
+        
+    &:first-letter {
+        text-transform: capitalize;
+    }
+}
+
 // Maps
 .map {
 

@@ -63,6 +63,8 @@ function filter_global_search( $query ) {
 // Includes
 /* Custom Post Types */
 require 'inc/custom-post-types.php';
+/* Custom admin */
+require 'inc/custom-admin.php';
 /* Languages */
 require 'inc/languages.php';
 /* Scripts */
@@ -71,5 +73,3 @@ require 'inc/scripts.php';
 require 'inc/utils.php';
 /* Ajax */
 require 'inc/ajax.php';
-
-
