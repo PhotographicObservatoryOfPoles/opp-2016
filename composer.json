@@ -30,9 +30,10 @@
         "wpackagist-plugin/advanced-access-manager": "^3.9.5.1",
         "wpackagist-plugin/wordpress-seo": "^4.1",
         "wpackagist-plugin/google-analytics-dashboard-for-wp": "^4.9.5",
-	"wpackagist-plugin/gmail-smtp": "^1.1.1"
+	    "wpackagist-plugin/gmail-smtp": "^1.1.1"
     },
     "require-dev": {
+        "phing/phing": "^2.10"
     },
     "extra": {
         "installer-paths": {
