@@ -1,9 +1,9 @@
 <?php
 /*
-  Template Name: Galleries
+  Template Name: Videos Galleries
 */
 
-get_header(); 
+get_header();
 
 // Get galleries (5 per page)
 $galleries = new WP_Query( array(
@@ -11,7 +11,7 @@ $galleries = new WP_Query( array(
 	'order'          => 'DESC',
 	'posts_per_page' => POSTS_PER_PAGE,
 	'paged' 		 => ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1,
-	'post_type'  	 => 'photos-gallery',
+	'post_type'  	 => 'videos-gallery',
 	'post_status'	 => 'publish',
 	'meta_query' 	 => array(
 		'relation' => 'OR',
@@ -61,8 +61,8 @@ $index = 0;
 					// Terms (theme & region)
 					$terms = get_theme_region_terms( $gallery, true );
 					// Description
-		        	$description = get_field( 'description', $gallery, false );
-		        	$description = strlen( $description ) > 300 ? mb_substr( $description, 0, 300 ) . '...' : $description;
+        	$description = get_field( 'description', $gallery, false );
+        	$description = strlen( $description ) > 300 ? mb_substr( $description, 0, 300 ) . '...' : $description;
 		    ?>
 				<div class="col-sm-6 col-md-6 <?php echo $index % 2 !== 0 ? 'break' : ''; ?> grid-item">
 				  	<div class="thumbnail">
@@ -101,7 +101,7 @@ $index = 0;
 				    </div>
 				</div>
 			<?php endwhile; ?>
-			
+
 			</div>
 
 			<div class="load-more-manual">
@@ -141,7 +141,7 @@ $index = 0;
 	        var $newElems = $(newElements).css({
 	            opacity: 0
 	        });
-	        
+
 	        $newElems.imagesLoaded(function() {
 	            $newElems.animate({
 	                opacity: 1
@@ -152,12 +152,12 @@ $index = 0;
 
 		// Pause Infinite Scroll
 	    $container.infinitescroll('pause');
-		
+
 		// Resume Infinite Scroll
 	    jQuery('.page-nav a').click(function() {
 	    	$container.infinitescroll('retrieve');
 	        return false;
 	    });
-	    
+
 	});
 </script>

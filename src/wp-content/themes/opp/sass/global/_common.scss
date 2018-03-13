@@ -222,7 +222,12 @@ header {
         background-size: cover;
     }
 
-    &.page-template-page-galleries > header {
+    &.page-template-page-photos-galleries > header {
+        background: rgba(0,0,0,0.65) url('img/banner/5.png') center no-repeat;
+        background-size: cover;
+    }
+
+    &.page-template-page-videos-galleries > header {
         background: rgba(0,0,0,0.65) url('img/banner/5.png') center no-repeat;
         background-size: cover;
     }
@@ -268,12 +273,12 @@ header {
                 display: inline-block;
             }
         }
-        
+
         .light-blue {
             color: #358DAD;
             display: block;
         }
-       
+
     }
 }
 
@@ -437,7 +442,7 @@ header {
 
     button[type="submit"] {
         padding-right: 25px;
-        padding-left: 25px; 
+        padding-left: 25px;
     }
 }
 
@@ -518,7 +523,7 @@ header {
     &:hover {
         opacity: 1;
     }
-    
+
     a {
         display: block;
         font-size: 26px;
@@ -531,7 +536,7 @@ header {
     }
 }
 
-// Footer 
+// Footer
 .site-footer {
     padding: 15px;
     color: white;
@@ -603,7 +608,7 @@ header {
 
 #search {
     padding-left: 0;
-    
+
     .row {
         margin-top: 12px;
         margin-bottom: 12px;
@@ -631,7 +636,7 @@ header {
         &.selected {
             background-color: #337ab7;
             color: #fff;
-            
+
             &:hover {
                 background-color: #286090;
             }
@@ -880,7 +885,7 @@ header {
     color: #57025B;
     font-weight: bold;
     font-size: 13px;
-        
+
     &:first-letter {
         text-transform: capitalize;
     }
@@ -1095,7 +1100,7 @@ iframe {
             @media screen and (min-width: 991px) {
                 max-width: none;
             }
-            
+
         }
     }
 

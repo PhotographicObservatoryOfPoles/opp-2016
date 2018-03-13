@@ -4,39 +4,42 @@
 global $locale;
 /* Post types subpages */
 global $post_type_subpages;
-$post_type_subpages = [ 'photos-gallery', 'expedition', 'contributor', 'post' ];
+$post_type_subpages = [ 'photos-gallery', 'videos-gallery', 'expedition', 'contributor', 'post' ];
 
 /* ID pages (fr_FR) */
-const PAGE_GALLERIES_ID        	   	  = 83;
+const PAGE_PHOTOS_GALLERIES_ID        = 83;
+const PAGE_VIDEOS_GALLERIES_ID        = 1781;
 const PAGE_EXPEDITIONS_ID     	   	  = 944;
 const PAGE_MAP_ID              	   	  = 77;
 const PAGE_CONTRIBUTORS_ID     	   	  = 1078;
-const PAGE_OBSERVATORY_ID 		   	  = 1122;
-const PAGE_OBSERVATORY_ABOUT_ID 	  = 1126;
+const PAGE_OBSERVATORY_ID 		   	  	= 1122;
+const PAGE_OBSERVATORY_ABOUT_ID 	  	= 1126;
 const PAGE_OBSERVATORY_TEAM_ID    	  = 1128;
 const PAGE_OBSERVATORY_SPONSORS_ID 	  = 1149;
 const PAGE_OBSERVATORY_PARTNERS_ID	  = 1151;
-const PAGE_DONATION_ID 	 			  = 1132;
-const PAGE_CONTACT_ID 	 			  = 1212;
-const CONTACT_FORM_ID 	 			  = 1218;
-const PAGE_NEWS_ID	 	 			  = 1252;
-const PAGE_MEDIAS_ID	 	 		  = 1289;
-const PAGE_LEGAL_NOTICE_ID	 	  	  = 1292;
+const PAGE_DONATION_ID 	 			  			= 1132;
+const PAGE_CONTACT_ID 	 			  			= 1212;
+const CONTACT_FORM_ID 	 			  			= 1218;
+const PAGE_NEWS_ID	 	 			  				= 1252;
+const PAGE_MEDIAS_ID	 	 		  				= 1289;
+const PAGE_LEGAL_NOTICE_ID	 	  	  	= 1292;
 
 /* Pagination */
 const POSTS_PER_PAGE = 6;
 
 /* Mobile hidden pages */
 global $mobile_hidden_pages;
-$mobile_hidden_pages = [ 
-	PAGE_GALLERIES_ID,
+$mobile_hidden_pages = [
+	PAGE_PHOTOS_GALLERIES_ID,
+	PAGE_VIDEOS_GALLERIES_ID,
 	PAGE_EXPEDITIONS_ID,
 	PAGE_MAP_ID,
 	PAGE_CONTRIBUTORS_ID
 ];
 if ( function_exists(pll_get_post) ) {
-	$mobile_hidden_pages = [ 
-		pll_get_post( PAGE_GALLERIES_ID, $locale ),
+	$mobile_hidden_pages = [
+		pll_get_post( PAGE_PHOTOS_GALLERIES_ID, $locale ),
+		pll_get_post( PAGE_VIDEOS_GALLERIES_ID, $locale ),
 		pll_get_post( PAGE_EXPEDITIONS_ID, $locale ),
 		pll_get_post( PAGE_MAP_ID, $locale ),
 		pll_get_post( PAGE_CONTRIBUTORS_ID, $locale )

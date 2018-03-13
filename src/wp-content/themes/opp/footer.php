@@ -12,10 +12,10 @@
 
 	<?php $footerLinkItemsIDs = array(
 			pll_get_post( PAGE_NEWS_ID, $locale ) => array('post_type' => 'post'),
-		    pll_get_post( PAGE_CONTACT_ID, $locale ) => array('post_type' => ''),
-		    pll_get_post( PAGE_DONATION_ID, $locale ) => array('post_type' => ''),
-		    pll_get_post( PAGE_MEDIAS_ID, $locale ) => array('post_type' => ''),
-		    pll_get_post( PAGE_LEGAL_NOTICE_ID, $locale ) => array('post_type' => '')
+	    pll_get_post( PAGE_CONTACT_ID, $locale ) => array('post_type' => ''),
+	    pll_get_post( PAGE_DONATION_ID, $locale ) => array('post_type' => ''),
+	    pll_get_post( PAGE_MEDIAS_ID, $locale ) => array('post_type' => ''),
+	    pll_get_post( PAGE_LEGAL_NOTICE_ID, $locale ) => array('post_type' => '')
 	); ?>
 	<footer class="site-footer">
 		<ul class="links">
@@ -76,7 +76,8 @@
 	<!-- Main menu -->
 	<?php $mainMenuItemsIDs = array(
 		    pll_get_post( PAGE_OBSERVATORY_ID, $locale ) => array('post_type' => ''),
-		    pll_get_post( PAGE_GALLERIES_ID, $locale ) => array('post_type' => 'photos-gallery'),
+		    pll_get_post( PAGE_PHOTOS_GALLERIES_ID, $locale ) => array('post_type' => 'photos-gallery'),
+		    pll_get_post( PAGE_VIDEOS_GALLERIES_ID, $locale ) => array('post_type' => 'videos-gallery'),
 		    pll_get_post( PAGE_EXPEDITIONS_ID, $locale ) => array('post_type' => 'expedition'),
 		    pll_get_post( PAGE_MAP_ID, $locale ) => array('post_type' => ''),
 		    pll_get_post( PAGE_CONTRIBUTORS_ID, $locale ) => array('post_type' => 'contributor'),
@@ -167,7 +168,7 @@
 			itemWidth: 250,
 			itemMargin: 15
 		});
-		
+
 		// Homepage contributors carousel
 		$('#homepage-contributors-carousel').flexslider({
 		    animation: "slide",
@@ -187,7 +188,7 @@
 	            itemSelector: '.grid-item',
 	        });
 	    });
-	    
+
 	});
 </script>
 
