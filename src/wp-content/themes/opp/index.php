@@ -324,7 +324,7 @@ get_header(); ?>
 			<!-- All posts link -->
 			<div class="col-sm-12 col-md-6">
 				<div class="col-sm-6 col-md-6 all-posts-link">
-					<a class="btn btn-default" href="<?php echo get_permalink( PAGE_GALLERIES_ID ); ?>" title="<?php echo __( 'All galleries', 'opp' ); ?>">
+					<a class="btn btn-default" href="<?php echo get_permalink( PAGE_PHOTOS_GALLERIES_ID ); ?>" title="<?php echo __( 'All galleries', 'opp' ); ?>">
 						<?php echo __( 'All galleries', 'opp' ); ?>
 					</a>
 				</div>

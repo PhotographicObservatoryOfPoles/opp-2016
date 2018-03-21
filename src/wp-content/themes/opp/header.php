@@ -14,7 +14,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
-	<?php 
+	<?php
 		if ( $post->post_parent ) {
 			$parent = get_post( $post->post_parent );
 			$title = $parent->post_parent ? get_the_title( $parent->post_parent ) : get_the_title( $post->post_parent );
@@ -25,7 +25,7 @@
  	</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=1.2" rel="stylesheet">
+	<link href="<?php bloginfo( 'template_directory' ); ?>/style.css?ver=1.3" rel="stylesheet">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.ico">
 	<?php wp_head(); ?>
 </head>
@@ -125,7 +125,7 @@
 								'hierarchical' => false,
 								'title_li'     => '',
 								'hide_empty'   => false
-							); 
+							);
 						?>
 
 						<!--<div class="filters">

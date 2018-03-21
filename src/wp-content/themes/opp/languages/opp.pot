@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPP Theme\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-05 20:58+0000\n"
+"POT-Creation-Date: 2018-03-12 18:45+0000\n"
 "POT-Revision-Date: Thu Sep 08 2016 22:31:46 GMT+0200 (Paris, Madrid (heure "
 "d’été))\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -24,6 +24,47 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/"
 
+#: taxonomy.php:67 taxonomy.php:80 taxonomy.php:89 index.php:37 index.php:38
+#: index.php:71 index.php:85 index.php:94 index.php:131 index.php:145
+#: index.php:154 index.php:191 index.php:197 index.php:210 index.php:214
+#: index.php:249 index.php:261 index.php:270 index.php:297 index.php:309
+#: index.php:318 index.php:386 index.php:392 single-videos-gallery.php:138
+#: single-videos-gallery.php:175 single-videos-gallery.php:187
+#: single-videos-gallery.php:196 single-expedition.php:170
+#: page-photos-galleries.php:76 page-photos-galleries.php:91
+#: page-photos-galleries.php:100 page-expeditions.php:63
+#: page-expeditions.php:75 page-expeditions.php:84 page-contributors.php:116
+#: page-contributors.php:122 single-contributor.php:158
+#: single-contributor.php:173 single-contributor.php:182
+#: single-contributor.php:220 single-contributor.php:236
+#: single-contributor.php:245 header.php:92 content-search.php:33
+#: content-search.php:38 single-photos-gallery.php:203
+#: single-photos-gallery.php:240 single-photos-gallery.php:252
+#: single-photos-gallery.php:261 page-news.php:54 page-news.php:68
+#: page-news.php:77 page-map.php:153 page-videos-galleries.php:76
+#: page-videos-galleries.php:91 page-videos-galleries.php:100
+#: single-post.php:90 partials/map-panel.php:86
+#: partials/expedition-thumbnail.php:10 partials/expedition-thumbnail.php:22
+#: partials/expedition-thumbnail.php:31
+#: partials/photos-gallery-thumbnail.php:10
+#: partials/photos-gallery-thumbnail.php:22
+#: partials/photos-gallery-thumbnail.php:31 partials/page-team.php:67
+#: partials/page-team.php:71
+msgid "See more"
+msgstr ""
+
+#: taxonomy.php:71 page-map.php:124
+msgid "gallery"
+msgstr ""
+
+#: taxonomy.php:71 page-map.php:124 partials/map-panel.php:54
+msgid "expedition"
+msgstr ""
+
+#. Name of the template
+msgid "Donation"
+msgstr ""
+
 #: 404.php:17
 msgid "404"
 msgstr ""
@@ -40,92 +81,11 @@ msgstr ""
 msgid "Back to homepage"
 msgstr ""
 
-#: content-none.php:16
-msgid "Nothing Found"
+#. Name of the template
+msgid "Contact"
 msgstr ""
 
-#: content-none.php:26
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: content-none.php:31
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: content-search.php:19
-msgid "post"
-msgstr ""
-
-#: content-search.php:21
-msgid "contributor"
-msgstr ""
-
-#: content-search.php:33 content-search.php:38 header.php:92 index.php:37
-#: index.php:38 index.php:71 index.php:85 index.php:94 index.php:131
-#: index.php:145 index.php:154 index.php:191 index.php:197 index.php:210
-#: index.php:214 index.php:249 index.php:261 index.php:270 index.php:297
-#: index.php:309 index.php:318 index.php:386 index.php:392
-#: page-contributors.php:116 page-contributors.php:122 page-expeditions.php:63
-#: page-expeditions.php:75 page-expeditions.php:84 page-galleries.php:76
-#: page-galleries.php:91 page-galleries.php:100 page-map.php:150
-#: page-news.php:54 page-news.php:68 page-news.php:77
-#: single-contributor.php:156 single-contributor.php:170
-#: single-contributor.php:179 single-contributor.php:215
-#: single-contributor.php:230 single-contributor.php:239
-#: single-expedition.php:170 single-photos-gallery.php:203
-#: single-photos-gallery.php:240 single-photos-gallery.php:252
-#: single-photos-gallery.php:261 single-post.php:90 taxonomy.php:67
-#: taxonomy.php:80 taxonomy.php:89 partials/expedition-thumbnail.php:10
-#: partials/expedition-thumbnail.php:22 partials/expedition-thumbnail.php:31
-#: partials/map-panel.php:83 partials/page-team.php:67
-#: partials/page-team.php:71 partials/photos-gallery-thumbnail.php:10
-#: partials/photos-gallery-thumbnail.php:22
-#: partials/photos-gallery-thumbnail.php:31
-msgid "See more"
-msgstr ""
-
-#: footer.php:69 header.php:37
-msgid "Homepage"
-msgstr ""
-
-#: footer.php:70 header.php:38 single-photos-gallery.php:143
-msgid "Observatory Photographic of Poles"
-msgstr ""
-
-#: footer.php:72 header.php:40
-msgid "Observatory <span class=\"light-blue\">Photographic</span> of Poles"
-msgstr ""
-
-#: footer.php:103
-msgid "Follow us"
-msgstr ""
-
-#: header.php:48
-msgid "Menu"
-msgstr ""
-
-#: header.php:56 inc/custom-post-types.php:23 inc/custom-post-types.php:59
-#: inc/custom-post-types.php:95 inc/custom-post-types.php:131
-msgid "Search"
-msgstr ""
-
-#: header.php:110
-msgid "Close"
-msgstr ""
-
-#: header.php:133 inc/custom-post-types.php:183
-msgid "Themes"
-msgstr ""
-
-#: header.php:140 inc/custom-post-types.php:194
-msgid "Regions"
-msgstr ""
-
-#: index.php:25 single-contributor.php:128 single-expedition.php:150
+#: index.php:25 single-expedition.php:150 single-contributor.php:128
 msgid "About"
 msgstr ""
 
@@ -151,12 +111,12 @@ msgid "Explore the map"
 msgstr ""
 
 #: index.php:327 index.php:328 single-photos-gallery.php:38
-#: inc/custom-post-types.php:89
+#: inc/custom-post-types.php:90 inc/custom-post-types.php:126
 msgid "All galleries"
 msgstr ""
 
 #: index.php:333 index.php:334 single-expedition.php:90
-#: inc/custom-post-types.php:125
+#: inc/custom-post-types.php:162
 msgid "All expeditions"
 msgstr ""
 
@@ -164,95 +124,89 @@ msgstr ""
 msgid "Our contributors"
 msgstr ""
 
-#. Name of the template
-msgid "Contact"
+#: single-videos-gallery.php:38
+msgid "All videos"
 msgstr ""
 
-#: single-expedition.php:106 single-expedition.php:149
-#: inc/custom-post-types.php:15
-msgid "Contributors"
+#: single-videos-gallery.php:69
+msgid "Watch"
 msgstr ""
 
-#: page-contributors.php:65
-msgid "and"
+#: single-videos-gallery.php:79 single-contributor.php:133
+#: single-photos-gallery.php:79 single-post.php:58
+#: partials/expedition-cover.php:40 partials/expedition-slide.php:23
+#: partials/expedition-chapter.php:31 partials/expedition-chapter.php:56
+msgid "Share"
 msgstr ""
 
-#: page-contributors.php:71 page-contributors.php:75
-msgid "Read the news"
+#: single-videos-gallery.php:92 single-photos-gallery.php:92
+msgid "Location"
 msgstr ""
 
-#: page-contributors.php:90 single-contributor.php:75
-#: inc/custom-post-types.php:17
-msgid "All contributors"
+#: single-videos-gallery.php:151
+msgid "Here are other videos that should please you"
 msgstr ""
 
-#. Name of the template
-msgid "Confirmation don"
-msgstr ""
-
-#: page-donation-confirmation.php:28
-msgid ""
-"Your donation has been taken into account. Thank you for your generosity!"
-msgstr ""
-
-#: page-donation-confirmation.php:35
-msgid "Back to the Observatory page"
-msgstr ""
-
-#. Name of the template
-msgid "Donation"
-msgstr ""
-
-#: inc/custom-post-types.php:123
-msgid "Expeditions"
-msgstr ""
-
-#: page-expeditions.php:92
-msgid "<span class=\"btn btn-default\">More expeditions</span>"
-msgstr ""
-
-#: inc/custom-post-types.php:87
-msgid "Galleries"
-msgstr ""
-
-#: page-galleries.php:109
-msgid "<span class=\"btn btn-default\">More galleries</span>"
-msgstr ""
-
-#. Name of the template
-msgid "Legal notice"
+#: single-expedition.php:98
+msgid "Summary"
 msgstr ""
 
 #: single-expedition.php:102
 msgid "Map"
 msgstr ""
 
-#: page-map.php:122 taxonomy.php:71
-msgid "gallery"
+#: single-expedition.php:106 single-expedition.php:149
+#: inc/custom-post-types.php:16
+msgid "Contributors"
 msgstr ""
 
-#: page-map.php:122 taxonomy.php:71 partials/map-panel.php:52
-msgid "expedition"
+#: single-expedition.php:106 single-expedition.php:149
+#: inc/custom-post-types.php:17
+msgid "Contributor"
+msgstr ""
+
+#: single-expedition.php:116
+msgid "Expedition timeline"
+msgstr ""
+
+#: single-expedition.php:132
+msgid "Fold up the map"
 msgstr ""
 
 #. Name of the template
-msgid "Medias"
+msgid "Photos Galleries"
 msgstr ""
 
-#: page-news.php:85
-msgid "<span class=\"btn btn-default\">Older posts</span>"
+#: page-photos-galleries.php:109 page-videos-galleries.php:109
+msgid "<span class=\"btn btn-default\">More galleries</span>"
+msgstr ""
+
+#: content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
 #. Name of the template
-msgid "Observatory"
+msgid "Legal notice"
 msgstr ""
 
-#: page-observatory.php:43
-msgid "Download the information brochure"
+#: inc/custom-post-types.php:160
+msgid "Expeditions"
 msgstr ""
 
-#: page-observatory.php:55
-msgid "Support us"
+#: page-expeditions.php:92
+msgid "<span class=\"btn btn-default\">More expeditions</span>"
 msgstr ""
 
 #: search.php:23
@@ -272,18 +226,21 @@ msgstr ""
 msgid "Page"
 msgstr ""
 
-#: searchform.php:5
-msgid "Search through all website"
+#: page-contributors.php:65
+msgid "and"
+msgstr ""
+
+#: page-contributors.php:71 page-contributors.php:75
+msgid "Read the news"
+msgstr ""
+
+#: page-contributors.php:90 single-contributor.php:75
+#: inc/custom-post-types.php:18
+msgid "All contributors"
 msgstr ""
 
 #: single-contributor.php:113 partials/page-sponsors.php:61
 msgid "Website"
-msgstr ""
-
-#: single-contributor.php:133 single-photos-gallery.php:79 single-post.php:58
-#: partials/expedition-chapter.php:31 partials/expedition-chapter.php:56
-#: partials/expedition-cover.php:40 partials/expedition-slide.php:23
-msgid "Share"
 msgstr ""
 
 #: single-contributor.php:141
@@ -294,33 +251,54 @@ msgstr ""
 msgid "Last contribution"
 msgstr ""
 
-#: single-contributor.php:195
+#: single-contributor.php:198
 msgid "All contributions"
 msgstr ""
 
-#: single-expedition.php:98
-msgid "Summary"
+#: header.php:37 footer.php:69
+msgid "Homepage"
 msgstr ""
 
-#: single-expedition.php:106 single-expedition.php:149
-#: inc/custom-post-types.php:16
-msgid "Contributor"
+#: header.php:38 single-photos-gallery.php:143 footer.php:70
+msgid "Observatory Photographic of Poles"
 msgstr ""
 
-#: single-expedition.php:116
-msgid "Expedition timeline"
+#: header.php:40 footer.php:72
+msgid "Observatory <span class=\"light-blue\">Photographic</span> of Poles"
 msgstr ""
 
-#: single-expedition.php:132
-msgid "Fold up the map"
+#: header.php:48
+msgid "Menu"
+msgstr ""
+
+#: header.php:56 inc/custom-post-types.php:24 inc/custom-post-types.php:60
+#: inc/custom-post-types.php:96 inc/custom-post-types.php:132
+#: inc/custom-post-types.php:168
+msgid "Search"
+msgstr ""
+
+#: header.php:110
+msgid "Close"
+msgstr ""
+
+#: header.php:133 inc/custom-post-types.php:220
+msgid "Themes"
+msgstr ""
+
+#: header.php:140 inc/custom-post-types.php:231
+msgid "Regions"
+msgstr ""
+
+#: content-search.php:19
+msgid "post"
+msgstr ""
+
+#: content-search.php:21
+msgid "contributor"
 msgstr ""
 
 #: single-photos-gallery.php:69
 msgid "See the gallery"
-msgstr ""
-
-#: single-photos-gallery.php:92
-msgid "Location"
 msgstr ""
 
 #: single-photos-gallery.php:169
@@ -331,6 +309,51 @@ msgstr ""
 msgid "Here are other galleries that should please you"
 msgstr ""
 
+#: footer.php:104
+msgid "Follow us"
+msgstr ""
+
+#: page-news.php:85
+msgid "<span class=\"btn btn-default\">Older posts</span>"
+msgstr ""
+
+#. Name of the template
+msgid "Confirmation don"
+msgstr ""
+
+#: page-donation-confirmation.php:28
+msgid ""
+"Your donation has been taken into account. Thank you for your generosity!"
+msgstr ""
+
+#: page-donation-confirmation.php:35
+msgid "Back to the Observatory page"
+msgstr ""
+
+#. Name of the template
+msgid "Videos Galleries"
+msgstr ""
+
+#. Name of the template
+msgid "Medias"
+msgstr ""
+
+#. Name of the template
+msgid "Observatory"
+msgstr ""
+
+#: page-observatory.php:43
+msgid "Download the information brochure"
+msgstr ""
+
+#: page-observatory.php:55
+msgid "Support us"
+msgstr ""
+
+#: searchform.php:5
+msgid "Search through all website"
+msgstr ""
+
 #: single-post.php:35
 msgid "Published on"
 msgstr ""
@@ -339,78 +362,92 @@ msgstr ""
 msgid "Subtitle / Type"
 msgstr ""
 
-#: inc/custom-post-types.php:18 inc/custom-post-types.php:54
-#: inc/custom-post-types.php:90 inc/custom-post-types.php:126
+#: inc/custom-post-types.php:19 inc/custom-post-types.php:55
+#: inc/custom-post-types.php:91 inc/custom-post-types.php:127
+#: inc/custom-post-types.php:163
 msgid "View"
 msgstr ""
 
-#: inc/custom-post-types.php:19
+#: inc/custom-post-types.php:20
 msgid "Add a contributor"
-msgstr ""
-
-#: inc/custom-post-types.php:20 inc/custom-post-types.php:56
-#: inc/custom-post-types.php:92 inc/custom-post-types.php:128
-msgid "Add"
 msgstr ""
 
 #: inc/custom-post-types.php:21 inc/custom-post-types.php:57
 #: inc/custom-post-types.php:93 inc/custom-post-types.php:129
-msgid "Edit"
+#: inc/custom-post-types.php:165
+msgid "Add"
 msgstr ""
 
 #: inc/custom-post-types.php:22 inc/custom-post-types.php:58
 #: inc/custom-post-types.php:94 inc/custom-post-types.php:130
-msgid "Update"
+#: inc/custom-post-types.php:166
+msgid "Edit"
 msgstr ""
 
-#: inc/custom-post-types.php:24 inc/custom-post-types.php:60
-#: inc/custom-post-types.php:96 inc/custom-post-types.php:132
-msgid "Not found"
+#: inc/custom-post-types.php:23 inc/custom-post-types.php:59
+#: inc/custom-post-types.php:95 inc/custom-post-types.php:131
+#: inc/custom-post-types.php:167
+msgid "Update"
 msgstr ""
 
 #: inc/custom-post-types.php:25 inc/custom-post-types.php:61
 #: inc/custom-post-types.php:97 inc/custom-post-types.php:133
+#: inc/custom-post-types.php:169
+msgid "Not found"
+msgstr ""
+
+#: inc/custom-post-types.php:26 inc/custom-post-types.php:62
+#: inc/custom-post-types.php:98 inc/custom-post-types.php:134
+#: inc/custom-post-types.php:170
 msgid "Not found in trash"
 msgstr ""
 
-#: inc/custom-post-types.php:51
+#: inc/custom-post-types.php:52
 msgid "Partners"
 msgstr ""
 
-#: inc/custom-post-types.php:52
+#: inc/custom-post-types.php:53
 msgid "Partner"
 msgstr ""
 
-#: inc/custom-post-types.php:53
+#: inc/custom-post-types.php:54
 msgid "All partners"
 msgstr ""
 
-#: inc/custom-post-types.php:55
+#: inc/custom-post-types.php:56
 msgid "Add a partner"
 msgstr ""
 
 #: inc/custom-post-types.php:88
-msgid "Gallery"
+msgid "Photos galleries"
 msgstr ""
 
-#: inc/custom-post-types.php:91
+#: inc/custom-post-types.php:89
+msgid "Photos gallery"
+msgstr ""
+
+#: inc/custom-post-types.php:92 inc/custom-post-types.php:128
 msgid "Add a gallery"
 msgstr ""
 
 #: inc/custom-post-types.php:124
+msgid "Videos galleries"
+msgstr ""
+
+#: inc/custom-post-types.php:125
+msgid "Videos gallery"
+msgstr ""
+
+#: inc/custom-post-types.php:161
 msgid "Expedition"
 msgstr ""
 
-#: inc/custom-post-types.php:127
+#: inc/custom-post-types.php:164
 msgid "Add an expedition"
 msgstr ""
 
-#: inc/custom-post-types.php:172
+#: inc/custom-post-types.php:209
 msgid "Contributor types"
-msgstr ""
-
-#: partials/expedition-chapter.php:45
-msgid "In this chapter"
 msgstr ""
 
 #: partials/expedition-cover.php:52
@@ -421,16 +458,20 @@ msgstr ""
 msgid "Discover the expedition"
 msgstr ""
 
-#: partials/map-panel.php:52
+#: partials/map-panel.php:54
 msgid "photos-gallery"
 msgstr ""
 
-#: partials/no-result.php:3
-msgid "No result fits your search"
+#: partials/expedition-chapter.php:45
+msgid "In this chapter"
 msgstr ""
 
 #: partials/page-partners.php:45 partials/page-partners.php:53
 msgid "Go to website"
+msgstr ""
+
+#: partials/no-result.php:3
+msgid "No result fits your search"
 msgstr ""
 
 #. Name of the theme

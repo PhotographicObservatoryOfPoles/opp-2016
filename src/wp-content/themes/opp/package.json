@@ -20,7 +20,8 @@
   "dependencies": {
     "flexslider": "^2.6.3",
     "jquery": "2.2.1",
-    "malihu-custom-scrollbar-plugin": "^3.1.5"
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "ruby": "^0.6.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

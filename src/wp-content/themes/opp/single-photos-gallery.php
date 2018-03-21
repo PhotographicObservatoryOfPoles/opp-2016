@@ -26,9 +26,9 @@ while ( have_posts() ) : the_post();
 
 	// Featured galleries
 	$featuredGalleries = get_featured_posts( $post, $terms, true, 3 );
-	
+
 	// All galleries page
-	$allGalleriesPage = pll_get_post( PAGE_GALLERIES_ID, $locale );
+	$allGalleriesPage = pll_get_post( PAGE_PHOTOS_GALLERIES_ID, $locale );
 ?>
 
 <!-- Panel button -->
@@ -90,7 +90,7 @@ while ( have_posts() ) : the_post();
 		<div class="container">
 			<div class="row">
 				<h3><?php echo __( 'Location', 'opp' ); ?></h3>
-				<h4><?php echo $geolocation['address']; ?></h4>	
+				<h4><?php echo $geolocation['address']; ?></h4>
 				<div class="acf-map">
 					<div class="marker current" data-lat="<?php echo $geolocation['lat']; ?>" data-lng="<?php echo $geolocation['lng']; ?>"></div>
 				</div>
@@ -100,9 +100,9 @@ while ( have_posts() ) : the_post();
 <?php endif; ?>
 
 <!-- Gallery / Carrousel -->
-<?php 
+<?php
 	$gallery = get_post_gallery( $post, false );
-	
+
 	if ( $gallery ) :
 		$imagesIDs = explode( ',', $gallery['ids'] );
 		$nbImages = count( $imagesIDs );
@@ -136,7 +136,7 @@ while ( have_posts() ) : the_post();
 								<p><?php echo $image->post_content; ?></p>
 							<?php endif; ?>
 						</div>
-					<?php endif; ?>	
+					<?php endif; ?>
 					<h3 class="credit">
 						&copy;&nbsp;
 						<?php if ( $metadata['image_meta']['credit'] ) : echo $metadata['image_meta']['credit'] . '&nbsp;&nbsp;/&nbsp;'; endif; ?>
