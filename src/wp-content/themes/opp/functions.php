@@ -8,7 +8,7 @@ $post_type_subpages = [ 'photos-gallery', 'videos-gallery', 'expedition', 'contr
 
 /* ID pages (fr_FR) */
 const PAGE_PHOTOS_GALLERIES_ID        = 83;
-const PAGE_VIDEOS_GALLERIES_ID        = 1781;
+const PAGE_VIDEOS_GALLERIES_ID        = 4999;
 const PAGE_EXPEDITIONS_ID     	   	  = 944;
 const PAGE_MAP_ID              	   	  = 77;
 const PAGE_CONTRIBUTORS_ID     	   	  = 1078;
