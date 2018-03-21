@@ -121,11 +121,11 @@ function custom_post_type() {
 
     // Video gallery
     $labels = array(
-        'name'                => __( 'Videos galleries', 'opp' ),
-        'singular_name'       => __( 'Videos gallery', 'opp' ),
-        'all_items'           => __( 'All galleries', 'opp' ),
+        'name'                => __( 'Videos', 'opp' ),
+        'singular_name'       => __( 'Video', 'opp' ),
+        'all_items'           => __( 'All videos', 'opp' ),
         'view_item'           => __( 'View', 'opp' ),
-        'add_new_item'        => __( 'Add a gallery', 'opp' ),
+        'add_new_item'        => __( 'Add a video', 'opp' ),
         'add_new'             => __( 'Add', 'opp' ),
         'edit_item'           => __( 'Edit', 'opp' ),
         'update_item'         => __( 'Update', 'opp' ),
